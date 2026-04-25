@@ -87,9 +87,6 @@
         * [4.1. Style Guidelines](#4-1)
             * [4.1.1. General Style Guidelines](#4-1-1)
             * [4.1.2. Web Style Guidelines](#4-1-2)
-            * [4.1.3. Mobile Style Guidelines](#4-1-3)
-                * [4.1.3.1. iOS Mobile Style Guidelines](#4-1-3-1)
-                * [4.1.3.2. Android Mobile Style Guidelines](#4-1-3-2)
         * [4.2. Information Architecture](#4-2)
             * [4.2.1. Organization Systems](#4-2-1)
             * [4.2.2. Labeling Systems](#4-2-2)
@@ -99,29 +96,21 @@
         * [4.3. Landing Page UI Design](#4-3)
             * [4.3.1. Landing Page Wireframe](#4-3-1)
             * [4.3.2. Landing Page Mock-up](#4-3-2)
-        * [4.4. Mobile Applications UX/UI Design](#4-4)
-            * [4.4.1. Mobile Applications Wireframes](#4-4-1)
-            * [4.4.2. Mobile Applications Wireflow Diagrams](#4-4-2)
-            * [4.4.3. Mobile Applications Mock-ups](#4-4-3)
-            * [4.4.4. Mobile Applications User Flow Diagrams](#4-4-4)
-        * [4.5. Mobile Applications Prototyping](#4-5)
-            * [4.5.1. Android Mobile Applications Prototyping](#4-5-1)
-            * [4.5.2. iOS Mobile Applications Prototyping](#4-5-2)
-        * [4.6. Web Applications UX/UI Design](#4-6)
-            * [4.6.1. Web Applications Wireframes](#4-6-1)
-            * [4.6.2. Web Applications Wireflow Diagrams](#4-6-2)
-            * [4.6.3. Web Applications Mock-ups](#4-6-3)
-            * [4.6.4. Web Applications User Flow Diagrams](#4-6-4)
-        * [4.7. Web Applications Prototyping](#4-7)
-        * [4.8. Domain-Driven Software Architecture](#4-8)
-            * [4.8.1. Software Architecture Context Diagram](#4-8-1)
-            * [4.8.2. Software Architecture Container Diagrams](#4-8-2)
-            * [4.8.3. Software Architecture Components Diagrams](#4-8-3)
-        * [4.9. Software Object-Oriented Design](#4-9)
-            * [4.9.1. Class Diagrams](#4-9-1)
-            * [4.9.2. Class Dictionary](#4-9-2)
-        * [4.10. Database Design](#4-10)
-            * [4.10.1. Relational/Non-Relational Database Diagram](#4-10-1)
+        * [4.4. Web Applications UX/UI Design](#4-6)
+            * [4.4.1. Web Applications Wireframes](#4-6-1)
+            * [4.4.2. Web Applications Wireflow Diagrams](#4-6-2)
+            * [4.4.3. Web Applications Mock-ups](#4-6-3)
+            * [4.4.4. Web Applications User Flow Diagrams](#4-6-4)
+        * [4.5. Web Applications Prototyping](#4-7)
+        * [4.6. Domain-Driven Software Architecture](#4-8)
+            * [4.6.1. Software Architecture Context Diagram](#4-8-1)
+            * [4.6.2. Software Architecture Container Diagrams](#4-8-2)
+            * [4.6.3. Software Architecture Components Diagrams](#4-8-3)
+        * [4.7. Software Object-Oriented Design](#4-9)
+            * [4.7.1. Class Diagrams](#4-9-1)
+            * [4.7.2. Class Dictionary](#4-9-2)
+        * [4.8. Database Design](#4-10)
+            * [4.8.1. Relational/Non-Relational Database Diagram](#4-10-1)
     * [Capítulo V: Product Implementation](#cap-5)
         * [5.1. Software Configuration Management](#5-1)
             * [5.1.1. Software Development Environment Configuration](#5-1-1)
@@ -133,10 +122,9 @@
             * [5.2.2. Implemented Landing Page Evidence](#5-2-2)
             * [5.2.3. Implemented Frontend-Web Application Evidence](#5-2-3)
             * [5.2.4. Acuerdo de Servicio - SaaS](#5-2-4)
-            * [5.2.5. Implemented Native-Mobile Application Evidence](#5-2-5)
-            * [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#5-2-6)
-            * [5.2.7. RESTful API documentation](#5-2-7)
-            * [5.2.8. Team Collaboration Insights](#5-2-8)
+            * [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#5-2-6)
+            * [5.2.6. RESTful API documentation](#5-2-7)
+            * [5.2.7. Team Collaboration Insights](#5-2-8)
         * [5.3. Video About-the-Product](#5-3)
 3. [Part II: Verification, Validation & Pipeline](#part-2)
     * [Capítulo VI: Product Verification & Validation](#cap-6)
@@ -315,11 +303,6 @@
 <a name="4-1-2"></a>
 ##### 4.1.2. Web Style Guidelines
 <a name="4-1-3"></a>
-##### 4.1.3. Mobile Style Guidelines
-<a name="4-1-3-1"></a>
-###### 4.1.3.1. iOS Mobile Style Guidelines
-<a name="4-1-3-2"></a>
-###### 4.1.3.2. Android Mobile Style Guidelines
 
 <a name="4-2"></a>
 #### 4.2. Information Architecture
@@ -342,57 +325,39 @@
 ##### 4.3.2. Landing Page Mock-up
 
 <a name="4-4"></a>
-#### 4.4. Mobile Applications UX/UI Design
-<a name="4-4-1"></a>
-##### 4.4.1. Mobile Applications Wireframes
-<a name="4-4-2"></a>
-##### 4.4.2. Mobile Applications Wireflow Diagrams
-<a name="4-4-3"></a>
-##### 4.4.3. Mobile Applications Mock-ups
-<a name="4-4-4"></a>
-##### 4.4.4. Mobile Applications User Flow Diagrams
+#### 4.4. Web Applications UX/UI Design
+<a name="4-6-1"></a>
+##### 4.4.1. Web Applications Wireframes
+<a name="4-6-2"></a>
+##### 4.4.2. Web Applications Wireflow Diagrams
+<a name="4-6-3"></a>
+##### 4.4.3. Web Applications Mock-ups
+<a name="4-6-4"></a>
+##### 4.4.4. Web Applications User Flow Diagrams
 
 <a name="4-5"></a>
-#### 4.5. Mobile Applications Prototyping
-<a name="4-5-1"></a>
-##### 4.5.1. Android Mobile Applications Prototyping
-<a name="4-5-2"></a>
-##### 4.5.2. iOS Mobile Applications Prototyping
+#### 4.5. Web Applications Prototyping
 
 <a name="4-6"></a>
-#### 4.6. Web Applications UX/UI Design
+#### 4.6. Domain-Driven Software Architecture
 <a name="4-6-1"></a>
-##### 4.6.1. Web Applications Wireframes
+##### 4.6.1. Software Architecture Context Diagram
 <a name="4-6-2"></a>
-##### 4.6.2. Web Applications Wireflow Diagrams
+##### 4.6.2. Software Architecture Container Diagrams
 <a name="4-6-3"></a>
-##### 4.6.3. Web Applications Mock-ups
-<a name="4-6-4"></a>
-##### 4.6.4. Web Applications User Flow Diagrams
+##### 4.6.3. Software Architecture Components Diagrams
 
 <a name="4-7"></a>
-#### 4.7. Web Applications Prototyping
+#### 4.7. Software Object-Oriented Design
+<a name="4-7-1"></a>
+##### 4.7.1. Class Diagrams
+<a name="4-7-2"></a>
+##### 4.7.2. Class Dictionary
 
 <a name="4-8"></a>
-#### 4.8. Domain-Driven Software Architecture
+#### 4.8. Database Design
 <a name="4-8-1"></a>
-##### 4.8.1. Software Architecture Context Diagram
-<a name="4-8-2"></a>
-##### 4.8.2. Software Architecture Container Diagrams
-<a name="4-8-3"></a>
-##### 4.8.3. Software Architecture Components Diagrams
-
-<a name="4-9"></a>
-#### 4.9. Software Object-Oriented Design
-<a name="4-9-1"></a>
-##### 4.9.1. Class Diagrams
-<a name="4-9-2"></a>
-##### 4.9.2. Class Dictionary
-
-<a name="4-10"></a>
-#### 4.10. Database Design
-<a name="4-10-1"></a>
-##### 4.10.1. Relational/Non-Relational Database Diagram
+##### 4.8.1. Relational/Non-Relational Database Diagram
 
 <a name="cap-5"></a>
 ### Capítulo V: Product Implementation
@@ -419,13 +384,11 @@
 <a name="5-2-4"></a>
 ##### 5.2.4. Acuerdo de Servicio - SaaS
 <a name="5-2-5"></a>
-##### 5.2.5. Implemented Native-Mobile Application Evidence
+##### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 <a name="5-2-6"></a>
-##### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
+##### 5.2.6. RESTful API documentation
 <a name="5-2-7"></a>
-##### 5.2.7. RESTful API documentation
-<a name="5-2-8"></a>
-##### 5.2.8. Team Collaboration Insights
+##### 5.2.7. Team Collaboration Insights
 
 <a name="5-3"></a>
 #### 5.3. Video About-the-Product
