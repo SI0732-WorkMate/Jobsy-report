@@ -1411,7 +1411,7 @@ Gothelf, J., & Seiden, J. (2013). _Lean UX: Applying lean principles to improve 
 
 El HuffPost. (2025). _Gestión de talento y digitalización: el nuevo desafío para empresas en 2025_. Recuperado de https://www.huffingtonpost.es/economia/gestion-talento-digitalizacion-nuevo-desafio-empresas-2025.html
 
-LinkedIn Talent Solutions. (2024). _The Future of Recruiting 2024_. https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/resources/pdfs/future-of-recruiting-2024.pdf
+LinkedIn Talent Solutions. (2024). _The Future of Recruiting 2024_. Recuperado de https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/resources/pdfs/future-of-recruiting-2024.pdf
 
 <a name="anexos"></a>
 ## Anexos
