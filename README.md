@@ -359,6 +359,44 @@ WorkMate adoptará un modelo de negocio tipo Software as a Service (SaaS), dirig
 
 <a name="1-2-1"></a>
 ##### 1.2.1. Antecedentes y problemática
+
+En el contexto actual, los procesos de reclutamiento y selección en muchas empresas siguen siendo largos, ineficientes y, en varios casos, propensos a errores humanos o sesgos. Las áreas de Recursos Humanos deben revisar manualmente cientos de currículums, coordinar entrevistas por distintos canales y hacer seguimiento de manera dispersa, lo cual genera demoras, sobrecarga operativa y una experiencia poco fluida tanto para el candidato como para la empresa.
+
+A pesar de que existen soluciones tecnológicas que buscan optimizar estos procesos, muchas de ellas no se adaptan completamente a la realidad local o presentan costos elevados. Además, gran parte de estas plataformas están diseñadas para grandes corporaciones, dejando de lado a medianas y pequeñas empresas que también necesitan contratar talento de manera ágil y eficiente.
+
+En ese contexto, surge la necesidad de una herramienta centralizada, intuitiva y automatizada que facilite el proceso de contratación, desde la publicación de vacantes hasta la incorporación del candidato. Una solución que ahorre tiempo, reduzca sesgos y permita a los equipos de RRHH tomar decisiones basadas en datos. WorkMate nace para atender esta problemática con un enfoque moderno, accesible y adaptable a distintos tamaños de empresa.
+
+La metodología 5W y 2H es una herramienta práctica y eficaz para solucionar problemas relacionados a la gestión y análisis de datos. Este enfoque nos permite responder siete preguntas fundamentales que permiten abordar cualquier situación de manera estructurada.
+
+**What (¿Qué?)**
+
+Las empresas enfrentan procesos de selección lentos, poco eficientes y con alta carga operativa, lo que genera pérdida de tiempo, errores humanos y una experiencia insatisfactoria tanto para los reclutadores como para los candidatos.
+
+**Who (¿Quién?)**
+
+A reclutadores, responsables de selección de personal, y en general a los equipos de Recursos Humanos que deben gestionar múltiples procesos de contratación con recursos limitados. También afecta a los postulantes, que no siempre reciben una experiencia clara ni oportuna.
+
+**Where (¿Dónde?)**
+
+En los departamentos de Recursos Humanos de empresas de distintos tamaños, especialmente en aquellas que aún no cuentan con herramientas tecnológicas integradas o que usan soluciones dispersas y poco automatizadas.
+
+**When (¿Cuándo?)**
+
+Durante todo el proceso de contratación, desde la creación y publicación de vacantes, hasta la recepción, filtrado de CVs, entrevistas y selección final. El problema se intensifica cuando hay muchas postulaciones o vacantes urgentes.
+
+**Why (¿Por qué?)**
+
+La falta de automatización y digitalización en los procesos de reclutamiento. Muchas tareas se hacen manualmente, lo que consume tiempo, aumenta el margen de error y dificulta la organización y el seguimiento de candidatos.
+
+**How (¿Cómo?)**
+Ocurre cuando los reclutadores deben buscar candidatos entre cientos de CVs, usar múltiples herramientas para comunicarse y evaluar, y realizar seguimiento manual de cada etapa. Todo esto provoca demoras, decisiones poco informadas y frustración en el equipo.
+
+**How much (¿Cuánto?)**
+
+De acuerdo con el portal El HuffPost (2025), la digitalización es un pilar esencial en la gestión del talento que permite automatizar procesos críticos, optimizar la experiencia del empleado y liberar tiempo para actividades estratégicas; una realidad respaldada por el informe The Future of Recruiting 2024 de LinkedIn, donde se evidencia que el 57% de los profesionales espera que la tecnología ayude a redactar descripciones de puestos más rápido y un 42% destaca su valor para la automatización de tareas repetitivas. En el contexto de WorkMate, estas ventajas se potencian al ofrecer una plataforma integral que centraliza y automatiza todo el proceso de selección, reduciendo la carga operativa y minimizando errores humanos para mejorar significativamente la efectividad del área de Recursos Humanos.
+
+![Expectativas de ayuda de la IA generativa en el reclutamiento](./assets/images/chapter-1/HowMuchGrafico.png)
+
 <a name="1-2-2"></a>
 ##### 1.2.2. Lean UX Process
 <a name="1-2-2-1"></a>
