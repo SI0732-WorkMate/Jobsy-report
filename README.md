@@ -549,6 +549,8 @@ Nuestra Startup fue diseñada para optimizar y modernizar los procesos de selecc
 <a name="1-2-2-4"></a>
 ###### 1.2.2.4. Lean UX Canvas
 
+![Lean UX Canvas](./assets/images/chapter-1/LeanUXCanvas.jpg)
+
 <a name="1-3"></a>
 #### 1.3. Segmentos objetivo
 
