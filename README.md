@@ -1407,5 +1407,23 @@ El escenario "To-Be" describe cómo se desarrollarán las experiencias de los us
 <a name="bibliografia"></a>
 ## Bibliografía
 
+Gothelf, J., & Seiden, J. (2013). _Lean UX: Applying lean principles to improve user experience_. Recuperado de https://books.google.es/books?hl=es&lr=&id=7TDQ4WZ1BHoC&oi=fnd&pg=PR9&dq=Lean+UX+2013&ots=wcoh1DeAHp&sig=BUw_djW-_fO2xALUpzNdHv3pJaA#v=onepage&q=Lean%20UX%202013&f=false
+
+El HuffPost. (2025). _Gestión de talento y digitalización: el nuevo desafío para empresas en 2025_. Recuperado de https://www.huffingtonpost.es/economia/gestion-talento-digitalizacion-nuevo-desafio-empresas-2025.html
+
+LinkedIn Talent Solutions. (2024). _The Future of Recruiting 2024_. https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/resources/pdfs/future-of-recruiting-2024.pdf
+
 <a name="anexos"></a>
 ## Anexos
+
+Link del Miro del Lean UX Canvas: https://miro.com/app/board/uXjVHc_ELqU=/?share_link_id=372502949921
+
+Link del Repositorio: https://github.com/SI0732-WorkMate
+
+Link de la Landing Page: 
+
+Link del Backend:
+
+Link del Frontend:
+
+Link de las diapositivas:
