@@ -342,6 +342,21 @@ Nuestra visión es ser la solución líder en Latinoamérica en automatización 
 
 <a name="1-2"></a>
 #### 1.2. Solution Profile
+
+En esta sección detallamos el funcionamiento y propuesta de valor de nuestro producto digital, resaltando tanto su factor innovador como su esquema de monetización.
+
+**Product Name**
+
+El nombre de nuestra plataforma es “WorkMate". Se eligió este nombre por su enfoque en ser el aliado perfecto para las empresas en la búsqueda de talento, adaptándose a las necesidades del mercado moderno. La palabra "Work" (trabajo) hace alusión directa al entorno laboral y profesional, mientras que "Mate" (compañero o socio) transmite cercanía, colaboración y apoyo continuo. Esta combinación genera confianza y comunica una propuesta clara: un socio estratégico que hace que las contrataciones sean más rápidas, precisas y efectivas.
+
+**Product Description**
+
+Una vez publicada la oferta, la plataforma centraliza la recepción de postulaciones y aplica filtros inteligentes que clasifican automáticamente los CVs en categorías como "aptos", "en duda" y "descartados", según criterios personalizados. Desde un panel interactivo, los reclutadores pueden refinar los resultados, aplicar filtros avanzados, enviar pruebas técnicas automatizadas y agendar entrevistas directamente desde la plataforma. Además, WorkMate permite generar contratos laborales digitales y gestionar el onboarding del nuevo colaborador, incluyendo accesos, checklist de incorporación y recursos de bienvenida. Finalmente, se dispone de un dashboard con métricas de rendimiento, como tiempo promedio de contratación o eficiencia del embudo, que permiten mejorar procesos futuros con base en datos reales.
+
+**Monetization**
+
+WorkMate adoptará un modelo de negocio tipo Software as a Service (SaaS), dirigido a empresas y organizaciones que deseen mejorar sus procesos de reclutamiento. Las compañías pagarán una suscripción mensual o anual para acceder a todas las funcionalidades de la plataforma, incluyendo la publicación automática de vacantes, el filtrado inteligente de CVs con IA, la programación de entrevistas y el seguimiento completo del proceso de selección.
+
 <a name="1-2-1"></a>
 ##### 1.2.1. Antecedentes y problemática
 <a name="1-2-2"></a>
