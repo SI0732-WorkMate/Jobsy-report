@@ -216,6 +216,72 @@
 <a name="student-outcome"></a>
 ## Student Outcome
 
+El curso contribuye al cumplimiento del Student Outcome ABET:  
+
+**ABET – EAC - Student Outcome 4**  
+**Criterio:** La capacidad de reconocer responsabilidades éticas y
+profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
+
+En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el ABET – EAC - Student Outcome 4.
+
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:normal">Criterio específico</span></th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:normal">Acciones realizadas</span></th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:normal">Conclusiones</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+
+**María Hernández:**  
+- **AV1:** 
+
+**Jasmin Urrutia:**  
+- **AV1:** 
+
+**Fabricio Vega:**  
+- **AV1:** 
+
+**Ysaac Villanueva:**  
+- **AV1:** 
+
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+
+- **AV1:**  
+  
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+
+**María Hernández:**  
+- **AV1:** 
+
+**Jasmin Urrutia:**  
+- **AV1:** 
+
+**Fabricio Vega:**  
+- **AV1:** 
+
+**Ysaac Villanueva:**  
+- **AV1:** 
+
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+
+- **AV1:** 
+
+</td>
+</tr>
+</tbody>
+</table>
+
 <a name="part-1"></a>
 ## Part I: As-Is Software Project
 
