@@ -23,7 +23,7 @@
 <br>
 
 <div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
-    <p>U</p>
+    <p>U202311258 — Hernádez Uchuya, María Patricia</p>
     <p>U202310008 — Urrutia Pena, Jasmin Adriana</p>
     <p>U202317000 — Vega Coronado, Fabricio Samir</p>
     <p>U20231c168 — Villanueva Andrade, Ysaac Ligorio</p>
@@ -232,15 +232,15 @@
   <tbody>
     <tr>
       <td style="padding: 10px; width: 70%;">
-        <strong>Nombre:</strong> name
+        <strong>Nombre:</strong> Hernández Uchuya, María Patricia
       </td>
       <td style="padding: 10px; width: 30%; text-align: center;" rowspan="4">
-        <img src="assets/images/chapter-1/perfiles-integrantes/foto_Maria.png" alt="Maria" title="Foto de Maria" style="width: 150px; height: auto; border-radius: 8px;" />
+        <img src="assets/images/chapter-1/perfiles-integrantes/maria-hernandez.jpeg" alt="Maria" title="Foto de Maria" style="width: 150px; height: auto; border-radius: 8px;" />
       </td>
     </tr>
     <tr>
       <td style="padding: 10px;">
-        <strong>Código:</strong> U20231
+        <strong>Código:</strong> U202311258
       </td>
     </tr>
     <tr>
@@ -251,7 +251,7 @@
     <tr>
       <td style="padding: 10px; text-align: justify;">
         <strong>Habilidades:</strong>
-        Mi nombre es Maria, soy estudiante de Ingeniería de software.
+        Estudio la carrera de Ingeniería de Software, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de dicha carrera. Me considero una persona con responsabilidad, optimismo y honestidad, cualidades que considero fundamentales para una colaboración efectiva en equipo y un buen desarrollo en este proyecto.
       </td>
     </tr>
      <tr>
