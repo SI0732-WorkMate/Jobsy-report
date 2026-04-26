@@ -399,8 +399,15 @@ De acuerdo con el portal El HuffPost (2025), la digitalización es un pilar esen
 
 <a name="1-2-2"></a>
 ##### 1.2.2. Lean UX Process
+
+Lean UX es una metodología ágil que pone énfasis en la colaboración constante y el aprendizaje iterativo durante el desarrollo de un producto, priorizando la acción sobre la documentación exhaustiva. Este enfoque impulsa el trabajo conjunto entre los equipos de diseño y desarrollo, quienes crean prototipos y obtienen retroalimentación valiosa mediante ciclos de mejora continua.
+Su objetivo esencial es validar hipótesis de forma ágil y con el menor uso de recursos, garantizando así que el resultado final sea adaptable y responda verdaderamente a las necesidades de los usuarios (Gothelf, 2013).
+
 <a name="1-2-2-1"></a>
 ###### 1.2.2.1. Lean UX Problem Statements
+
+Nuestra Startup fue diseñada para optimizar y modernizar los procesos de selección de personal, brindando a las empresas una plataforma centralizada, automatizada e intuitiva que permite realizar contrataciones más rápidas, precisas y efectivas. Hemos observado que el proceso de reclutamiento no está cumpliendo con estos objetivos en muchas empresas, ya que los equipos de Recursos Humanos enfrentan dificultades al gestionar manualmente grandes volúmenes de postulaciones, coordinar entrevistas en múltiples canales y tomar decisiones sin datos claros o centralizados. Esto está causando retrasos en las contrataciones, errores humanos y una experiencia poco satisfactoria tanto para los candidatos como para los reclutadores, lo cual impacta negativamente en la eficiencia operativa y en la capacidad de atraer talento de calidad. ¿Cómo podemos mejorar la eficiencia operativa y la calidad de las contrataciones, proporcionando una plataforma web que automatice el filtrado de CVs, centralice todas las etapas del proceso y ofrezca métricas útiles para una toma de decisiones estratégicas basada en datos objetivos?
+
 <a name="1-2-2-2"></a>
 ###### 1.2.2.2. Lean UX Assumptions
 <a name="1-2-2-3"></a>
