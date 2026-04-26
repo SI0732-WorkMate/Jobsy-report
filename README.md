@@ -456,6 +456,7 @@ Durante todo el proceso de contratación, desde la creación y publicación de v
 La falta de automatización y digitalización en los procesos de reclutamiento. Muchas tareas se hacen manualmente, lo que consume tiempo, aumenta el margen de error y dificulta la organización y el seguimiento de candidatos.
 
 **How (¿Cómo?)**
+
 Ocurre cuando los reclutadores deben buscar candidatos entre cientos de CVs, usar múltiples herramientas para comunicarse y evaluar, y realizar seguimiento manual de cada etapa. Todo esto provoca demoras, decisiones poco informadas y frustración en el equipo.
 
 **How much (¿Cuánto?)**
@@ -887,10 +888,10 @@ Aprovechar la agilidad y el enfoque innovador de Jobsy para adaptarse rápidamen
 <a name="2-2-3"></a>
 ##### 2.2.3. Análisis de entrevistas
 
--Segmento 1: 
+- Segmento 1: Equipos de Recursos Humanos encargados del proceso de contratación<br>
 Los equipos de Recursos Humanos buscan herramientas que agilicen y centralicen la publicación y administración de ofertas laborales. Existe una clara necesidad de reducir el trabajo manual, minimizar riesgos de errores y optimizar el tiempo destinado a tareas operativas. Además, valoran la incorporación de tecnologías como la inteligencia artificial para automatizar el filtrado de currículums, mejorando así la calidad del proceso de selección. En resumen, requieren soluciones que les permitan trabajar de manera más eficiente, segura y estratégica.
 
--Segmento 2:
+- Segmento 2: Postulantes (Candidatos para el empleo)<br>
 Los postulantes enfrentan frustraciones principalmente por la desorganización en las plataformas actuales, la falta de seguimiento en sus postulaciones y la dificultad de destacarse sin experiencia previa. Valoran mucho las soluciones que automaticen procesos tediosos, les brinden sugerencias para mejorar su perfil profesional y centralicen la búsqueda de empleo. También consideran esencial una comunicación rápida y clara, idealmente mediante canales como WhatsApp. En general, buscan plataformas que les ahorren tiempo, reduzcan el estrés del proceso de búsqueda y aumenten sus posibilidades de ser contratados.
 
 ---
@@ -1114,7 +1115,7 @@ El escenario "To-Be" describe cómo se desarrollarán las experiencias de los us
 ### Segmento 1: Equipos de Recursos Humanos encargados del proceso de contratación
 <img src="assets/images/chapter-3/impact_map_1.png" alt="impactmap1" width= 800/>
 
-### Segmento 2: Postulantes o candidatos que aplican a las vacantes
+### Segmento 2: Postulantes (Candidatos para el empleo)
 <img src="assets/images/chapter-3/impact_map_2.png" alt="impactmap2" width= 800/>
 
 <a name="cap-4"></a>
