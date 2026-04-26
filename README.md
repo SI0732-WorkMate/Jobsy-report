@@ -42,6 +42,7 @@
 | Versión | Fecha | Autor | Descripción |
 | :--- | :--- | :--- | :--- |
 | AV1 | 23/04/2026 | Equipo de Desarrollo | Estructura inicial completa |
+| AV1 | 26/04/2026 | María Hernández, Jazmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo I<br>Capítulo II<br>Capítulo III<br>Capítulo IV<br>Capítulo V |
 
 ## Project Report Collaboration Insights
 
