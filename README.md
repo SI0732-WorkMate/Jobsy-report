@@ -26,7 +26,7 @@
     <p>U</p>
     <p>U202310008 — Urrutia Pena, Jasmin Adriana</p>
     <p>U202317000 — Vega Coronado, Fabricio Samir</p>
-    <p>U</p>
+    <p>U20231c168 — Villanueva Andrade, Ysaac Ligorio</p>
 </div>
 
 
@@ -669,26 +669,106 @@ Los postulantes enfrentan frustraciones principalmente por la desorganización e
 
 <a name="2-3"></a>
 #### 2.3. Needfinding
+
+La sección de Needfinding tiene como objetivo identificar las necesidades y problemas específicos de los usuarios que WorkMate pretende resolver. A través de investigaciones y análisis cualitativos y cuantitativos, se detectan oportunidades clave para mejorar la experiencia del usuario, basándose principalmente en entrevistas. Así mismo, se definen los aspectos esenciales que deberán abordarse para lograr una solución efectiva y centrada en el usuario.  
+
 <a name="2-3-1"></a>
 ##### 2.3.1. User Personas
+
+A través de un perfil detallado, esta sección explora las características demográficas, necesidades, deseos, comportamientos y problemas específicos de los usuarios de los segmentos objetivos predefinidos, facilitando el diseño de soluciones que se alineen mejor con sus expectativas y desafíos.
+
+- **Segmento 1:** Equipos de Recursos Humanos encargados del proceso de contratación
+<img src="assets/images/chapter-2/UserPersonas/Carla Rodríguez.png" alt="User-Persona-1" />
+  
+
+- **Segmento 2:** Postulantes (Candidatos para el empleo)
+<img src="assets/images/chapter-2/UserPersonas/Ramiro Muñoz.png" alt="User-Persona-2" />
+
 <a name="2-3-2"></a>
 ##### 2.3.2. User Task Matrix
+
+En esta sección se detallan las tareas que realizan los usuarios clave de nuestra solución digital “WorkMate”. Se han identificado dos segmentos principales:  
+- Segmento 1: Equipos de Recursos Humanos encargados del proceso de contratación
+
+- Segmento 2: Postulantes o candidatos que aplican a las vacantes
+
+
+Las tareas aquí descritas no dependen exclusivamente del uso del software, ya que representan acciones que los usuarios deben realizar en cualquier proceso de selección, sea manual o automatizado. Para cada tarea, se especifica su frecuencia y nivel de importancia, permitiendo identificar qué funciones son más críticas para cada perfil.
+
+#### 🧑‍💼 User Task Matrix – Reclutador (Equipo de RRHH)
+
+| Tarea                                             | Frecuencia | Importancia |
+|--------------------------------------------------|------------|-------------|
+| Publicar vacantes en múltiples plataformas       | Diaria     | Alta        |
+| Filtrar CVs con IA                               | Diaria     | Alta        |
+| Organizar entrevistas con candidatos             | Diaria     | Alta        |
+| Programar pruebas técnicas o psicométricas       | Diaria     | Alta        |
+| Revisar métricas de rendimiento del proceso      | Semanal    | Media       |
+| Gestionar el onboarding de nuevos empleados      | Ocasional  | Alta        |
+
+#### 🙋‍♂️ User Task Matrix – Candidato (Postulante)
+
+| Tarea                                          | Frecuencia | Importancia |
+|-----------------------------------------------|------------|-------------|
+| Crear y cargar perfil (CV, habilidades)       | Diaria     | Alta        |
+| Postularse a vacantes disponibles             | Diaria     | Alta        |
+| Realizar pruebas técnicas o psicométricas     | Ocasional  | Alta        |
+| Agendar entrevistas                           | Ocasional  | Alta        |
+| Ver estado de la postulación                  | Semanal    | Media       |
+
+En el caso del reclutador, las tareas con mayor frecuencia e importancia incluyen la publicación de vacantes, el filtrado de currículums, la organización de entrevistas y la programación de evaluaciones. Estas actividades son operativas, repetitivas y consumen gran parte del tiempo del equipo de RRHH, lo cual refuerza la necesidad de automatizarlas. También destaca la importancia del onboarding, aunque su frecuencia es menor.
+
+En el caso del candidato, las tareas más importantes y frecuentes son la creación del perfil y la postulación a vacantes, lo que demuestra su interés en estar continuamente buscando oportunidades. Las pruebas y entrevistas son menos frecuentes, pero igualmente importantes para su proceso de selección. Consultar el estado de la postulación tiene una frecuencia alta, pero una importancia media, lo que indica que, aunque no sea esencial para avanzar en el proceso, sí influye en su percepción y experiencia.
+
+En resumen, ambos segmentos comparten tareas importantes, como las entrevistas y evaluaciones, pero desde enfoques diferentes. WorkMate busca optimizar precisamente esas intersecciones, automatizando el trabajo operativo para el reclutador y mejorando la experiencia para el candidato.
+
+
 <a name="2-3-3"></a>
 ##### 2.3.3. User Journey Mapping
+
+En esta sección, se presenta el mapa de viaje del usuario para el sistema de selección WorkMate, destacando las interacciones clave del usuario desde la fase de concientización hasta la de recomendación. Se detallan las acciones que realiza el usuario, las experiencias emocionales asociadas en cada etapa y los puntos de contacto clave que facilitan su interacción con el sistema.
+
+- **Segmento 1:** Equipos de Recursos Humanos encargados del proceso de contratación
+  <img src="assets/images/chapter-2/JourneyMapping/journy mapping 1.png" alt="Mapping-1" />
+  
+- **Segmento 2:** Postulantes o candidatos que aplican a las vacantes
+   <img src="assets/images/chapter-2/JourneyMapping/Customer journey map 2.png" alt="Mapping-2" />
+
 <a name="2-3-4"></a>
 ##### 2.3.4. Empathy Mapping
+
+- **Segmento 1:** Equipos de Recursos Humanos encargados del proceso de contratación
+  <img src="assets/images/chapter-2/EmpathyMapping/RRHH-empatymap.png" alt="Mapping-3" />
+- **Segmento 2:** Postulantes o candidatos que aplican a las vacantes
+  <img src="assets/images/chapter-2/EmpathyMapping/PostulantesEmpatyMap.png" alt="Mapping-4" />
+
 <a name="2-3-5"></a>
 ##### 2.3.5. As-is Scenario Mapping
 
+El escenario “As-Is” muestra cómo viven actualmente los usuarios el proceso de reclutamiento, antes de implementar la solución digital Jobsy. Refleja los principales problemas, emociones y pensamientos que surgen en cada etapa del proceso.
+- **Segmento 1:** Equipos de Recursos Humanos encargados del proceso de contratación
+  <img src="assets/images/chapter-2/AsIs/RRHH-AS-IS.png" alt="Mapping-5" />
+- **Segmento 2:** Postulantes o candidatos que aplican a las vacantes
+  <img src="assets/images/chapter-2/AsIs/Postulantes-AS-IS.png" alt="Mapping-6" />
+
 <a name="2-4"></a>
 #### 2.4. Ubiquitous Language
+
+| Término       | Definición                                                                                                                                     |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vacante       | Oferta laboral publicada por una empresa con los detalles del puesto a cubrir.                                                                |
+| Postulante    | Persona que aplica a una vacante mediante el envío de su CV u otros requisitos.                                                              |
+| CV            | Curriculum Vitae. Documento que resume la experiencia laboral y académica del postulante.                                                    |
+| Contratación  | Proceso final donde se elige y se incorpora al postulante a la empresa.                                                                      |
+| IA            | Tecnología integrada en la plataforma que permite automatizar procesos de selección, aplicar filtros inteligentes y mejorar la toma de decisiones con base en datos. |
+| HHRR          | Departamento encargado de la gestión del talento humano dentro de una empresa. En Jobsy, son los principales usuarios del sistema para gestionar postulaciones y contrataciones. |
 
 <a name="cap-3"></a>
 ### Capítulo III: Requirements Specification
 
 <a name="3-1"></a>
 #### 3.1. To-Be Scenario Mapping
-El escenario "To-Be" describe cómo se desarrollarán las experiencias de los usuarios una vez implementada la solución digital **SmartHire**, optimizando los procesos de reclutamiento actuales.
+El escenario "To-Be" describe cómo se desarrollarán las experiencias de los usuarios una vez implementada la solución digital **WorkMate**, optimizando los procesos de reclutamiento actuales.
 
 ### Segmento 1: Equipos de Recursos Humanos encargados del proceso de contratación
 <img src="assets/images/chapter-3/Captura de pantalla 2025-04-17 201630.png" alt="Logo UPC" />
