@@ -463,6 +463,22 @@ Nuestra Startup fue diseñada para optimizar y modernizar los procesos de selecc
 
 <a name="1-2-2-3"></a>
 ###### 1.2.2.3. Lean UX Hypothesis Statements
+
+1. *Creemos que* los reclutadores preferirán el filtrado inteligente por IA frente a la revisión manual de CVs.
+*Sabremos que esta hipótesis es cierta cuando* veamos que al menos el 70% de los usuarios usa el filtrado automático.
+
+2. *Creemos que* la publicación automatizada de vacantes facilitará una mayor difusión de las ofertas laborales y reducirá el tiempo de publicación.
+*Sabremos que esta hipótesis es cierta cuando* veamos una reducción del 50% en el tiempo promedio que toma publicar las vacantes en otros portales.
+
+3. *Creemos que* el sistema de seguimiento de candidatos permitirá una gestión más ordenada y eficiente del proceso de selección.
+*Sabremos que esta hipótesis es cierta cuando* los usuarios consulten y actualicen el estado de los candidatos frecuentemente dentro del sistema.
+
+4. *Creemos que* la gamificación para evaluar habilidades blandas mejorará el nivel de engagement de los postulantes y facilitará la evaluación de competencias sociales.
+*Sabremos que esta hipótesis es cierta cuando* más del 50% de los candidatos completen las pruebas gamificadas y los reclutadores tomen en cuenta esto en su decisión final.
+
+5. *Creemos que* los usuarios valorarán tener una agenda donde puedan gestionar fechas y recordatorios de todos los candidatos en un solo lugar.
+*Sabremos que esta hipótesis es cierta cuando* veamos que al menos el 75% de los usuarios utilizan activamente la agenda para programar entrevistas y establecer recordatorios durante el proceso de evaluación.
+
 <a name="1-2-2-4"></a>
 ###### 1.2.2.4. Lean UX Canvas
 
