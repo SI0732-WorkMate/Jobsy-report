@@ -410,6 +410,57 @@ Nuestra Startup fue diseñada para optimizar y modernizar los procesos de selecc
 
 <a name="1-2-2-2"></a>
 ###### 1.2.2.2. Lean UX Assumptions
+
+**Business Assumptions**
+
+- Creo que mis clientes necesitan... optimizar y automatizar sus procesos de reclutamiento y selección de personal para ahorrar tiempo y reducir la carga operativa.
+
+- Estas necesidades se pueden resolver con... una plataforma integral y centralizada impulsada por Inteligencia Artificial que gestione desde la publicación de la vacante hasta el onboarding del candidato.
+
+- Mis clientes iniciales son (o serán)… medianas y pequeñas empresas, así como equipos de Recursos Humanos que buscan modernizar su gestión de talento sin los altos costos de los sistemas corporativos tradicionales.
+
+- El valor # 1 que un cliente quiere de mi servicio es... la reducción significativa del tiempo de contratación (Time-to-Hire) y la simplificación del filtrado de currículums.
+
+- El cliente también puede obtener estos beneficios adicionales... reducción de sesgos en la selección, una toma de decisiones basada en datos (métricas en tiempo real) y una mejora en la experiencia (engagement) del candidato.
+
+- Voy a adquirir la mayoría de mis clientes a través de... campañas de marketing digital B2B (LinkedIn, Google Ads), demostraciones guiadas gratuitas (demos) y alianzas estratégicas.
+
+- Haré dinero a través de... un modelo de negocio tipo SaaS (Software as a Service) con suscripciones mensuales o anuales, escalonadas según el volumen de contrataciones o el acceso a funcionalidades avanzadas.
+
+- Mi competencia principal en el mercado será... los sistemas ATS (Applicant Tracking Systems) tradicionales, plataformas de reclutamiento genéricas y portales de empleo clásicos.
+
+- Los venceremos debido a... nuestra interfaz altamente intuitiva, el potente filtrado inteligente con IA y la capacidad de integrar todo el ecosistema de contratación (evaluaciones, entrevistas, contratos) en un solo lugar.
+
+- Mi mayor riesgo de producto es... la resistencia al cambio por parte de reclutadores acostumbrados a métodos manuales, o la desconfianza inicial en los algoritmos de IA para evaluar talento.
+
+- Resolveremos esto a través de... un diseño centrado en el usuario con una curva de aprendizaje mínima, procesos de onboarding guiados dentro de la app, y total transparencia en los criterios que usa la IA, permitiendo siempre la validación y control humano final.
+
+**User Assumptions**
+
+- ¿Quién es el usuario?<br>Reclutadores, analistas de selección de personal, headhunters y responsables de Recursos Humanos.
+
+- ¿Dónde encaja nuestro producto en su trabajo o vida?<br>Se convierte en su principal herramienta operativa diaria para gestionar convocatorias, evaluar talento y coordinar comunicaciones, reemplazando el uso disperso de correos electrónicos y hojas de cálculo.
+
+- ¿Qué problemas tiene nuestro producto? ¿Resolver?<br>Resuelve la pérdida excesiva de tiempo en tareas manuales (revisión de cientos de CVs), la desorganización de la información de los candidatos y la falta de métricas claras para medir la eficiencia del área.
+
+- ¿Cuándo y cómo es nuestro producto? ¿Usado?<br>Será utilizado principalmente durante la jornada laboral, a través de una aplicación web accesible desde navegadores en computadoras de escritorio o laptops.
+
+- ¿Qué características son importantes?<br>El filtrado automatizado de CVs, un panel visual tipo Kanban para ver el estado de los postulantes, la integración de agendas para entrevistas y un dashboard de métricas.
+
+- ¿Cómo debe verse nuestro producto y cómo comportarse?<br>Debe verse moderno, limpio y profesional, transmitiendo confianza. Su comportamiento debe ser rápido, intuitivo, libre de fricciones y diseñado para guiar al usuario a completar tareas con la menor cantidad de clics posibles.
+
+**Feature Assumptions**
+
+- Creemos que la plataforma debe contar con un sistema de filtrado inteligente por IA que permita preseleccionar candidatos de forma automática y precisa basándose en los requisitos del puesto, lo que reducirá drásticamente el tiempo de revisión manual.
+
+- Creemos que el sistema debe incluir un panel interactivo de gestión de postulaciones que proporcione a los reclutadores un control visual y rápido del estado de cada candidato (aptos, en duda, descartados), facilitando un seguimiento ordenado del embudo de contratación.
+
+- Creemos que la aplicación debe ofrecer herramientas de agendamiento integrado que permitan a los usuarios coordinar entrevistas y enviar pruebas técnicas estandarizadas directamente desde la plataforma, evitando depender de aplicaciones externas.
+
+- Creemos que la plataforma debe facilitar la generación de contratos digitales y gestión del onboarding para que las empresas puedan digitalizar la etapa de incorporación, haciendo que el proceso sea más ágil, estructurado y seguro para el nuevo colaborador.
+
+- Creemos que el sistema debe proporcionar un dashboard con métricas clave (como tiempo promedio de contratación, eficiencia por canal y ratios de conversión), lo que ayudará a los líderes de RRHH a tomar decisiones estratégicas fundamentadas en datos reales.
+
 <a name="1-2-2-3"></a>
 ###### 1.2.2.3. Lean UX Hypothesis Statements
 <a name="1-2-2-4"></a>
