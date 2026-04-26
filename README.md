@@ -485,6 +485,34 @@ Nuestra Startup fue diseñada para optimizar y modernizar los procesos de selecc
 <a name="1-3"></a>
 #### 1.3. Segmentos objetivo
 
+**Segmento 1: Equipos de Recursos Humanos encargados del proceso de contratación**
+
+Este segmento representa a los compradores y usuarios principales de la plataforma, enfocados en optimizar la gestión de talento.
+
+- Perfil Corporativo<br>Medianas empresas (entre 50 y 250 empleados) pertenecientes a sectores con alta rotación de personal, como tecnología, servicios, comercio y educación.
+
+- Perfil Demográfico y Profesional<br>Profesionales de Recursos Humanos de entre 25 y 45 años, con experiencia sólida en reclutamiento. Operan en equipos pequeños (de 1 a 5 personas) con la responsabilidad de gestionar múltiples vacantes al mes.
+
+- Perfil Geográfico<br>Ubicados principalmente en contextos urbanos y polos empresariales.
+
+- Perfil Tecnológico<br>Poseen familiaridad con herramientas digitales básicas, pero sus procesos de contratación actuales siguen siendo manuales, fragmentados o poco integrados.
+
+- Necesidades y Puntos de Dolor<br>Carecen de soluciones completas de automatización. Necesitan centralizar la información, reducir la carga operativa y agilizar el filtrado de candidatos para mejorar sus tiempos de contratación.
+
+**Segmento 2: Postulantes (Candidatos para el empleo)**
+
+Este segmento representa a los usuarios que interactúan con la plataforma para aplicar a las ofertas laborales publicadas por las empresas.
+
+- Perfil Demográfico<br>Jóvenes profesionales y técnicos de entre 22 y 35 años, recién egresados o titulados de universidades e institutos.
+
+- Perfil Profesional<br>Cuentan con una experiencia laboral previa de entre 1 y 5 años. Se desempeñan principalmente en áreas dinámicas como tecnología, diseño, administración, ventas o atención al cliente.
+
+- Perfil Geográfico y Tecnológico<br>Residentes de zonas urbanas con acceso constante a internet. Son usuarios nativos digitales, altamente familiarizados con el uso de plataformas de empleo (como LinkedIn, Computrabajo, etc.).
+
+- Expectativas del Proceso<br>Sienten afinidad por empresas que demuestran tener procesos de selección modernos e innovadores, con evaluaciones claras y entrevistas bien estructuradas.
+
+- Necesidades y Puntos de Dolor<br>Valoran profundamente la transparencia. Buscan una experiencia de postulación intuitiva y ágil, que les permita hacer seguimiento de su estado en el proceso y recibir comunicación rápida y oportuna.
+
 <a name="cap-2"></a>
 ### Capítulo II: Requirements Elicitation & Analysis
 
