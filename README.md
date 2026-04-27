@@ -1551,21 +1551,24 @@ Asimismo, en secciones como las tablas de candidatos, publicaciones o postulacio
 ##### 4.3.1. Landing Page Wireframe
 
 Se diseñó el wireframe aplicando los principios visuales, la arquitectura de información y el enfoque inclusivo definidos anteriormente.
-| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser | Vista Previa Pad Web Browser |
-|----------------------------------|----------------------------------|-------------------------------|
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
 | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingDesktopWireframe1.png" alt="wireframe1" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPhoneWireframe1.png" alt="wireframe2" /> |
+
 <br>
--Link: [![Figma](https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t=2dIKTDU7reH1Tc2o-1)
+-Link: https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t=2dIKTDU7reH1Tc2o-1
 <br>
 <a name="4-3-2"></a>
+
 ##### 4.3.2. Landing Page Mock-up
 
 El mock-up refleja la identidad visual de la plataforma, siguiendo el estilo y estructura planteados en el wireframe.
-| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser | Vista Previa Pad Web Browser |
-|----------------------------------|----------------------------------|-------------------------------|
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
 | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingDesktopMockUp1.png" alt="wireframe1" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPhoneMockUp1.png" alt="wireframe2" /> |
+
 <br>
--Link: [![Figma](https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t=2dIKTDU7reH1Tc2o-1)
+-Link: https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t=2dIKTDU7reH1Tc2o-1
 <br>
 
 <a name="4-4"></a>
