@@ -1156,49 +1156,38 @@ Algunos de los principios de diseño y heurísticas que hemos aplicado para nues
 
 Para los colores del logotipo, seleccionamos un tono azul oscuro con código hexadecimal (`#285A84`), que transmite profesionalismo, confianza y solidez, características clave para una plataforma orientada al sector empresarial. Complementariamente, se eligió un verde luminoso con código (`#85C872`) para el ícono del logo, con el objetivo de aportar un contraste visual atractivo que represente innovación, dinamismo y eficiencia, atributos centrales de nuestra propuesta tecnológica.  
 
-<div align="center">
 
-<img src="assets\images\chapter-4\productDesign\color_logo.png" alt="color logo" width="50%" />
+**Color de fondo:** <br> Para el fondo de la sección principal de la plataforma se utilizó un tono verde con código (`#85C872`), el cual aporta frescura, vitalidad y una sensación de cercanía desde el primer contacto visual. Además, se incorporaron secciones con fondo blanco (`#FFFFFF`) que generan un efecto visual limpio y ordenado, mejorando la legibilidad y creando un contraste armónico con el verde predominante. Como elemento complementario, se integraron líneas decorativas en color azul oscuro (`#285A84`) en ciertas áreas del fondo, aportando profundidad, equilibrio visual y reforzando la identidad visual de la marca. <br>
 
-<div align="left">
-    
-<b>Color de fondo:</b> <br> Para el fondo de la sección principal de la plataforma se utilizó un tono verde con código (`#85C872`), el cual aporta frescura, vitalidad y una sensación de cercanía desde el primer contacto visual. Además, se incorporaron secciones con fondo blanco (`#FFFFFF`) que generan un efecto visual limpio y ordenado, mejorando la legibilidad y creando un contraste armónico con el verde predominante. Como elemento complementario, se integraron líneas decorativas en color azul oscuro (`#285A84`) en ciertas áreas del fondo, aportando profundidad, equilibrio visual y reforzando la identidad visual de la marca. <br>
-    <div align="center">
-<br>
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeiWyEV2fHcWXJeYvbUHHHw4yyVT5KheegQYaEblKFxW3Ozmu9S0NUvTaxS2FmDhWDhMHIs6yc8DtpTe-JiM1E_p5ZiWZrCEZ7RX0T1mlJTVoDLN_d3HMM3gx8fUz0YORN9gPPc?key=gvlLacgsz9NCnDkMVc0Umifa"  width="50%" />
-<br>
 
-<div align="left">
-
-    
 **Colores del texto:**  
 Para los títulos se utilizaron colores que aseguran buen contraste según el fondo: (`#B0E7B1`) para fondos oscuros, (`#285A84`) para fondos claros, blanco en secciones oscuras y gris claro para los placeholder de los formularios. Los subtítulos y párrafos siguen la misma lógica cromática, manteniendo legibilidad y coherencia visual en toda la plataforma.
+
 <br>
  <div align="center">
 <br>
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXez2oH4jfFtSqNF4cLQ7o9gTQtr40QPPu7jiT_IGSXZ_ovHT45lHefDwOPHCWyKVDbiE0Zjk6perRu0n8KmP7OKVxoAxONBTpMbY-2hhNJDvh5QnX7yVuxGDTKHc0x2qmO0B-viGg?key=gvlLacgsz9NCnDkMVc0Umifa"/>
+<img src="assets\images\chapter-4\productDesign\colors.png" alt="color logo" width="50%" />
 
 <div align="left">
 
 #### Botones
 Los botones principales utilizan un fondo azul oscuro (`#285A84`) con bordes redondeados al 40% y con una ligera sombra oscura, otorgándoles un estilo moderno. El texto interior es de color blanco, en mayúsculas o capitalizado, lo que asegura una excelente legibilidad. Además, se incluye un segundo estilo de botón con fondo verde aqua (`#B0E7B1`), bordes y texto en color (`#285A84`), ideal para acciones secundarias o enlaces menos prioritarios.
 <div align="center">
-
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfxi5FUMm3fJ6JKDVDzzrbiUUCK1MwIvaiT9zthLz7Y9i98HEbxdB3fFbsEfZSyt9eLOwlowPLB_1mQUWjxIkB1JLKdeNdqpN9LEymN5hemkdRia0WEKJFvNLPJ_KGTtHDnrX0ZXg?key=gvlLacgsz9NCnDkMVc0Umifa" width="50%">
+<img src="assets\images\chapter-4\productDesign\butons.png" alt="color logo" width="50%" />
 <div align="left">
 
 #### - Tipografía
 
-- **ISTOK WEB (negrita):** Utilizada para los títulos principales por su fuerza visual y claridad. <br>
-- **Inter, Pavanam, Questrial (light o regular):** Fuentes limpias y minimalistas, ideales para párrafos y textos secundarios.<br>
-- **Patua One (negrita display):** Estilo más robusto, ideal para encabezados o elementos que necesitan destacarse.<br>
-- **Playfair Display (cursiva serif):** Aporta elegancia y dinamismo a citas o secciones especiales.<br>
-- **Alexandria (bold) y Markazi Text (regular):** Ofrecen una opción moderna con buena legibilidad en enlaces o descripciones.<br>
-- **Poppins:** Fuente redondeada y versátil, útil tanto en títulos como en textos principales por su excelente legibilidad.<br>
+Manrope es la elección ideal porque combina la geometría moderna con una legibilidad excepcional. Sus rasgos clave son:
+
+- Versatilidad: Escala perfectamente desde titulares de gran impacto hasta etiquetas mínimas sin perder claridad.
+
+- Optimización Digital: Su altura de "x" elevada y aperturas amplias evitan que las letras se vean borrosas en pantallas pequeñas.
+
+- Balance: Proyecta una imagen tecnológica y profesional, siendo más amable que las fuentes clásicas y más legible que las puramente decorativas.
 
 <div align="center">
-
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe-gjofnvAEEorgPfVRY0AnamoI6IVkRv8kf40fc7DegudARCSqIfgfdgK8TtBjR4yfydJtpYl1qzEUT9YNF20OZw4Zjz-oHCN9M5lf4mMrvoPoASHki3HqetYVg96d0CtbAfJL6A?key=gvlLacgsz9NCnDkMVc0Umifa" width="30%">
+<img src="assets\images\chapter-4\productDesign\tipografia.png" alt="color logo" width="50%" />
 <div align="left">
 
 
@@ -1208,15 +1197,14 @@ Algunos de los iconos utilizados en la interfaz representan elementos clave de l
 
 <div align="center">
 
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfk2VCkKlf0GH86lUmsbMzeC118gn6zNkjD-Vex-LA_aBFk4xkqV3epkDES87YVf-AOq7-JKyN1P63rR2nQfbkgcRe4DDh84rm69wv_YQHAsTao2KHhIypugd4tNNWO7to1q_3unw?key=gvlLacgsz9NCnDkMVc0Umifa" width="50%">
+<img src="assets\images\chapter-4\productDesign\iconografia.png" alt="color logo" width="50%" />
 <div align="left">
 
 #### - Cabecera
 La cabecera cuenta con el icono, los enlaces en una esquina superior derecha y con un botón de registro que facilita el ingreso a los usuarios.<br>
 
 <div align="center">
-
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcjsLPwmZNDZeegCwBXeakk9-rMZGB5oZWWwQGnpp2bHnuOhncmNlaCnJfpcjG3IJv1pxtJw3rBe1WPcm7I33GR1bQdclAvFso4zzu1NROCPg7Kaexjm6bd7d-BYw31RqETffdb6A?key=gvlLacgsz9NCnDkMVc0Umifa" width="70%">
+<img src="assets\images\chapter-4\productDesign\cabecera.png" alt="color logo" width="50%" />
 <div align="left">
 
     
@@ -1225,7 +1213,7 @@ El pie de página cuenta con tres secciones: La descripción de la startup, los 
 
 <div align="center">
 
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_g5XP8XiObaqSX7xxLNVf-AZ5b8_f2i1rp6Eqi_ibhsgJOGQUn3QHKHuIFkPsVxI3Ly3ptFUqpBVBF_VzVoC9rA2STImu5aUSa9iakNNGdLvNsLi79-Jc17hAyJ7KQJ1Q8vJ0OQ?key=gvlLacgsz9NCnDkMVc0Umifa" width="70%">
+<img src="assets\images\chapter-4\productDesign\piedepagina.png" alt="color logo" width="50%" />
 <div align="left">
 
 #### - Logo
@@ -1233,7 +1221,7 @@ El diseño del logo incorpora el nombre de la startup utilizando la fuente Quest
 
 <div align="center">
 
-<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc-FSDqlolKCALvdJQ0jLzRLwjwRFqvi4pvJ_GkihfXjkIFia3pg7C-jYjEvJ5_NL9ObTh1SloFjDp_hhgTCJ45nwoHAFoSoGNd1s0vOpwHBiPvyKYY3exMNKxZVYWU1Jp4446Slg?key=gvlLacgsz9NCnDkMVc0Umifa" width="50%">
+<img src="assets\images\chapter-4\productDesign\logojob.png" alt="color logo" width="50%" />
 <div align="left">
 
 
@@ -1565,20 +1553,20 @@ Asimismo, en secciones como las tablas de candidatos, publicaciones o postulacio
 Se diseñó el wireframe aplicando los principios visuales, la arquitectura de información y el enfoque inclusivo definidos anteriormente.
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser | Vista Previa Pad Web Browser |
 |----------------------------------|----------------------------------|-------------------------------|
-| <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPhoneWireframe.png" alt="wireframe2" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPadWireframe.png" alt="wireframe3"/> |
-
--Link: [![Figma](https://img.shields.io/badge/Figma-Diseño_UI-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/design/GIGB1SiI7KVd15nanLTBBt/Untitled?node-id=0-1&t=uJ6xNFzKYxW0VpQV-1)
-
+| <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingDesktopWireframe1.png" alt="wireframe1" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPhoneWireframe1.png" alt="wireframe2" /> |
+<br>
+-Link: [![Figma](https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t=2dIKTDU7reH1Tc2o-1)
+<br>
 <a name="4-3-2"></a>
 ##### 4.3.2. Landing Page Mock-up
 
 El mock-up refleja la identidad visual de la plataforma, siguiendo el estilo y estructura planteados en el wireframe.
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser | Vista Previa Pad Web Browser |
 |----------------------------------|----------------------------------|-------------------------------|
-| <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingDesktopMockUp.png" alt="wireframe1" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPhoneMockUp.png" alt="wireframe2" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPadMockUp.png" alt="wireframe3"/> |
-
--Link: [![Figma](https://img.shields.io/badge/Figma-Diseño_UI-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/design/GIGB1SiI7KVd15nanLTBBt/Untitled?node-id=0-1&t=uJ6xNFzKYxW0VpQV-1)
-
+| <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingDesktopMockUp1.png" alt="wireframe1" /> | <img src="assets/images//chapter-4/productDesign/LandingPageUIDesign/LandingPhoneMockUp1.png" alt="wireframe2" /> |
+<br>
+-Link: [![Figma](https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t=2dIKTDU7reH1Tc2o-1)
+<br>
 
 <a name="4-4"></a>
 #### 4.4. Web Applications UX/UI Design
