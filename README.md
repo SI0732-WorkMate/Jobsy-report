@@ -2189,10 +2189,10 @@ Link del Miro del Lean UX Canvas: https://miro.com/app/board/uXjVHc_ELqU=/?share
 
 Link del Repositorio: https://github.com/SI0732-WorkMate
 
-Link de la Landing Page: 
+Link de la Landing Page: https://si0732-workmate.github.io/LandingPage-Jobsy/
 
-Link del Backend:
+Link del Backend: https://backend-jobsy-production.up.railway.app/swagger/index.html
 
-Link del Frontend:
+Link del Frontend: https://front-end-jobsy.vercel.app
 
-Link de las diapositivas:
+Link de las diapositivas: https://canva.link/wu2ynvec9d19cmy
