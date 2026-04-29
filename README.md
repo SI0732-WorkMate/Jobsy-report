@@ -2095,8 +2095,14 @@ El proyecto WorkMate mantiene una estricta guía de estilo de código para garan
 
 <a name="5-2-2"></a>
 ##### 5.2.2. Implemented Landing Page Evidence
+
+![Implemented Landing Page Evidence](./assets/images/chapter-5/ImplementedLandingPageEvidence.jpeg)
+
 <a name="5-2-3"></a>
 ##### 5.2.3. Implemented Frontend-Web Application Evidence
+
+![Implemented Frontend-Web Application Evidence](./assets/images/chapter-5/ImplementedFrontend-WebApplicationEvidence.jpeg)
+
 <a name="5-2-4"></a>
 ##### 5.2.4. Acuerdo de Servicio - SaaS
 <a name="5-2-5"></a>
