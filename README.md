@@ -2105,6 +2105,38 @@ El proyecto WorkMate mantiene una estricta guía de estilo de código para garan
 
 <a name="5-2-4"></a>
 ##### 5.2.4. Acuerdo de Servicio - SaaS
+
+El presente Acuerdo de Servicio establece los términos legales bajo los cuales WorkMate (el "Proveedor") otorga acceso a la plataforma Jobsy (el "Servicio"). Este documento garantiza la transparencia en el uso de datos, la seguridad de la información y las responsabilidades éticas de las partes.
+
+#### 1. Definición del Servicio
+Jobsy es una solución de Software as a Service (SaaS) diseñada para la automatización del reclutamiento. El servicio incluye el filtrado de CVs mediante IA, gestión de entrevistas, publicación de vacantes y analíticas de contratación.
+
+#### 2. Cuentas y Accesos
+- Registro: El usuario se compromete a proporcionar información veraz y mantener la confidencialidad de sus credenciales.
+- Tipos de Usuario: El acuerdo distingue entre el "Usuario Empresa" (Reclutador) y el "Usuario Postulante", cada uno con permisos limitados según su rol.
+
+#### 3. Política de Privacidad y Protección de Datos
+En cumplimiento con las normativas de protección de datos personales:
+- Propiedad de los Datos: Los postulantes son dueños de su información personal. Las empresas solo podrán utilizar dicha información para fines estrictos de evaluación laboral.
+- Uso de IA: Se informa al usuario que el sistema utiliza algoritmos de IA para el filtrado inicial. El Proveedor garantiza que estos modelos se revisan para mitigar sesgos discriminatorios, cumpliendo con el compromiso ético profesional del equipo.
+
+#### 4. Niveles de Servicio (SLA)
+- Disponibilidad: El Proveedor se compromete a mantener una disponibilidad del servicio del 99.5% anual.
+- Soporte: Las incidencias reportadas mediante el sistema de tickets (US020) serán atendidas en un plazo máximo de 48 horas hábiles.
+
+#### 5. Modelo de Suscripción y Pagos
+- Planes: El acceso para empresas se rige por planes mensuales o anuales (Standard/Enterprise).
+- Cancelación: Los usuarios pueden cancelar su suscripción en cualquier momento; el acceso se mantendrá hasta el fin del periodo facturado.
+
+#### 6. Restricciones de Uso
+Queda estrictamente prohibido:
+- Utilizar la plataforma para publicar ofertas de empleo falsas o engañosas.
+- Intentar realizar ingeniería inversa sobre los algoritmos de filtrado de IA.
+- Extraer datos masivos (scraping) de perfiles de candidatos sin autorización.
+
+#### 7. Limitación de Responsabilidad
+WorkMate actúa como un facilitador tecnológico. La decisión final de contratación es responsabilidad exclusiva de la Empresa. El Proveedor no garantiza la veracidad absoluta de la información proporcionada por los postulantes en sus CVs.
+
 <a name="5-2-5"></a>
 ##### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 <a name="5-2-6"></a>
@@ -2126,6 +2158,8 @@ Frontend
 
 <a name="5-3"></a>
 #### 5.3. Video About-the-Product
+
+https://drive.google.com/drive/folders/13F5ogw8GuqCuExB-3Yeh5sRYKW09eaQ2?usp=sharing
 
 <a name="part-2"></a>
 ## Part II: Verification, Validation & Pipeline
