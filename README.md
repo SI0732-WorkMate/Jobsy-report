@@ -1575,6 +1575,25 @@ Link: https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t
 #### 4.4. Web Applications UX/UI Design
 <a name="4-6-1"></a>
 ##### 4.4.1. Web Applications Wireframes
+
+![](./assets/images/chapter-5/1.jpeg)
+![](./assets/images/chapter-5/2.jpeg)
+![](./assets/images/chapter-5/3.jpeg)
+![](./assets/images/chapter-5/4.jpeg)
+![](./assets/images/chapter-5/5.jpeg)
+![](./assets/images/chapter-5/6.jpeg)
+![](./assets/images/chapter-5/7.jpeg)
+![](./assets/images/chapter-5/8.jpeg)
+![](./assets/images/chapter-5/9.jpeg)
+![](./assets/images/chapter-5/10.jpeg)
+![](./assets/images/chapter-5/11.jpeg)
+![](./assets/images/chapter-5/12.jpeg)
+![](./assets/images/chapter-5/13.jpeg)
+![](./assets/images/chapter-5/14.jpeg)
+![](./assets/images/chapter-5/15.jpeg)
+![](./assets/images/chapter-5/16.jpeg)
+![](./assets/images/chapter-5/17.jpeg)
+
 <a name="4-6-2"></a>
 ##### 4.4.2. Web Applications Wireflow Diagrams
 <a name="4-6-3"></a>
