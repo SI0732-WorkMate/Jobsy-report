@@ -934,7 +934,7 @@ En esta sección se detallan las tareas que realizan los usuarios clave de nuest
 
 Las tareas aquí descritas no dependen exclusivamente del uso del software, ya que representan acciones que los usuarios deben realizar en cualquier proceso de selección, sea manual o automatizado. Para cada tarea, se especifica su frecuencia y nivel de importancia, permitiendo identificar qué funciones son más críticas para cada perfil.
 
-#### 🧑‍💼 User Task Matrix – Reclutador (Equipo de RRHH)
+#### User Task Matrix – Reclutador (Equipo de RRHH)
 
 | Tarea                                             | Frecuencia | Importancia |
 |--------------------------------------------------|------------|-------------|
@@ -945,7 +945,7 @@ Las tareas aquí descritas no dependen exclusivamente del uso del software, ya q
 | Revisar métricas de rendimiento del proceso      | Semanal    | Media       |
 | Gestionar el onboarding de nuevos empleados      | Ocasional  | Alta        |
 
-#### 🙋‍♂️ User Task Matrix – Candidato (Postulante)
+#### User Task Matrix – Candidato (Postulante)
 
 | Tarea                                          | Frecuencia | Importancia |
 |-----------------------------------------------|------------|-------------|
@@ -1021,50 +1021,50 @@ El escenario "To-Be" describe cómo se desarrollarán las experiencias de los us
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |:---|:---|:---|:---|:---|
 | **EP001** | **Gestión de Vacantes** | Epic para crear, editar y cerrar vacantes laborales | | EP001 |
-| US001 | Crear nueva vacante | Como reclutador, quiero registrar una nueva vacante para iniciar el proceso de contratación. | **Escenario 1:** El reclutador completa el formulario y la vacante se publica correctamente.<br>**Escenario 2:** Si se omite un campo obligatorio, el sistema muestra un mensaje de error. | EP001 |
-| US002 | Editar vacante existente | Como reclutador, quiero editar una vacante publicada para actualizar su información. | **Escenario 1:** Los cambios en vacantes activas se guardan y muestran correctamente.<br>**Escenario 2:** El sistema impide la edición de vacantes que ya han sido cerradas. | EP001 |
-| US003 | Cerrar vacante | Como reclutador, quiero cerrar una vacante para detener nuevas postulaciones. | **Escenario 1:** Al cerrar la vacante, el sistema deja de aceptar nuevas postulaciones.<br>**Escenario 2:** El sistema solicita una confirmación antes de ejecutar el cierre. | EP001 |
+| US001 | Crear nueva vacante | Como reclutador, quiero registrar una nueva vacante para iniciar el proceso de contratación. | **Escenario 1: Creación exitosa** <br>• **Given** que el reclutador ha completado los campos obligatorios <br>• **When** hace clic en "Publicar" <br>• **Then** la vacante se guarda y es visible para los postulantes. <br><br>**Escenario 2: Validación de campos** <br>• **Given** que el reclutador deja campos obligatorios vacíos <br>• **When** intenta guardar <br>• **Then** el sistema muestra un error y no permite la publicación. | EP001 |
+| US002 | Editar vacante existente | Como reclutador, quiero editar una vacante publicada para actualizar su información. | **Escenario 1: Actualización de datos** <br>• **Given** que la vacante está en estado "Activa" <br>• **When** el reclutador modifica la descripción <br>• **Then** los cambios se actualizan en tiempo real. <br><br>**Escenario 2: Restricción de edición** <br>• **Given** que la vacante tiene estado "Cerrada" <br>• **When** el reclutador intenta editarla <br>• **Then** el sistema bloquea la acción y muestra una advertencia. | EP001 |
+| US003 | Cerrar vacante | Como reclutador, quiero cerrar una vacante para detener nuevas postulaciones. | **Escenario 1: Cierre de proceso** <br>• **Given** que una vacante está abierta <br>• **When** el reclutador selecciona "Cerrar vacante" <br>• **Then** el sistema deja de recibir postulaciones. <br><br>**Escenario 2: Confirmación de seguridad** <br>• **Given** que el reclutador solicita el cierre <br>• **When** el sistema pide confirmación <br>• **Then** la acción solo se ejecuta si el usuario confirma. | EP001 |
 | **EP002** | **Gestión de Postulaciones** | Epic para gestionar postulaciones de los candidatos | | EP002 |
-| US004 | Aplicar a vacante | Como postulante, quiero postularme a una vacante para ser considerado en un proceso de selección. | **Escenario 1:** El usuario recibe una confirmación tras postularse con éxito.<br>**Escenario 2:** El sistema detecta y bloquea intentos de postulación duplicada para la misma vacante. | EP002 |
-| US005 | Ver postulaciones recibidas | Como reclutador, quiero ver las postulaciones recibidas para conocer los candidatos interesados. | **Escenario 1:** El reclutador visualiza una lista detallada de los postulantes por vacante.<br>**Escenario 2:** El reclutador puede ordenar la lista por fecha de postulación. | EP002 |
-| US006 | Filtrar postulaciones | Como reclutador, quiero filtrar postulaciones por estado para gestionar mejor el proceso. | **Escenario 1:** Al aplicar un filtro de estado, solo se muestran las coincidencias.<br>**Escenario 2:** Se pueden combinar filtros de estado y rango de fechas. | EP002 |
+| US004 | Aplicar a vacante | Como postulante, quiero postularme a una vacante para ser considerado en un proceso de selección. | **Escenario 1: Postulación exitosa** <br>• **Given** que el usuario ha iniciado sesión <br>• **When** hace clic en "Aplicar" <br>• **Then** recibe un mensaje de éxito y su perfil se vincula a la vacante. <br><br>**Escenario 2: Control de duplicados** <br>• **Given** que el usuario ya aplicó a la vacante X <br>• **When** intenta aplicar nuevamente a X <br>• **Then** el sistema indica que ya tiene una postulación activa. | EP002 |
+| US005 | Ver postulaciones recibidas | Como reclutador, quiero ver las postulaciones recibidas para conocer los candidatos interesados. | **Escenario 1: Visualización de lista** <br>• **Given** que existen candidatos postulados <br>• **When** el reclutador abre el detalle de la vacante <br>• **Then** se muestra la lista de nombres y perfiles. <br><br>**Escenario 2: Ordenamiento** <br>• **Given** que hay múltiples postulaciones <br>• **When** se selecciona ordenar por fecha <br>• **Then** la lista se reorganiza de la más reciente a la más antigua. | EP002 |
+| US006 | Filtrar postulaciones | Como reclutador, quiero filtrar postulaciones por estado para gestionar mejor el proceso. | **Escenario 1: Filtro simple** <br>• **Given** una lista de 50 postulantes <br>• **When** el reclutador filtra por "Pre-seleccionados" <br>• **Then** solo se muestran los candidatos con ese estado. <br><br>**Escenario 2: Filtro combinado** <br>• **Given** el panel de gestión <br>• **When** se filtra por "Pendiente" y "Última semana" <br>• **Then** el sistema cruza ambos criterios correctamente. | EP002 |
 | **EP003** | **Gestión de Usuarios** | Epic para la administración de cuentas y perfiles | | EP003 |
-| US007 | Registrar cuenta de postulante | Como usuario, quiero registrarme como postulante para aplicar a vacantes. | **Escenario 1:** El usuario completa el registro y se crea su cuenta de postulante.<br>**Escenario 2:** El sistema valida que el correo electrónico no esté registrado previamente. | EP003 |
-| US008 | Registrar cuenta de reclutador | Como empresa, quiero registrarme para gestionar vacantes laborales. | **Escenario 1:** La empresa completa el registro corporativo y se crea la cuenta de reclutador.<br>**Escenario 2:** El sistema bloquea el registro si faltan datos fiscales o empresariales. | EP003 |
-| US009 | Editar perfil profesional | Como postulante, quiero actualizar mi perfil con experiencia y habilidades. | **Escenario 1:** Los cambios realizados en la experiencia y habilidades se guardan correctamente.<br>**Escenario 2:** El sistema valida que los archivos cargados (CV) cumplan con el formato permitido. | EP003 |
+| US007 | Registrar cuenta de postulante | Como usuario, quiero registrarme como postulante para aplicar a vacantes. | **Escenario 1: Registro base** <br>• **Given** que el usuario ingresa sus datos <br>• **When** envía el formulario <br>• **Then** el sistema crea la cuenta y envía un correo de bienvenida. <br><br>**Escenario 2: Correo existente** <br>• **Given** que el email ya está en la base de datos <br>• **When** el usuario intenta registrarse <br>• **Then** el sistema solicita iniciar sesión o recuperar contraseña. | EP003 |
+| US008 | Registrar cuenta de reclutador | Como empresa, quiero registrarme para gestionar vacantes laborales. | **Escenario 1: Registro empresarial** <br>• **Given** que la empresa ingresa su RUC y nombre comercial <br>• **When** valida los datos <br>• **Then** se habilita el panel de reclutamiento. <br><br>**Escenario 2: Validación de seguridad** <br>• **Given** que los datos ingresados no son verificables <br>• **When** se envía el registro <br>• **Then** la cuenta queda en estado "Pendiente de verificación". | EP003 |
+| US009 | Editar perfil profesional | Como postulante, quiero actualizar mi perfil con experiencia y habilidades. | **Escenario 1: Cambio de CV** <br>• **Given** que el usuario sube un nuevo archivo PDF <br>• **When** guarda los cambios <br>• **Then** el archivo anterior es reemplazado por el nuevo. <br><br>**Escenario 2: Formato inválido** <br>• **Given** que el usuario intenta subir un archivo .exe <br>• **When** selecciona el archivo <br>• **Then** el sistema muestra un error de formato no permitido. | EP003 |
 | **EP004** | **IA y Recomendaciones** | Epic para automatizar sugerencias mediante IA | | EP004 |
-| US010 | Sugerencia de candidatos | Como reclutador, quiero ver candidatos sugeridos automáticamente según la vacante. | **Escenario 1:** El sistema muestra una lista de perfiles cuya afinidad coincide con la vacante.<br>**Escenario 2:** Si no hay coincidencias, el sistema informa que no hay perfiles compatibles. | EP004 |
-| US011 | Recomendación de vacantes | Como postulante, quiero recibir sugerencias de vacantes relevantes a mi perfil. | **Escenario 1:** El postulante ve un feed de vacantes recomendadas basadas en su perfil.<br>**Escenario 2:** Las sugerencias se actualizan automáticamente tras modificar el perfil profesional. | EP004 |
-| US012 | Puntaje automático de CVs | Como reclutador, quiero que los CVs tengan puntajes automáticos para facilitar la evaluación. | **Escenario 1:** Cada postulación muestra un puntaje de afinidad calculado automáticamente.<br>**Escenario 2:** El reclutador puede ver el desglose de criterios que generaron dicho puntaje. | EP004 |
+| US010 | Sugerencia de candidatos | Como reclutador, quiero ver candidatos sugeridos automáticamente según la vacante. | **Escenario 1: Match de perfiles** <br>• **Given** una vacante de "Programador C#" <br>• **When** el reclutador activa el asistente de IA <br>• **Then** se listan candidatos con esa habilidad específica. <br><br>**Escenario 2: Sin coincidencias** <br>• **Given** una búsqueda con criterios muy específicos <br>• **When** la IA no encuentra perfiles <br>• **Then** sugiere ampliar los criterios de búsqueda. | EP004 |
+| US011 | Recomendación de vacantes | Como postulante, quiero recibir sugerencias de vacantes relevantes a mi perfil. | **Escenario 1: Feed personalizado** <br>• **Given** que el postulante tiene perfil de "Diseñador" <br>• **When** entra al inicio <br>• **Then** se muestran primero vacantes de diseño. <br><br>**Escenario 2: Actualización de intereses** <br>• **Given** que el usuario agrega "Crochet" a sus habilidades <br>• **When** refresca las recomendaciones <br>• **Then** aparecen vacantes relacionadas a artesanías. | EP004 |
+| US012 | Puntaje automático de CVs | Como reclutador, quiero que los CVs tengan puntajes automáticos para facilitar la evaluación. | **Escenario 1: Cálculo de Score** <br>• **Given** un CV cargado <br>• **When** el sistema analiza las keywords <br>• **Then** asigna un porcentaje de afinidad (ej. 85%). <br><br>**Escenario 2: Transparencia** <br>• **Given** un puntaje asignado <br>• **When** el reclutador hace clic en el score <br>• **Then** el sistema muestra qué habilidades coincidieron. | EP004 |
 | **EP005** | **Gestión de Notificaciones** | Epic para la administración de alertas | | EP005 |
-| US013 | Recibir notificaciones de vacantes | Como postulante, quiero recibir alertas cuando se publiquen vacantes relevantes. | **Escenario 1:** El sistema envía una notificación al publicarse una vacante que coincide con el interés del usuario.<br>**Escenario 2:** El usuario puede filtrar de qué categorías desea recibir alertas. | EP005 |
-| US014 | Recibir notificaciones de postulaciones | Como reclutador, quiero recibir alertas de nuevas postulaciones. | **Escenario 1:** El reclutador recibe un aviso inmediato cuando un candidato se postula.<br>**Escenario 2:** El reclutador puede configurar la frecuencia de estas notificaciones. | EP005 |
+| US013 | Recibir notificaciones de vacantes | Como postulante, quiero recibir alertas cuando se publiquen vacantes relevantes. | **Escenario 1: Alerta Push/Email** <br>• **Given** que se publica una vacante de interés <br>• **When** se activa la publicación <br>• **Then** el postulante recibe una notificación en su dispositivo. <br><br>**Escenario 2: Personalización** <br>• **Given** que el usuario solo quiere alertas semanales <br>• **When** ajusta su configuración <br>• **Then** el sistema agrupa las vacantes en un solo envío. | EP005 |
+| US014 | Recibir notificaciones de postulaciones | Como reclutador, quiero recibir alertas de nuevas postulaciones. | **Escenario 1: Notificación de nuevo candidato** <br>• **Given** una vacante abierta <br>• **When** alguien aplica <br>• **Then** el reclutador recibe un aviso inmediato. | EP005 |
 | **EP006** | **Gestión de Roles** | Epic para administrar permisos de acceso | | EP006 |
-| US015 | Asignar rol de reclutador | Como administrador, quiero asignar el rol de reclutador a un usuario. | **Escenario 1:** Tras la asignación, el usuario accede a las funciones de gestión de vacantes.<br>**Escenario 2:** El sistema notifica al usuario sobre la actualización de sus permisos. | EP006 |
-| US016 | Asignar rol de postulante | Como administrador, quiero asignar el rol de postulante a un usuario. | **Escenario 1:** El usuario adquiere los permisos necesarios para buscar y aplicar a empleos.<br>**Escenario 2:** El cambio de rol se refleja instantáneamente en la interfaz del usuario. | EP006 |
+| US015 | Asignar rol de reclutador | Como administrador, quiero asignar el rol de reclutador a un usuario. | **Escenario 1: Cambio de permisos** <br>• **Given** un usuario estándar <br>• **When** el admin cambia su rol a "Reclutador" <br>• **Then** se habilitan las opciones de crear vacantes. | EP006 |
+| US016 | Asignar rol de postulante | Como administrador, quiero asignar el rol de postulante a un usuario. | **Escenario 1: Habilitación de búsqueda** <br>• **Given** un nuevo registro <br>• **When** se le asigna el rol de postulante <br>• **Then** puede cargar su CV y aplicar a ofertas. | EP006 |
 
 ---
 
 ### 3.3. Product Backlog
 
-| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+| # Orden | User Story Id | Título | Descripción | Story Points |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | US007 | Registrar cuenta de postulante | Como usuario, quiero registrarme como postulante para aplicar a vacantes. | 1 |
-| 2 | US008 | Registrar cuenta de reclutador | Como empresa, quiero registrarme para gestionar vacantes laborales. | 1 |
-| 3 | US001 | Crear nueva vacante | Como reclutador, quiero registrar una nueva vacante para iniciar el proceso de contratación. | 1 |
-| 4 | US002 | Editar vacante existente | Como reclutador, quiero editar una vacante publicada para actualizar su información. | 1 |
-| 5 | US003 | Cerrar vacante | Como reclutador, quiero cerrar una vacante para detener nuevas postulaciones. | 1 |
-| 6 | US004 | Aplicar a vacante | Como postulante, quiero postularme a una vacante para ser considerado en un proceso de selección. | 2 |
-| 7 | US005 | Ver postulaciones recibidas | Como reclutador, quiero ver las postulaciones recibidas para conocer los candidatos interesados. | 2 |
-| 8 | US009 | Editar perfil profesional | Como postulante, quiero actualizar mi perfil con experiencia y habilidades. | 2 |
-| 9 | US015 | Asignar rol de reclutador | Como administrador, quiero asignar el rol de reclutador a un usuario. | 2 |
-| 10 | US016 | Asignar rol de postulante | Como administrador, quiero asignar el rol de postulante a un usuario. | 2 |
-| 11 | US006 | Filtrar postulaciones | Como reclutador, quiero filtrar postulaciones por estado para gestionar mejor el proceso. | 2 |
-| 12 | US014 | Recibir notificaciones de postulaciones | Como reclutador, quiero recibir alertas de nuevas postulaciones. | 2 |
-| 13 | US013 | Recibir notificaciones de vacantes | Como postulante, quiero recibir alertas cuando se publiquen vacantes relevantes. | 3 |
-| 14 | US011 | Recomendación de vacantes | Como postulante, quiero recibir sugerencias de vacantes relevantes a mi perfil. | 3 |
-| 15 | US012 | Puntaje automático de CVs | Como reclutador, quiero que los CVs tengan puntajes automáticos para facilitar la evaluación. | 3 |
-| 16 | US010 | Sugerencia de candidatos | Como reclutador, quiero ver candidatos sugeridos automáticamente según la vacante. | 5 |
+| 1 | US007 | Registrar cuenta de postulante | Registro inicial para usuarios que buscan empleo. | 1 |
+| 2 | US008 | Registrar cuenta de reclutador | Registro inicial para empresas que ofrecen empleo. | 1 |
+| 3 | US001 | Crear nueva vacante | Funcionalidad principal del reclutador. | 1 |
+| 4 | US002 | Editar vacante existente | Mantenimiento de ofertas laborales. | 1 |
+| 5 | US003 | Cerrar vacante | Finalización del ciclo de vida de la vacante. | 1 |
+| 6 | US004 | Aplicar a vacante | Funcionalidad core para el postulante. | 2 |
+| 7 | US005 | Ver postulaciones recibidas | Visualización de resultados para el reclutador. | 2 |
+| 8 | US009 | Editar perfil profesional | Gestión de información del candidato. | 2 |
+| 9 | US015 | Asignar rol de reclutador | Gestión de seguridad y permisos. | 2 |
+| 10 | US016 | Asignar rol de postulante | Gestión de seguridad y permisos. | 2 |
+| 11 | US006 | Filtrar postulaciones | Optimización de búsqueda de candidatos. | 2 |
+| 12 | US014 | Recibir notificaciones de postulaciones | Alertas para el reclutador. | 2 |
+| 13 | US013 | Recibir notificaciones de vacantes | Alertas para el postulante. | 3 |
+| 14 | US011 | Recomendación de vacantes | Inteligencia de negocio para el usuario. | 3 |
+| 15 | US012 | Puntaje automático de CVs | Automatización de filtrado mediante IA. | 3 |
+| 16 | US010 | Sugerencia de candidatos | Análisis avanzado de perfiles mediante IA. | 5 |
 
 <a name="3-4"></a>
 #### 3.4. Impact Mapping
