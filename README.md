@@ -1576,6 +1576,15 @@ Link: https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t
 <a name="4-6-1"></a>
 ##### 4.4.1. Web Applications Wireframes
 
+![](./assets/images/chapter-5/w1.jpeg)
+![](./assets/images/chapter-5/w2.jpeg)
+![](./assets/images/chapter-5/w3.jpeg)
+
+<a name="4-6-2"></a>
+##### 4.4.2. Web Applications Wireflow Diagrams
+<a name="4-6-3"></a>
+##### 4.4.3. Web Applications Mock-ups
+
 ![](./assets/images/chapter-5/1.jpeg)
 ![](./assets/images/chapter-5/2.jpeg)
 ![](./assets/images/chapter-5/3.jpeg)
@@ -1594,10 +1603,6 @@ Link: https://www.figma.com/design/O0LiKEyN1hv6KwfEraXiDr/Untitled?node-id=0-1&t
 ![](./assets/images/chapter-5/16.jpeg)
 ![](./assets/images/chapter-5/17.jpeg)
 
-<a name="4-6-2"></a>
-##### 4.4.2. Web Applications Wireflow Diagrams
-<a name="4-6-3"></a>
-##### 4.4.3. Web Applications Mock-ups
 <a name="4-6-4"></a>
 ##### 4.4.4. Web Applications User Flow Diagrams
 
@@ -2139,6 +2144,9 @@ WorkMate actúa como un facilitador tecnológico. La decisión final de contrata
 
 <a name="5-2-5"></a>
 ##### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+
+![Implemented Serverless Backend Evidence](./assets/images/chapter-5/ImplementedServerlessBackendEvidence.jpeg)
+
 <a name="5-2-6"></a>
 ##### 5.2.6. RESTful API documentation
 
