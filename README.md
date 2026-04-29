@@ -2103,9 +2103,20 @@ El proyecto WorkMate mantiene una estricta guía de estilo de código para garan
 ##### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 <a name="5-2-6"></a>
 ##### 5.2.6. RESTful API documentation
+
 ![API documentation](./assets/images/chapter-5/API_Documentation.png)
+
 <a name="5-2-7"></a>
 ##### 5.2.7. Team Collaboration Insights
+
+Report
+![InsightReport](./assets/images/chapter-5/InsightsReport.png)
+
+Backend
+![InsightBackend](./assets/images/chapter-5/InsightBackend.png)
+
+Frontend
+![InsightFrontend](./assets/images/chapter-5/InsightFrontend.png)
 
 <a name="5-3"></a>
 #### 5.3. Video About-the-Product
