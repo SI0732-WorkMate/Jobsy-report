@@ -227,9 +227,9 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 <table style="border-collapse:collapse;border-spacing:0" class="tg">
 <thead>
 <tr>
-<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:normal">Criterio específico</span></th>
-<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:normal">Acciones realizadas</span></th>
-<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:normal">Conclusiones</span></th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">Criterio específico</span></th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">Acciones realizadas</span></th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">Conclusiones</span></th>
 </tr>
 </thead>
 <tbody>
@@ -237,45 +237,45 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-**María Hernández:**  
-- **AV1:** 
+**María Hernández:**  
+- **AV1:** Definió la problemática y el Lean UX Process (Assumptions e Hypothesis) manteniendo la objetividad profesional y el enfoque en resolver problemas reales de los usuarios sin sesgos, garantizando la viabilidad y honestidad del Solution Profile.
 
-**Jasmin Urrutia:**  
-- **AV1:** 
+**Jasmin Urrutia:**  
+- **AV1:** Estructuró el Needfinding (User Personas y Empathy Mapping) de forma inclusiva y ética, asegurando que el diseño del software refleje y respete fielmente las necesidades y realidades operativas de los diversos tipos de usuarios (reclutadores y postulantes).
 
-**Fabricio Vega:**  
-- **AV1:** 
+**Fabricio Vega:**  
+- **AV1:** Condujo el diseño, registro y análisis de entrevistas respetando la privacidad de los datos y el consentimiento de los entrevistados, además de realizar un análisis competitivo basado en información transparente y veraz del mercado.
 
-**Ysaac Villanueva:**  
-- **AV1:** 
+**Ysaac Villanueva:**  
+- **AV1:** Formuló el Requirements Specification (User Stories y Product Backlog) bajo estándares profesionales de ingeniería, asegurando que los requerimientos sean trazables y cumplan con las verdaderas necesidades extraídas de los usuarios.
 
 </td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-- **AV1:**  
-  
+- **AV1:** El equipo demostró un alto sentido de ética y profesionalismo al investigar y diseñar el producto basándose en datos reales de los usuarios (entrevistas y needfinding). Se priorizó la objetividad, el respeto por la información recolectada y la aplicación de metodologías formales (Lean UX, Domain-Driven Design) para garantizar que la solución de software resuelva problemas genuinos con altos estándares de calidad y transparencia. 
+  
 </td>
 </tr>
 <tr>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-**María Hernández:**  
-- **AV1:** 
+**María Hernández:**  
+- **AV1:** Evaluó el impacto económico y operativo del proyecto mediante el Lean UX Canvas, determinando cómo la plataforma optimizará los recursos empresariales (Business Outcomes) y mejorará la calidad de vida laboral de los usuarios (User Outcomes).
 
-**Jasmin Urrutia:**  
-- **AV1:** 
+**Jasmin Urrutia:**  
+- **AV1:** Analizó el impacto social en el entorno laboral mediante el As-is Scenario Mapping y el User Journey, identificando los puntos de frustración actuales de la sociedad respecto a los largos y desordenados procesos de selección.
 
-**Fabricio Vega:**  
-- **AV1:** 
+**Fabricio Vega:**  
+- **AV1:** Midió el impacto económico en el mercado mediante el Análisis Competitivo, estructurando estrategias y tácticas que permitirán a la solución de software ser financieramente rentable frente a las alternativas globales y locales existentes.
 
-**Ysaac Villanueva:**  
-- **AV1:** 
+**Ysaac Villanueva:**  
+- **AV1:** Delimitó el impacto socioeconómico directo definiendo los Segmentos Objetivo y elaboró el Impact Mapping, alineando los objetivos de negocio del software con la transformación digital esperada en pequeñas y medianas empresas.
 
 </td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-- **AV1:** 
+- **AV1:** A través del diseño y la especificación de requisitos, el equipo logró fundamentar que la plataforma generará un impacto positivo significativo: **económicamente**, reduciendo los costos operativos y tiempos de contratación para las empresas (To-Be Scenario Mapping); y **socialmente**, agilizando la inserción laboral al brindar herramientas eficientes y amigables a los postulantes. Todo esto soportado por un diseño arquitectónico robusto y escalable (Software Architecture) planificado de manera conjunta por todo el equipo.
 
 </td>
 </tr>
