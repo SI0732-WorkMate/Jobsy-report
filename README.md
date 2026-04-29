@@ -2168,7 +2168,7 @@ Frontend
 #### 5.3. Video About-the-Product
 Video de el producto de Jobsy
 
-[![Google Drive](https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=sharing)
+https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=sharing
 
 <a name="part-2"></a>
 ## Part II: Verification, Validation & Pipeline
