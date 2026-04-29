@@ -1995,8 +1995,6 @@ Registro de la membresía activa de un empleador, asociada a un plan. Guarda la 
 <a name="5-1-2"></a>
 ##### 5.1.2. Source Code Management
 
-### 5.1.2. Source Code Management.
-
 El proyecto WorkMate utiliza GitHub como plataforma centralizada para el control de versiones. Dada la necesidad de iterar rápidamente, mantener una integración continua y agilizar la entrega del producto en su fase inicial, el equipo optó por aplicar un modelo de Trunk-Based Development (Desarrollo Basado en Tronco). 
 
 Este enfoque minimiza la sobrecarga de gestionar múltiples ramas, evitando conflictos de integración (merge conflicts) prolongados y asegurando que todos los miembros del equipo trabajen sincronizados con la versión más reciente del código.
@@ -2014,6 +2012,35 @@ Al trabajar bajo el enfoque Trunk-Based Development y prescindir de *Pull Reques
 
 <a name="5-1-3"></a>
 ##### 5.1.3. Source Code Style Guide & Conventions
+
+El proyecto WorkMate mantiene una estricta guía de estilo de código para garantizar la legibilidad, mantenibilidad y facilitar la colaboración ágil entre los miembros del equipo.
+
+**Idioma base:** Todos los identificadores (variables, funciones, clases, tablas), comentarios en el código y documentación técnica estarán escritos estrictamente en inglés.
+
+**Backend (ASP.NET con C#)**
+- **Estándares:** Convenciones de codificación oficiales de Microsoft para C#.
+- **Clases, Interfaces y Métodos:** `PascalCase`. Todas las interfaces deben iniciar con la letra "I" mayúscula.
+- **Variables locales y parámetros:** `camelCase`.
+- **Campos privados (Private fields) de clase:** `_camelCase`.
+- **Organización:** Estructura de carpetas fuertemente tipada y basada en separación de responsabilidades (Controllers, Services, Repositories, Models, DTOs).
+
+**Frontend (Vue 3 + Vite)**
+- **Estándares:** Vue Official Style Guide (Reglas esenciales y fuertemente recomendadas).
+- **Componentes (Archivos .vue):** `PascalCase` para el nombre del archivo y su importación.
+- **Variables, métodos y Composables:** `camelCase`.
+- **Arquitectura:** Uso prioritario de Composition API para mantener una lógica limpia, modular y altamente reactiva.
+
+**HTML / CSS**
+- **Clases CSS:** Formato `kebab-case`, con nombres descriptivos y siempre en inglés.
+- **Encapsulamiento:** Uso de Scoped CSS dentro de cada componente de Vue para evitar que los estilos colisionen globalmente.
+- **Estructura:** Uso riguroso de etiquetas semánticas de HTML5 para mejorar el SEO y la accesibilidad.
+  
+**Convenciones generales y Control de Versiones**
+- **Commits:** Mensajes claros, cortos y estructurados bajo la norma de Conventional Commits para facilitar la legibilidad del historial en el entorno Trunk-Based Development.
+  - `feat:` Nueva funcionalidad.
+  - `fix:` Solución de bugs.
+  - Otros prefijos soportados: `refactor:`, `docs:`, `style:`, `test:`.
+
 <a name="5-1-4"></a>
 ##### 5.1.4. Software Deployment Configuration
 
