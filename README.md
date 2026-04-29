@@ -1978,6 +1978,20 @@ Registro de la membresía activa de un empleador, asociada a un plan. Guarda la 
 #### 5.1. Software Configuration Management
 <a name="5-1-1"></a>
 ##### 5.1.1. Software Development Environment Configuration
+
+| Producto | Propósito en el proyecto | Categoría | Ruta de descarga/acceso | Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Vue 3 + Vite** | Desarrollo de la aplicación web frontend | Software Development | [https://vuejs.org/](https://vuejs.org/) <br> [https://vitejs.dev/](https://vitejs.dev/) | Framework progresivo de JavaScript combinado con una herramienta de construcción ultra rápida para el desarrollo ágil del frontend. |
+| **ASP.NET** | Desarrollo de la API REST y lógica de negocio | Software Development | [https://dotnet.microsoft.com/](https://dotnet.microsoft.com/) | Framework robusto de Microsoft utilizado para la construcción de los servicios backend, seguridad y gestión de datos. |
+| **WebStorm** | Entorno de desarrollo para frontend | Software Development | [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/) | Entorno de desarrollo integrado (IDE) avanzado de JetBrains especializado en el ecosistema JavaScript y Vue. |
+| **JetBrains Rider** | Entorno de desarrollo para backend | Software Development | [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/) | IDE multiplataforma rápido y potente de JetBrains, optimizado para el desarrollo de la arquitectura en .NET/ASP.NET. |
+| **VS Code** | Edición y gestión de la documentación | Documentation | [https://code.visualstudio.com/](https://code.visualstudio.com/) | Editor de código ligero y versátil, utilizado en este proyecto específicamente para redactar y estructurar la documentación técnica. |
+| **Postman** | Pruebas y validación de APIs REST | Software Testing | [https://www.postman.com/](https://www.postman.com/) | Plataforma empleada para simular peticiones HTTP, evaluar el comportamiento de los endpoints y documentar la API. |
+| **Figma** | Diseño UI/UX, wireframes y mockups | Product UX/UI Design | [https://figma.com/](https://figma.com/) | Herramienta colaborativa basada en la nube para la creación de interfaces de usuario, diseño visual y prototipado del producto. |
+| **Vercel** | Despliegue de la aplicación frontend | Software Deployment | [https://vercel.com/](https://vercel.com/) | Plataforma en la nube optimizada para el alojamiento y despliegue continuo (CI/CD) de proyectos web frontend. |
+| **Jobsy (Server)** | Despliegue y alojamiento del backend | Software Deployment | [https://backend-jobsy-production.up.railway.app/swagger/index.html](https://backend-jobsy-production.up.railway.app/swagger/index.html) | Entorno de producción o servicio en la nube utilizado para alojar el backend de WorkMate y gestionar las peticiones de la plataforma. |
+| **GitHub** | Control de versiones y repositorios | Project Management | [https://github.com/](https://github.com/) | Plataforma estándar para almacenar el código fuente, gestionar las ramas de desarrollo y coordinar el trabajo en equipo. |
+
 <a name="5-1-2"></a>
 ##### 5.1.2. Source Code Management
 <a name="5-1-3"></a>
