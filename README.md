@@ -1994,6 +1994,24 @@ Registro de la membresía activa de un empleador, asociada a un plan. Guarda la 
 
 <a name="5-1-2"></a>
 ##### 5.1.2. Source Code Management
+
+### 5.1.2. Source Code Management.
+
+El proyecto WorkMate utiliza GitHub como plataforma centralizada para el control de versiones. Dada la necesidad de iterar rápidamente, mantener una integración continua y agilizar la entrega del producto en su fase inicial, el equipo optó por aplicar un modelo de Trunk-Based Development (Desarrollo Basado en Tronco). 
+
+Este enfoque minimiza la sobrecarga de gestionar múltiples ramas, evitando conflictos de integración (merge conflicts) prolongados y asegurando que todos los miembros del equipo trabajen sincronizados con la versión más reciente del código.
+
+**Repositorio GitHub:** <a href="https://github.com/SI0732-WorkMate">https://github.com/SI0732-WorkMate</a>
+
+**Estructura de Ramas:**
+- **main:** Es la única rama del proyecto. Contiene la base de código centralizada, estable y lista para producción. Todos los desarrolladores integran (hacen *push*) sus nuevas funcionalidades, ajustes y correcciones directamente a esta rama de forma continua.
+
+**Control de Calidad e Integración:**
+Al trabajar bajo el enfoque Trunk-Based Development y prescindir de *Pull Requests* tradicionales desde ramas secundarias, la calidad y estabilidad del código en `main` se garantiza mediante:
+- **Comunicación síncrona:** Coordinación diaria del equipo para evitar sobreescribir archivos clave.
+- **Validación local estricta:** Pruebas y compilación del entorno de forma local por cada desarrollador antes de ejecutar un *commit* o *push* hacia el repositorio remoto.
+- **Pair Programming:** Revisiones de código en pares en tiempo real para las lógicas de negocio más complejas.
+
 <a name="5-1-3"></a>
 ##### 5.1.3. Source Code Style Guide & Conventions
 <a name="5-1-4"></a>
