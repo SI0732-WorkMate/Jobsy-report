@@ -1980,6 +1980,7 @@ Registro de la membresía activa de un empleador, asociada a un plan. Guarda la 
 ##### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 <a name="5-2-6"></a>
 ##### 5.2.6. RESTful API documentation
+![API documentation](./assets/images/chapter-5/API_Documentation.png)
 <a name="5-2-7"></a>
 ##### 5.2.7. Team Collaboration Insights
 
