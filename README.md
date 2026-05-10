@@ -2194,20 +2194,55 @@ https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=shari
 ##### 7.1.1. Tools and Practices
 <a name="7-1-2"></a>
 ##### 7.1.2. Build & Test Suite Pipeline Components
+* **Build Step (Frontend):** Utiliza Vite para compilar los componentes de Vue 3, transformando el código fuente en archivos estáticos optimizados para el navegador.
+* **Build Step (Backend):** Emplea el SDK de .NET para compilar la API REST y verificar que no existan errores sintácticos o de dependencias en la lógica de negocio.
+* **Unit Testing Component:** Ejecuta automáticamente la suite de pruebas unitarias para validar funciones críticas, como el procesamiento de perfiles de candidatos y la gestión de ofertas.
+* **Security & Quality Scanning:** Componente encargado de revisar que el código cumpla con estándares de seguridad, previniendo vulnerabilidades antes de generar los artefactos.
+* **Artifact Archiving:** Tras una integración exitosa, el pipeline genera y almacena los archivos de construcción listos para ser tomados por las etapas de entrega y despliegue.
 
 <a name="7-2"></a>
 #### 7.2. Continuous Delivery
+El objetivo de esta etapa para **Jobsy** es automatizar la integración y validación del código, asegurando que la plataforma esté siempre en un estado estable y lista para ser desplegada en producción. En nuestro flujo, el código se valida en entornos de prueba que simulan las condiciones reales de los usuarios, tanto para el segmento de reclutadores como para el de postulantes, antes de realizar el lanzamiento final.
+
 <a name="7-2-1"></a>
 ##### 7.2.1. Tools and Practices
+**Tools:**
+* **GitHub Actions:** Es el motor principal del pipeline que automatiza la ejecución de pruebas unitarias y la construcción de artefactos cada vez que se realiza una actualización en la rama principal.
+* **Postman:** Se utiliza para la validación automática de los endpoints de la API REST desarrollada en ASP.NET, asegurando que la lógica de negocio y los servicios backend respondan correctamente.
+* **Vercel / Railway CLI:** Herramientas que permiten generar previsualizaciones del frontend y el backend en entornos de staging, facilitando la revisión de nuevas funcionalidades antes del despliegue definitivo.
+
+**Practices:**
+* **Trunk-Based Development:** Al integrar los cambios directamente en la rama principal de forma continua, eliminamos la complejidad de gestionar múltiples ramas y aseguramos que el código siempre esté listo para ser entregado.
+* **Validación Local Estricta:** Cada desarrollador del equipo debe compilar y ejecutar pruebas en su entorno local antes de subir cambios, garantizando que no se introduzcan errores que detengan el pipeline.
+* **Pair Programming:** Para funcionalidades críticas, como el sistema de filtrado con IA o la integración de pasarelas de pago, se realizan revisiones de código en pares para mantener altos estándares de calidad.
+* **Aprobación de Despliegue:** Aunque el proceso de construcción es automático, el equipo de WorkMate realiza una revisión final de los resultados en el entorno de pruebas antes de autorizar manualmente el paso a producción.
+
 <a name="7-2-2"></a>
 ##### 7.2.2. Stages Deployment Pipeline Components
+* **Integración Continua (CI):** Ejecución automática de pruebas unitarias para el backend (ASP.NET) y el frontend (Vue 3) al detectar nuevos commits en el repositorio de GitHub.
+* **Construcción de Artefactos (Build):** Generación de los archivos de distribución para el frontend mediante Vite y la compilación de los binarios necesarios para el servidor backend.
+* **Validación en Staging/Preview:** Despliegue automático de versiones de prueba en Vercel y Railway, permitiendo validar el comportamiento de la aplicación en un entorno web real antes de su publicación.
+* **Verificación de Seguridad y Calidad:** Análisis estático de código para detectar vulnerabilidades y asegurar que la gestión de datos sensibles cumpla con los términos del acuerdo de servicio SaaS.
+* **Monitoreo y Feedback:** El pipeline de entrega incluye herramientas que notifican de inmediato al equipo sobre el éxito o fallo de las pruebas, permitiendo una reacción rápida ante cualquier inestabilidad detectada.
 
 <a name="7-3"></a>
 #### 7.3. Continuous Deployment
+El objetivo de **Continuous Deployment (CD)** en Jobsy es que todos los cambios que hayan superado con éxito las pruebas de validación pasen de forma automática al entorno de producción. Esto garantiza que cada mejora o corrección sea entregada a los usuarios finales sin intervención manual, siempre que se cumplan los criterios de estabilidad definidos.
 <a name="7-3-1"></a>
 ##### 7.3.1. Tools and Practices
+**Tools:**
+* **Vercel:** Gestiona el despliegue automático del frontend de Jobsy, actualizando la interfaz de usuario en el dominio oficial cada vez que el código en la rama principal es validado.
+* **Railway:** Se encarga del despliegue automático del backend y la infraestructura de la base de datos SQL, asegurando que los servicios estén disponibles y actualizados sincrónicamente.
+
+**Practices:**
+* **Automatización Total del Lanzamiento:** Se elimina la necesidad de aprobaciones manuales finales para los cambios menores, confiando en la robustez de las pruebas automatizadas del pipeline para activar el lanzamiento.
+* **Rollback Automatizado:** En caso de que se detecte una anomalía crítica inmediatamente después de una actualización, el sistema está configurado para volver a la versión estable anterior de forma automática.
+
 <a name="7-3-2"></a>
 ##### 7.3.2. Production Deployment Pipeline Components
+* **Despliegue Automático en Vercel/Railway:** Una vez superadas las fases de CI y validación, el código se sincroniza con los servidores de producción de manera inmediata y transparente.
+* **Actualización de Esquema de Datos:** Ejecución automática de migraciones en la base de datos SQL para soportar nuevas funcionalidades sin interrumpir el servicio para las empresas y candidatos.
+* **Monitoreo Post-Despliegue:** Seguimiento en tiempo real de logs y métricas de rendimiento para asegurar que la nueva versión cumpla con la disponibilidad del 99.5% establecida en el acuerdo de servicio.
 
 <a name="7-4"></a>
 #### 7.4. Continuous Monitoring
