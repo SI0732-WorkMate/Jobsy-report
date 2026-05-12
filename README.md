@@ -2124,11 +2124,10 @@ Video de el producto de Jobsy
 
 https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=sharing
 
-<a name="part-2"></a>
-## Part II: Verification, Validation & Pipeline
 
 <a name="cap-6"></a>
 ### Capítulo VI: Product Verification & Validation
+
 
 <a name="6-1"></a>
 #### 6.1. Testing Suites & Validation
