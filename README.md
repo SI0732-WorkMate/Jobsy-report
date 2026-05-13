@@ -42,7 +42,8 @@
 | Versión | Fecha | Autor | Descripción |
 | :--- | :--- | :--- | :--- |
 | AV1 | 23/04/2026 | Equipo de Desarrollo | Estructura inicial completa |
-| AV1 | 26/04/2026 | María Hernández, Jazmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo I<br>Capítulo II<br>Capítulo III<br>Capítulo IV<br>Capítulo V |
+| AV1 | 26/04/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo I<br>Capítulo II<br>Capítulo III<br>Capítulo IV<br>Capítulo V |
+| TB1 | 08/05/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo VI<br>Capítulo VII |
 
 ## Project Report Collaboration Insights
 
@@ -218,18 +219,16 @@
 
 El curso contribuye al cumplimiento del Student Outcome ABET:  
 
-**ABET – EAC - Student Outcome 4**  
-**Criterio:** La capacidad de reconocer responsabilidades éticas y
-profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
+**ABET – EAC - Student Outcome 4** **Criterio:** La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
 En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el ABET – EAC - Student Outcome 4.
 
 <table style="border-collapse:collapse;border-spacing:0" class="tg">
 <thead>
 <tr>
-<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">Criterio específico</span></th>
-<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">Acciones realizadas</span></th>
-<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">Conclusiones</span></th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Criterio específico</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Acciones realizadas</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">Conclusiones</th>
 </tr>
 </thead>
 <tbody>
@@ -237,52 +236,62 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-**María Hernández:**  
-- **AV1:** Definió la problemática y el Lean UX Process (Assumptions e Hypothesis) manteniendo la objetividad profesional y el enfoque en resolver problemas reales de los usuarios sin sesgos, garantizando la viabilidad y honestidad del Solution Profile.
+**<span style="color:#FFD700">María Hernández:</span>** 
+- **AV1:** Definió la problemática y el Lean UX Process manteniendo la objetividad profesional y el enfoque en resolver problemas reales sin sesgos.
+- **TB1:** Lideró la transición a la arquitectura de software, asegurando que la selección de patrones técnicos cumpla con estándares de mantenibilidad y seguridad de datos a largo plazo.
 
-**Jasmin Urrutia:**  
-- **AV1:** Estructuró el Needfinding (User Personas y Empathy Mapping) de forma inclusiva y ética, asegurando que el diseño del software refleje y respete fielmente las necesidades y realidades operativas de los diversos tipos de usuarios (reclutadores y postulantes).
+**<span style="color:#00BFFF">Jasmin Urrutia:</span>** 
+- **AV1:** Estructuró el Needfinding de forma inclusiva y ética, asegurando que el diseño refleje las realidades operativas de reclutadores y postulantes.
+- **TB1:** Desarrolló el prototipado de alta fidelidad aplicando criterios de accesibilidad (WCAG), garantizando que la interfaz sea inclusiva para usuarios con diversas capacidades.
 
-**Fabricio Vega:**  
-- **AV1:** Condujo el diseño, registro y análisis de entrevistas respetando la privacidad de los datos y el consentimiento de los entrevistados, además de realizar un análisis competitivo basado en información transparente y veraz del mercado.
+**<span style="color:#0000FF">Fabricio Vega):</span>** 
+- **AV1:** Condujo el análisis de entrevistas respetando la privacidad y el consentimiento, realizando un análisis competitivo basado en información veraz.
+- **TB1:** Diseñó la arquitectura de persistencia de datos bajo el principio de "Privacy by Design", protegiendo la información sensible de los candidatos frente a vulnerabilidades.
 
-**Ysaac Villanueva:**  
-- **AV1:** Formuló el Requirements Specification (User Stories y Product Backlog) bajo estándares profesionales de ingeniería, asegurando que los requerimientos sean trazables y cumplan con las verdaderas necesidades extraídas de los usuarios.
+**<span style="color:#FF69B4">Ysaac Villanueva:</span>** 
+- **AV1:** Formuló el Requirements Specification bajo estándares profesionales, asegurando que los requerimientos sean trazables y cumplan con necesidades reales.
+- **TB1:** Validó que el Product Backlog técnico cumpla con las normativas locales de protección de datos personales, evitando riesgos legales para la organización y el usuario.
 
 </td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-- **AV1:** El equipo demostró un alto sentido de ética y profesionalismo al investigar y diseñar el producto basándose en datos reales de los usuarios (entrevistas y needfinding). Se priorizó la objetividad, el respeto por la información recolectada y la aplicación de metodologías formales (Lean UX, Domain-Driven Design) para garantizar que la solución de software resuelva problemas genuinos con altos estándares de calidad y transparencia. 
-  
+- **AV1:** El equipo demostró ética al investigar basándose en datos reales y metodologías formales (Lean UX).
+- **TB1:** Se alcanzó un nivel de profesionalismo técnico superior al integrar la seguridad, la accesibilidad y el cumplimiento normativo dentro del diseño arquitectónico, demostrando responsabilidad no solo en el "qué" se construye, sino en "cómo" se protege al usuario final.
+
 </td>
 </tr>
 <tr>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-**María Hernández:**  
-- **AV1:** Evaluó el impacto económico y operativo del proyecto mediante el Lean UX Canvas, determinando cómo la plataforma optimizará los recursos empresariales (Business Outcomes) y mejorará la calidad de vida laboral de los usuarios (User Outcomes).
+**<span style="color:#FFD700">María Hernández:</span>** 
+- **AV1:** Evaluó el impacto económico mediante el Lean UX Canvas, determinando la optimización de recursos empresariales.
+- **TB1:** Analizó la viabilidad económica de la infraestructura Cloud, seleccionando servicios que optimizan el costo operativo y permiten la escalabilidad global del negocio.
 
-**Jasmin Urrutia:**  
-- **AV1:** Analizó el impacto social en el entorno laboral mediante el As-is Scenario Mapping y el User Journey, identificando los puntos de frustración actuales de la sociedad respecto a los largos y desordenados procesos de selección.
+**<span style="color:#00BFFF">Jasmin Urrutia:</span>** 
+- **AV1:** Analizó el impacto social identificando frustraciones actuales en los procesos de selección mediante el User Journey.
+- **TB1:** Utilizó el To-Be Scenario Mapping para medir cómo la solución reduce el estrés laboral y mejora la transparencia social en la inserción laboral de nuevos talentos.
 
-**Fabricio Vega:**  
-- **AV1:** Midió el impacto económico en el mercado mediante el Análisis Competitivo, estructurando estrategias y tácticas que permitirán a la solución de software ser financieramente rentable frente a las alternativas globales y locales existentes.
+**<span style="color:#0000FF">Fabricio Vega:</span>** 
+- **AV1:** Midió el impacto económico en el mercado mediante el Análisis Competitivo frente a alternativas globales.
+- **TB1:** Evaluó el impacto ambiental y técnico de la solución, seleccionando una arquitectura eficiente que reduce el consumo innecesario de recursos de procesamiento y almacenamiento.
 
-**Ysaac Villanueva:**  
-- **AV1:** Delimitó el impacto socioeconómico directo definiendo los Segmentos Objetivo y elaboró el Impact Mapping, alineando los objetivos de negocio del software con la transformación digital esperada en pequeñas y medianas empresas.
+**<span style="color:#FF69B4">Ysaac Villanueva:</span>** 
+- **AV1:** Delimitó el impacto socioeconómico definiendo Segmentos Objetivo alineados con la transformación digital de las PYMES.
+- **TB1:** Proyectó el impacto social de la automatización del software, fundamentando cómo la reducción de sesgos en los algoritmos de selección promueve una sociedad más equitativa.
 
 </td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
-- **AV1:** A través del diseño y la especificación de requisitos, el equipo logró fundamentar que la plataforma generará un impacto positivo significativo: **económicamente**, reduciendo los costos operativos y tiempos de contratación para las empresas (To-Be Scenario Mapping); y **socialmente**, agilizando la inserción laboral al brindar herramientas eficientes y amigables a los postulantes. Todo esto soportado por un diseño arquitectónico robusto y escalable (Software Architecture) planificado de manera conjunta por todo el equipo.
+- **AV1:** El equipo fundamentó que la plataforma reducirá costos operativos (económico) y agilizará la inserción laboral (social).
+- **TB1:** A través de la especificación de la arquitectura y el diseño To-Be, el equipo demostró capacidad para emitir juicios técnicos que consideran la eficiencia energética del software, la equidad algorítmica y la rentabilidad en la nube, asegurando una solución sostenible y de alto impacto positivo en el mercado laboral actual.
 
 </td>
 </tr>
 </tbody>
 </table>
-
 <a name="part-1"></a>
+
 ## Part I: As-Is Software Project
 
 <a name="cap-1"></a>
