@@ -2142,10 +2142,62 @@ https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=shari
 #### 6.1. Testing Suites & Validation
 <a name="6-1-1"></a>
 ##### 6.1.1. Core Entities Unit Tests
+
+Con el objetivo de garantizar la integridad y el correcto despliegue de los elementos clave en la plataforma Jobsy, se definieron casos de prueba orientados a los componentes estratégicos de la interfaz. Para este proceso, se priorizó la validación de las siguientes secciones fundamentales presentes en la navegación:
+
+- Sobre nosotros: Verificación del contenido institucional y visión de la marca.
+
+- Servicios: Validación de la exposición de las soluciones de reclutamiento con IA.
+
+- Testimonios: Comprobación del correcto renderizado de las experiencias de usuarios.
+
+- Contacto: Aseguramiento de los canales de comunicación directa.
+
+- Planes: Verificación de la visualización de los modelos de suscripción ofrecidos.
+
+La automatización de estas pruebas se gestionó a través de Selenium-IDE, permitiendo certificar la estabilidad de la Landing Page presente:
+
+![alt text](assets/images/chapter-6/InicioLandingPage.png)
+
 <a name="6-1-2"></a>
 ##### 6.1.2. Core Integration Tests
+
+Prueba de la Landing Page de JOBSY:
+
+![alt text](assets/images/chapter-6/PruebasLandingPage.png)
+
+Prueba de la Pagina Web de JOBSY:
+
+Reclutador:
+
+![alt text](assets/images/chapter-6/PruebaReclutador.png)
+
+![alt text](assets/images/chapter-6/PruebaReclutador2.png)
+
+Postulante:
+
+![alt text](assets/images/chapter-6/PruebaPostulante.png)
+
+![alt text](assets/images/chapter-6/PruebaPostulante2.png)
+
+
 <a name="6-1-3"></a>
 ##### 6.1.3. Core Behavior-Driven Development
+
+Para el desarrollo de Jobsy, hemos integrado la metodología Behavior-Driven Development (BDD), la cual nos permite alinear las expectativas del negocio con el comportamiento técnico del sistema. Al centrar el desarrollo en el comportamiento del usuario, logramos una comunicación más fluida entre los interesados y el equipo de ingeniería, asegurando que cada funcionalidad aporte valor real.
+
+Como base para nuestras pruebas de aceptación, empleamos la estructura Given-When-Then (Dado que - Cuando - Entonces), lo que nos permite definir escenarios claros y automatizables. Un ejemplo de esta implementación para el flujo de visualización de propuestas es el siguiente:
+
+- Escenario: Generación de diagnóstico de reclutamiento automatizado.
+
+- Dado que soy un usuario del segmento "Recurso Humano" o "Dueño de Negocio" que ha ingresado a la sección de servicios de Jobsy.
+
+- Cuando el usuario interactúa con el botón de "Comenzar ahora" para iniciar el proceso de optimización de vacantes.
+
+- Entonces el sistema debe desplegar una interfaz de diagnóstico donde se detalla cómo la IA de vanguardia reducirá sus tiempos de contratación en un 60%.
+
+Este enfoque no solo facilita la validación técnica mediante herramientas de automatización, sino que también garantiza que la experiencia del usuario final sea consistente con la promesa de valor de nuestra plataforma: un reclutamiento automatizado y profesional.
+
 <a name="6-1-4"></a>
 ##### 6.1.4. Core System Tests
 
