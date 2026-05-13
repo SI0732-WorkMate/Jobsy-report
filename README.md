@@ -2151,55 +2151,81 @@ https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=shari
 
 En esta sección se presentan las pruebas principales del sistema realizadas con Selenium, las cuales permiten validar el correcto funcionamiento de los flujos esenciales de la plataforma Jobsy desde la interfaz web. Estas pruebas simulan la interacción real de los usuarios con el sistema y verifican funcionalidades clave como la selección de rol, registro de postulantes y reclutadores, creación, edición y cierre de vacantes, postulación a ofertas laborales, edición de perfil profesional, visualización del dashboard, analíticas, notificaciones y sugerencias de evaluación asistidas por inteligencia artificial. Cada caso fue ejecutado siguiendo una secuencia de pasos automatizados, con el objetivo de comprobar que los módulos principales respondan correctamente y que los procesos críticos del sistema se completen sin errores.
 
-| **1** | US015 | Seleccionar rol de usuario | Como administrador, quiero asignar el rol de reclutador a un usuario para definir sus permisos iniciales. |
+|  |  |  |
+|---|---|---|
+| US015 | Seleccionar rol de usuario | Como administrador, quiero asignar el rol de reclutador a un usuario para definir sus permisos iniciales. |
 
 ![Seleccionar rol de usuario](/assets/images/chapter-6/SeleccionarRoldeUsuario.png)
 
-| **2** | US007 | Registrar cuenta de postulante | Como usuario, quiero registrarme como postulante para comenzar la búsqueda de empleo. |
+|  |  |  |
+|---|---|---|
+| US007 | Registrar cuenta de postulante | Como usuario, quiero registrarme como postulante para comenzar la búsqueda de empleo. |
 
 ![Registrar cuenta de postulante](/assets/images/chapter-6/RegistrarCuentadePostulante.png)
 
-| **3** | US008 | Registrar cuenta de reclutador | Como empresa, quiero registrarme con datos corporativos para gestionar vacantes. |
+|  |  |  |
+|---|---|---|
+| US008 | Registrar cuenta de reclutador | Como empresa, quiero registrarme con datos corporativos para gestionar vacantes. |
 
 ![Registrar cuenta de reclutador](/assets/images/chapter-6/RegistrarCuentadeReclutador.png)
 
-| **4** | US001 | Crear nueva vacante | Como reclutador, quiero registrar una nueva vacante para iniciar procesos de selección. |
+|  |  |  |
+|---|---|---|
+| US001 | Crear nueva vacante | Como reclutador, quiero registrar una nueva vacante para iniciar procesos de selección. |
 
 ![Crear Nueva Vacante](/assets/images/chapter-6/CrearNuevaVacante.png)
 
-| **5** | US004 | Aplicar a vacante | Como postulante, quiero postularme a una vacante para vincular mi perfil al proceso. |
+|  |  |  |
+|---|---|---|
+| US004 | Aplicar a vacante | Como postulante, quiero postularme a una vacante para vincular mi perfil al proceso. |
 
 ![Aplicar a vacante](/assets/images/chapter-6/AplicarAVacante.png)
 
-| **6** | US006 | Visualizar resumen en Dashboard | Como reclutador, quiero ver el estado de mis publicaciones y accesos rápidos en el panel principal. |
+|  |  |  |
+|---|---|---|
+| US006 | Visualizar resumen en Dashboard | Como reclutador, quiero ver el estado de mis publicaciones y accesos rápidos en el panel principal. |
 
 ![Visualizar resumen en Dashboard](/assets/images/chapter-6/VisualizarResumenEnDashboard.png)
 
-| **7** | US009 | Editar perfil profesional | Como postulante, quiero actualizar mi información y CV para mantener mi perfil vigente. |
+|  |  |  |
+|---|---|---|
+| US009 | Editar perfil profesional | Como postulante, quiero actualizar mi información y CV para mantener mi perfil vigente. |
 
 ![Editar perfil profesional](/assets/images/chapter-6/EditarPerfilProfesional.png)
 
-| **8** | US002 | Editar vacante existente | Como reclutador, quiero actualizar la información de una vacante activa. |
+|  |  |  |
+|---|---|---|
+| US002 | Editar vacante existente | Como reclutador, quiero actualizar la información de una vacante activa. |
 
 ![Editar vacante existente](/assets/images/chapter-6/EditarVacanteExistente.png)
 
-| **9** | US003 | Eliminar/Cerrar vacante | Como reclutador, quiero cerrar una vacante para finalizar la recepción de CVs. |
+|  |  |  |
+|---|---|---|
+| US003 | Eliminar/Cerrar vacante | Como reclutador, quiero cerrar una vacante para finalizar la recepción de CVs. |
 
 ![Eliminar vacante](/assets/images/chapter-6/EliminarVacante.png)
 
-| **10** | US005 | Visualizar analíticas | Como reclutador, quiero medir el rendimiento de mis publicaciones mediante métricas de datos reales. |
+|  |  |  |
+|---|---|---|
+| US005 | Visualizar analíticas | Como reclutador, quiero medir el rendimiento de mis publicaciones mediante métricas de datos reales. |
 
 ![Visualizar analíticas](/assets/images/chapter-6/VisualizarAnalíticas.png)
 
-| **11** | US010 | Sugerencia de evaluación | Como reclutador, quiero que la IA genere guías de evaluación técnica para mis procesos. |
+|  |  |  |
+|---|---|---|
+| US010 | Sugerencia de evaluación | Como reclutador, quiero que la IA genere guías de evaluación técnica para mis procesos. |
 
 ![Sugerencia de evaluación](/assets/images/chapter-6/SugerenciaDeEvaluación.png)
 
-| **12** | US014 | Notificaciones de postulación | Como reclutador, quiero recibir alertas inmediatas cuando un nuevo candidato aplique. |
+|  |  |  |
+|---|---|---|
+| US014 | Notificaciones de postulación | Como reclutador, quiero recibir alertas inmediatas cuando un nuevo candidato aplique. |
 
 ![Notificaciones de postulación](/assets/images/chapter-6/NotificacionesDePostulacion.png)
 
-| **13** | US013 | Notificaciones de vacantes | Como postulante, quiero alertas sobre nuevas ofertas. |
+|  |  |  |
+|---|---|---|
+| US013 | Notificaciones de vacantes | Como postulante, quiero alertas sobre nuevas ofertas. |
 
 ![Notificaciones de vacantes](/assets/images/chapter-6/NotificacionesDeVacantes.png)
 
