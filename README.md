@@ -2307,6 +2307,21 @@ El objetivo de **Continuous Deployment (CD)** en Jobsy es que todos los cambios 
 #### 7.4. Continuous Monitoring
 <a name="7-4-1"></a>
 ##### 7.4.1. Tools and Practices
+
+En el proceso de integración continua de Jobsy se emplean herramientas y prácticas orientadas a mantener el código en un estado estable, funcional y preparado para su despliegue. Debido a que el proyecto utiliza una aplicación frontend desarrollada con Vue 3 y Vite, un backend basado en ASP.NET y repositorios gestionados en GitHub, la integración continua permite validar de forma constante los cambios realizados por el equipo antes de que estos afecten el funcionamiento general de la plataforma. Para ello, se consideran actividades como la compilación del frontend y backend, la ejecución de pruebas funcionales con Selenium, la validación de endpoints mediante Postman y el control de versiones bajo un flujo Trunk-Based Development. Estas prácticas ayudan a detectar errores de forma temprana, reducir conflictos entre integrantes y asegurar que las funcionalidades principales, como la gestión de vacantes, postulaciones, perfiles, analíticas y asistencia con IA, se mantengan operativas durante la evolución del producto.
+
+| Herramienta / Práctica | Tipo | Descripción | Propósito |
+|---|---|---|---|
+| GitHub | Control de versiones | Plataforma utilizada para almacenar los repositorios del frontend, backend y documentación del proyecto. | Centralizar el código fuente, registrar cambios y facilitar la colaboración del equipo. |
+| GitHub Actions | Automatización CI | Herramienta que permite automatizar procesos como instalación de dependencias, compilación y validación del proyecto. | Ejecutar verificaciones automáticas cada vez que se actualiza el repositorio. |
+| Vue 3 + Vite | Build Frontend | Tecnologías utilizadas para desarrollar y compilar la aplicación web del lado del cliente. | Verificar que la interfaz compile correctamente antes de ser desplegada. |
+| ASP.NET | Build Backend | Framework utilizado para desarrollar la API REST y la lógica principal del sistema. | Comprobar que los servicios backend compilen sin errores y estén listos para integrarse. |
+| Postman | Pruebas de API | Herramienta usada para probar endpoints del backend mediante peticiones HTTP. | Validar que las rutas principales de la API respondan correctamente. |
+| Selenium | Pruebas funcionales | Herramienta empleada para automatizar pruebas desde la interfaz web simulando acciones reales del usuario. | Comprobar flujos críticos como login, creación de vacantes, postulación y edición de perfiles. |
+| Validación local estricta | Práctica de calidad | Cada integrante revisa, compila y prueba sus cambios antes de subirlos al repositorio. | Prevenir errores básicos antes de que el código llegue al flujo de integración. |
+| Conventional Commits | Convención de trabajo | Uso de mensajes de commit claros como `feat:`, `fix:`, `docs:` o `test:`. | Mantener un historial ordenado y comprensible para el equipo. |
+| Pair Programming | Práctica colaborativa | Revisión conjunta de funcionalidades importantes entre integrantes del equipo. | Mejorar la calidad del código y reducir errores en módulos críticos. |
+
 <a name="7-4-2"></a>
 ##### 7.4.2. Monitoring Pipeline Components
 <a name="7-4-3"></a>
