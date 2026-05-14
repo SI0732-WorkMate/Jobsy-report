@@ -2129,7 +2129,9 @@ Frontend
 
 <a name="5-3"></a>
 #### 5.3. Video About-the-Product
-Video de el producto de Jobsy
+
+
+Video de el producto de Jobsy:
 
 https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=sharing
 
@@ -2143,11 +2145,9 @@ https://drive.google.com/file/d/1_i4AdgWZ5o7P81nPPozjrkKQuHUiG9SB/view?usp=shari
 <a name="6-1-1"></a>
 ##### 6.1.1. Core Entities Unit Tests
 
-Los Core Entities Unit Tests son esenciales en el desarrollo de software, ya que garantizan la calidad y
-correcto funcionamiento de las entidades centrales, previniendo errores y facilitando el mantenimiento
-del código.
+Los Core Entities Unit Tests son esenciales en el desarrollo de software, ya que garantizan la calidad y correcto funcionamiento de las entidades centrales, previniendo errores y facilitando el mantenimiento del código.
 
-Con el objetivo de garantizar la integridad y el correcto despliegue de los elementos clave en la plataforma Jobsy, se definieron casos de prueba orientados a los componentes estratégicos de la interfaz, como lo son las user stories. Para este proceso, se priorizó la validación de las siguientes secciones fundamentales presentes en la navegación:
+Con el objetivo de garantizar la integridad y el correcto despliegue de los elementos clave en la plataforma Jobsy, se definieron casos de prueba orientados a los componentes estratégicos de la interfaz, como lo son las user stories. Para este proceso, usando XUnit, se priorizó la validación de las siguientes secciones fundamentales presentes en la navegación:
 
 Crear una nueva vacante - US1:
 ![alt text](assets/images/chapter-6/Core_Entities_Unit_Test/TestUser1.png)
@@ -2173,14 +2173,36 @@ Seleccion de Rol para registrarse US15:
 <a name="6-1-2"></a>
 ##### 6.1.2. Core Integration Tests
 
+Para mantener la escalabilidad y el orden bajo el enfoque de Desarrollo Basado en Tronco (Trunk-Based Development) , el equipo organizó la suite de pruebas dentro del espacio de trabajo de la solución en una estructura modular. Como se aprecia en la vista del explorador de archivos:
 
+- Carpeta Features: Contiene los archivos .feature que definen el comportamiento esperado del sistema mediante la metodología BDD (Behavior-Driven Development).
+- Carpeta UnitTests: Almacena los archivos de código fuente en C# que ejecutan la lógica de validación técnica para cada historia de usuario (User Story).
 
+- Helpers:
 
+  - Crea una base de datos falsa en memoria para las pruebas. En vez de conectarse a MySQL real (Aiven), crea una BD temporal que vive solo mientras corre el test. Así las pruebas son rápidas, independientes y no afectan datos reales.
+  ![alt text](assets/images/chapter-6/dbHelper.png)
 
+  - Simula un usuario autenticado con JWT. Cuando los servicios necesitan saber quién está logueado (por ejemplo, CreateJobOfferService necesita saber el ID del reclutador), este helper crea un contexto HTTP falso con los claims del usuario sin necesidad de hacer un login real.
+  ![alt text](assets/images/chapter-6/HelperTESTS2.png)
 <a name="6-1-3"></a>
 ##### 6.1.3. Core Behavior-Driven Development
 
+Para el desarrollo de Jobsy, hemos integrado la metodología Behavior-Driven Development (BDD), la cual nos permite alinear las expectativas del negocio con el comportamiento técnico del sistema. Al centrar el desarrollo en el comportamiento del usuario, logramos una comunicación más fluida entre los interesados y el equipo de ingeniería, asegurando que cada funcionalidad aporte valor real.
 
+Como base para nuestras pruebas de aceptación, empleamos la estructura Given-When-Then (Dado que - Cuando - Entonces), lo que nos permite definir escenarios claros y automatizables. Un ejemplo de esta implementación para el flujo de visualización de propuestas es el siguiente:
+
+- Escenario: Generación de diagnóstico de reclutamiento automatizado.
+
+- Dado que soy un usuario del segmento "Recurso Humano" o "Dueño de Negocio" que ha ingresado a la sección de servicios de Jobsy.
+
+- Cuando el usuario interactúa con el botón de "Comenzar ahora" para iniciar el proceso de optimización de vacantes.
+
+- Entonces el sistema debe desplegar una interfaz de diagnóstico donde se detalla cómo la IA de vanguardia reducirá sus tiempos de contratación en un 60%.
+
+Este enfoque no solo facilita la validación técnica mediante herramientas de automatización, sino que también garantiza que la experiencia del usuario final sea consistente con la promesa de valor de nuestra plataforma: un reclutamiento automatizado y profesional.
+
+![alt text](assets/images/chapter-6/Behavior-gherkin.png)
 
 <a name="6-1-4"></a>
 ##### 6.1.4. Core System Tests
