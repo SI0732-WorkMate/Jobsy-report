@@ -2213,79 +2213,79 @@ En esta sección se presentan las pruebas principales del sistema realizadas con
 |---|---|---|
 | US015 | Seleccionar rol de usuario | Como administrador, quiero asignar el rol de reclutador a un usuario para definir sus permisos iniciales. |
 
-![Seleccionar rol de usuario](/assets/images/chapter-6/SeleccionarRoldeUsuario.png)
+![Seleccionar rol de usuario](assets/images/chapter-6/SeleccionarRoldeUsuario.png)
 
 |  |  |  |
 |---|---|---|
 | US007 | Registrar cuenta de postulante | Como usuario, quiero registrarme como postulante para comenzar la búsqueda de empleo. |
 
-![Registrar cuenta de postulante](/assets/images/chapter-6/RegistrarCuentadePostulante.png)
+![Registrar cuenta de postulante](assets/images/chapter-6/RegistrarCuentadePostulante.png)
 
 |  |  |  |
 |---|---|---|
 | US008 | Registrar cuenta de reclutador | Como empresa, quiero registrarme con datos corporativos para gestionar vacantes. |
 
-![Registrar cuenta de reclutador](/assets/images/chapter-6/RegistrarCuentadeReclutador.png)
+![Registrar cuenta de reclutador](assets/images/chapter-6/RegistrarCuentadeReclutador.png)
 
 |  |  |  |
 |---|---|---|
 | US001 | Crear nueva vacante | Como reclutador, quiero registrar una nueva vacante para iniciar procesos de selección. |
 
-![Crear Nueva Vacante](/assets/images/chapter-6/CrearNuevaVacante.png)
+![Crear Nueva Vacante](assets/images/chapter-6/CrearNuevaVacante.png)
 
 |  |  |  |
 |---|---|---|
 | US004 | Aplicar a vacante | Como postulante, quiero postularme a una vacante para vincular mi perfil al proceso. |
 
-![Aplicar a vacante](/assets/images/chapter-6/AplicarAVacante.png)
+![Aplicar a vacante](assets/images/chapter-6/AplicarAVacante.png)
 
 |  |  |  |
 |---|---|---|
 | US006 | Visualizar resumen en Dashboard | Como reclutador, quiero ver el estado de mis publicaciones y accesos rápidos en el panel principal. |
 
-![Visualizar resumen en Dashboard](/assets/images/chapter-6/VisualizarResumenEnDashboard.png)
+![Visualizar resumen en Dashboard](assets/images/chapter-6/VisualizarResumenEnDashboard.png)
 
 |  |  |  |
 |---|---|---|
 | US009 | Editar perfil profesional | Como postulante, quiero actualizar mi información y CV para mantener mi perfil vigente. |
 
-![Editar perfil profesional](/assets/images/chapter-6/EditarPerfilProfesional.png)
+![Editar perfil profesional](assets/images/chapter-6/EditarPerfilProfesional.png)
 
 |  |  |  |
 |---|---|---|
 | US002 | Editar vacante existente | Como reclutador, quiero actualizar la información de una vacante activa. |
 
-![Editar vacante existente](/assets/images/chapter-6/EditarVacanteExistente.png)
+![Editar vacante existente](assets/images/chapter-6/EditarVacanteExistente.png)
 
 |  |  |  |
 |---|---|---|
 | US003 | Eliminar/Cerrar vacante | Como reclutador, quiero cerrar una vacante para finalizar la recepción de CVs. |
 
-![Eliminar vacante](/assets/images/chapter-6/EliminarVacante.png)
+![Eliminar vacante](assets/images/chapter-6/EliminarVacante.png)
 
 |  |  |  |
 |---|---|---|
 | US005 | Visualizar analíticas | Como reclutador, quiero medir el rendimiento de mis publicaciones mediante métricas de datos reales. |
 
-![Visualizar analíticas](/assets/images/chapter-6/VisualizarAnalíticas.png)
+![Visualizar analíticas](assets/images/chapter-6/VisualizarAnalíticas.png)
 
 |  |  |  |
 |---|---|---|
 | US010 | Sugerencia de evaluación | Como reclutador, quiero que la IA genere guías de evaluación técnica para mis procesos. |
 
-![Sugerencia de evaluación](/assets/images/chapter-6/SugerenciaDeEvaluación.png)
+![Sugerencia de evaluación](assets/images/chapter-6/SugerenciaDeEvaluación.png)
 
 |  |  |  |
 |---|---|---|
 | US014 | Notificaciones de postulación | Como reclutador, quiero recibir alertas inmediatas cuando un nuevo candidato aplique. |
 
-![Notificaciones de postulación](/assets/images/chapter-6/NotificacionesDePostulacion.png)
+![Notificaciones de postulación](assets/images/chapter-6/NotificacionesDePostulacion.png)
 
 |  |  |  |
 |---|---|---|
 | US013 | Notificaciones de vacantes | Como postulante, quiero alertas sobre nuevas ofertas. |
 
-![Notificaciones de vacantes](/assets/images/chapter-6/NotificacionesDeVacantes.png)
+![Notificaciones de vacantes](assets/images/chapter-6/NotificacionesDeVacantes.png)
 
 <a name="6-2"></a>
 #### 6.2. Static testing & Verification
