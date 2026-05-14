@@ -6,7 +6,7 @@
 <div style="text-align: center;">
     <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
     <h4 style="text-align: center;">Ingeniería de Software</h2> 
-    <h4 style="text-align: center"> Periodo: 202520 </h4>
+    <h4 style="text-align: center"> Periodo: 202610 </h4>
     <h4 style="text-align: center"> 1ASI0732 - Diseño de Experimentos de Ingeniería de Software </h4>
     <h4 style="text-align: center"> NRC: 12278  </h4>
     <h4 style="text-align: center"> Docente: Julio Manuel Noriega Melendez </h4>
@@ -15,7 +15,7 @@
 <br>
 
 <div style="text-align: center;">
-    <h3 style="text-align: center">Informe del Trabajo Final </h3>
+    <h3 style="text-align: center">Informe del Trabajo Parcial </h3>
     <h4 style="text-align: center;"> Startup: WorkMate </h3>
     <h4 style="text-align: center"> Producto: Jobsy </h4>
 </div>
@@ -31,7 +31,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – abril 2025</h4>
+    <h4 style="text-align: center">Lima – Mayo 2026</h4>
 </div>
 
 <hr class="page-break">
@@ -2500,6 +2500,14 @@ El objetivo de **Continuous Deployment (CD)** en Jobsy es que todos los cambios 
 <a name="conclusiones"></a>
 ## Conclusiones
 **Conclusiones y recomendaciones.**
+
+-El proyecto Jobsy ha alcanzado exitosamente sus objetivos principales. El equipo desarrolló una plataforma completa de reclutamiento que conecta candidatos con empleadores de manera efectiva. La investigación inicial con usuarios permitió validar la necesidad del producto y entender claramente los problemas que debía resolver. Se implementaron todas las funcionalidades planificadas siguiendo una metodología ágil y se documentó todo el proceso de desarrollo detalladamente.
+
+-El desarrollo técnico de Jobsy demostró la aplicación correcta de principios de ingeniería de software. Se utilizó una arquitectura orientada por dominio que facilita el mantenimiento y evolución del código. La base de datos fue diseñada para soportar eficientemente todos los casos de uso identificados. Además, se estableció un pipeline de CI/CD que asegura calidad en cada integración del código y permite deployments predecibles.
+
+-La validación del producto mediante pruebas unitarias, de integración y entrevistas con usuarios confirmó que Jobsy cumple con las expectativas establecidas. Se realizaron auditorías de experiencia de usuario que permitieron identificar y corregir problemas antes del lanzamiento. El equipo aplicó prácticas modernas de DevOps incluyendo monitoreo continuo y alertas automáticas para garantizar la disponibilidad del servicio.
+
+-Este informe documenta un ciclo completo de desarrollo de software que sirve como referencia para futuros proyectos. El trabajo realizado por el equipo de WorkMate establece una base sólida para la evolución de Jobsy y demuestra que con metodologías adecuadas, investigación rigurosa y prácticas de ingeniería bien aplicadas, es posible entregar productos de calidad que realmente resuelven problemas reales en el mercado.
 
 <a name="v-validation"></a>
 ## Video App Validation
