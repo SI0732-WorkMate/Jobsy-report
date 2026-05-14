@@ -6,7 +6,7 @@
 <div style="text-align: center;">
     <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
     <h4 style="text-align: center;">Ingeniería de Software</h2> 
-    <h4 style="text-align: center"> Periodo: 202520 </h4>
+    <h4 style="text-align: center"> Periodo: 202620 </h4>
     <h4 style="text-align: center"> 1ASI0732 - Diseño de Experimentos de Ingeniería de Software </h4>
     <h4 style="text-align: center"> NRC: 12278  </h4>
     <h4 style="text-align: center"> Docente: Julio Manuel Noriega Melendez </h4>
@@ -15,7 +15,7 @@
 <br>
 
 <div style="text-align: center;">
-    <h3 style="text-align: center">Informe del Trabajo Final </h3>
+    <h3 style="text-align: center">Informe del Trabajo Parcial </h3>
     <h4 style="text-align: center;"> Startup: WorkMate </h3>
     <h4 style="text-align: center"> Producto: Jobsy </h4>
 </div>
@@ -31,7 +31,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – abril 2025</h4>
+    <h4 style="text-align: center">Lima – abril 2026</h4>
 </div>
 
 <hr class="page-break">
