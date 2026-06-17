@@ -2282,6 +2282,29 @@ Para el proyecto, se revisaron principalmente tres aspectos: estándares de codi
 
 <a name="6-2-1-1"></a>
 ###### 6.2.1.1. Coding standard & Code conventions
+
+El proyecto WorkMate mantiene una guía de estilo de código con el objetivo de garantizar la legibilidad, mantenibilidad y colaboración entre los integrantes del equipo. Esta guía se aplica tanto al backend como al frontend y a la documentación técnica.
+
+Además, durante el desarrollo se aplicaron principios de **Clean Code**, procurando que el código sea claro, entendible y fácil de modificar. Para ello, se utilizaron nombres descriptivos en variables, funciones, clases, métodos y componentes, evitando nombres genéricos o ambiguos. También se buscó que cada clase, método o componente tenga una responsabilidad definida, reduciendo la duplicación de código y evitando incluir lógica innecesaria o difícil de mantener.
+
+Asimismo, el proyecto se desarrolló considerando un enfoque basado en **Domain-Driven Design (DDD)** tanto en el backend como en el frontend. Esto permitió organizar la solución alrededor de los conceptos principales del negocio, como usuarios, postulantes, reclutadores, vacantes, postulaciones, perfiles, evaluaciones y asistencia con IA. De esta manera, la estructura del sistema se mantiene alineada con el dominio de reclutamiento y selección de personal que aborda Jobsy.
+
+En primer lugar, se estableció que el idioma base del código sea el inglés. Esto aplica para identificadores como variables, funciones, clases, tablas, comentarios dentro del código y documentación técnica. Esta decisión permite mantener uniformidad en el desarrollo y facilita que cualquier integrante pueda comprender el propósito de cada elemento del sistema.
+
+Para el backend, desarrollado con ASP.NET y C#, se aplican las convenciones oficiales de Microsoft. Las clases, interfaces y métodos utilizan `PascalCase`, mientras que las variables locales y parámetros utilizan `camelCase`. Además, las interfaces inician con la letra `I` mayúscula, siguiendo una convención común en proyectos C#. Para los campos privados de clase se utiliza el formato `_camelCase`.
+
+La organización del backend también sigue una separación de responsabilidades mediante carpetas como `Controllers`, `Services`, `Repositories`, `Models` y `DTOs`. Esta estructura permite que la lógica del sistema esté mejor distribuida y evita mezclar responsabilidades dentro de una misma clase o archivo. Desde el enfoque DDD, esta separación ayuda a diferenciar la lógica del dominio, la lógica de aplicación y el acceso a datos, facilitando que cada parte del sistema tenga una función clara.
+
+Para el frontend, desarrollado con Vue 3 y Vite, se siguen las reglas esenciales y fuertemente recomendadas de la guía oficial de estilo de Vue. Los componentes `.vue` utilizan nombres en `PascalCase`, mientras que las variables, métodos y composables emplean `camelCase`. Además, se prioriza el uso de Composition API, lo cual permite mantener una lógica más modular, limpia y reactiva.
+
+En el frontend también se aplicó una organización orientada al dominio del producto, agrupando componentes, vistas y lógica según las funcionalidades principales de Jobsy. Esto permite que las secciones relacionadas con vacantes, postulaciones, perfiles, dashboard, autenticación o asistencia con IA puedan mantenerse de forma más ordenada y comprensible. De esta forma, el enfoque DDD no solo se refleja en el backend, sino también en la manera en que se estructura la interfaz y sus flujos principales.
+
+En cuanto a HTML y CSS, las clases CSS utilizan el formato `kebab-case`, con nombres descriptivos y en inglés. También se emplea `Scoped CSS` dentro de los componentes Vue para evitar conflictos de estilos globales. Asimismo, se utilizan etiquetas semánticas de HTML5 para mejorar la accesibilidad, la estructura del contenido y el posicionamiento SEO.
+
+Finalmente, para el control de versiones se utilizan mensajes de commit claros y estructurados bajo la norma Conventional Commits. Algunos prefijos utilizados son `feat:`, `fix:`, `refactor:`, `docs:`, `style:` y `test:`, lo cual facilita la lectura del historial del repositorio y permite comprender rápidamente el propósito de cada cambio realizado.
+
+![Static testing & Verification](assets/images/chapter-6/Domain-Driven-Design.png)
+
 <a name="6-2-1-2"></a>
 ###### 6.2.1.2. Code Quality & Code Security
 <a name="6-2-2"></a>
