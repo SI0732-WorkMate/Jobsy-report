@@ -2271,14 +2271,14 @@ La prueba estática permite revisar el código fuente, su estructura, convencion
 
 Debido a que el equipo trabajó bajo un enfoque de Trunk-Based Development, el proceso de verificación se orientó a mantener la rama principal en un estado estable, evitando la acumulación de cambios grandes o difíciles de integrar. Por ello, cada integrante debía revisar, compilar y probar sus cambios localmente antes de subirlos al repositorio remoto.
 
-![Static testing & Verification](assets/images/chapter-6/static-code-analysis.jpg)
-
 <a name="6-2-1"></a>
 ##### 6.2.1. Static Code Analysis
 
 El análisis estático de código en Jobsy se realiza mediante la revisión del código fuente sin necesidad de ejecutar completamente el sistema. Este análisis permite identificar errores de estructura, incumplimiento de convenciones, problemas de legibilidad, duplicación innecesaria, malas prácticas y posibles riesgos de seguridad.
 
 Para el proyecto, se revisaron principalmente tres aspectos: estándares de codificación, convenciones de nombres y organización, calidad del código y seguridad básica relacionada con el tratamiento de datos y accesos.
+
+![Static testing & Verification](assets/images/chapter-6/static-code-analysis.jpg)
 
 <a name="6-2-1-1"></a>
 ###### 6.2.1.1. Coding standard & Code conventions
