@@ -2307,6 +2307,27 @@ Finalmente, para el control de versiones se utilizan mensajes de commit claros y
 
 <a name="6-2-1-2"></a>
 ###### 6.2.1.2. Code Quality & Code Security
+
+La calidad del código en WorkMate se gestiona mediante la aplicación de convenciones de desarrollo, principios de Clean Code, separación de responsabilidades y validación local estricta antes de integrar cambios al repositorio.
+
+En cuanto a la calidad del código, el equipo busca que cada módulo sea comprensible, mantenible y coherente con la estructura general del proyecto. En el backend, esto se refleja en la separación entre controladores, servicios, repositorios, modelos y DTOs. Esta organización evita concentrar toda la lógica en una sola capa y permite que cada archivo tenga una responsabilidad clara.
+
+En el frontend, la calidad del código se mantiene mediante el uso de componentes reutilizables, Composition API, nombres descriptivos y estilos encapsulados con `Scoped CSS`. Esto ayuda a reducir conflictos visuales, mejorar la organización de la interfaz y facilitar futuras modificaciones en los flujos de la aplicación.
+
+El uso de DDD también contribuye a la calidad del sistema, ya que permite que las funcionalidades estén organizadas en torno a conceptos propios del negocio. Por ejemplo, funcionalidades como gestión de vacantes, postulaciones, perfiles de usuario, analíticas y asistencia con IA se desarrollan como partes diferenciadas del dominio de reclutamiento. Esto permite que el código sea más fácil de entender y mantener, ya que la estructura técnica guarda relación directa con el problema que se busca resolver.
+
+Además, antes de realizar un commit o push hacia el repositorio remoto, cada integrante debe compilar y probar localmente sus cambios. Esta práctica permite detectar errores básicos antes de que afecten la rama principal `main`, especialmente considerando que el equipo trabaja bajo un enfoque de Trunk-Based Development.
+
+La calidad también se complementa con pruebas documentadas en el proyecto, como pruebas unitarias, pruebas de integración, pruebas BDD y pruebas de sistema. Estas pruebas permiten validar funcionalidades importantes como la creación de vacantes, aplicación a ofertas laborales, registro de usuarios, login y otros flujos principales de Jobsy.
+
+Respecto a la seguridad del código, se consideran medidas relacionadas con el control de accesos, la protección de datos personales y el uso responsable de la información de los postulantes. Debido a que Jobsy gestiona información sensible como CVs, perfiles profesionales, postulaciones y datos de empresas, se busca que el sistema respete los permisos asignados según el tipo de usuario.
+
+El acuerdo de servicio del proyecto establece que los postulantes son dueños de su información personal y que las empresas solo pueden utilizar dichos datos para fines de evaluación laboral. Además, se diferencia entre usuarios empresa, postulantes y administradores, cada uno con permisos limitados según su rol dentro de la plataforma.
+
+También se considera importante evitar la exposición de credenciales, datos privados o información sensible dentro del código fuente. Por ello, el equipo debe revisar que no se suban claves, tokens, contraseñas o configuraciones privadas al repositorio.
+
+Finalmente, debido a que la plataforma utiliza IA para el filtrado inicial de CVs, se contempla una revisión ética del uso de estos algoritmos. El objetivo es mitigar posibles sesgos discriminatorios y mantener una responsabilidad profesional en el tratamiento de los candidatos durante el proceso de selección.
+
 <a name="6-2-2"></a>
 ##### 6.2.2. Reviews
 
