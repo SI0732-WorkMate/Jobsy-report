@@ -2264,6 +2264,13 @@ En esta sección se presentan las pruebas principales del sistema realizadas con
 
 <a name="6-2"></a>
 #### 6.2. Static testing & Verification
+
+Esta sección se centra en los métodos de prueba estática y verificación aplicados al desarrollo de Jobsy, con el objetivo de asegurar que el software mantenga estándares de calidad, legibilidad, seguridad y mantenibilidad antes de su integración continua.
+
+La prueba estática permite revisar el código fuente, su estructura, convenciones y posibles riesgos sin necesidad de ejecutar directamente toda la aplicación. En el caso de WorkMate, este proceso se complementa con la validación local estricta, la revisión de código en pares y el uso de convenciones definidas para el frontend, backend, estilos y control de versiones.
+
+Debido a que el equipo trabajó bajo un enfoque de Trunk-Based Development, el proceso de verificación se orientó a mantener la rama principal en un estado estable, evitando la acumulación de cambios grandes o difíciles de integrar. Por ello, cada integrante debía revisar, compilar y probar sus cambios localmente antes de subirlos al repositorio remoto.
+
 <a name="6-2-1"></a>
 ##### 6.2.1. Static Code Analysis
 <a name="6-2-1-1"></a>
