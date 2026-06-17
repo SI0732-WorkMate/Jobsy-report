@@ -2339,6 +2339,67 @@ Debido a este enfoque, las revisiones se apoyaron principalmente en la comunicac
 
 ![Reviews](assets/images/chapter-6/Reviews.png)
 
+### Tipos de revisiones aplicadas
+
+**Revisión mediante validación local estricta:**
+Cada integrante debía compilar y probar sus cambios en su entorno local antes de realizar un commit o push hacia el repositorio remoto. Esta revisión permitió detectar errores de compilación, problemas básicos de funcionamiento o inconsistencias antes de afectar la rama `main`.
+
+**Revisión mediante comunicación síncrona:**
+El equipo mantuvo coordinación diaria para evitar conflictos al modificar archivos importantes. Esta práctica fue necesaria debido al uso de una única rama principal, ya que todos los integrantes trabajaban sobre la misma base de código.
+
+**Revisión mediante Pair Programming:**
+Para funcionalidades más complejas o críticas, los integrantes realizaron revisiones de código en pares en tiempo real. Esta práctica permitió revisar la lógica implementada, resolver dudas técnicas, detectar errores de forma temprana y asegurar que el código cumpla con los principios de Clean Code y la organización basada en DDD.
+
+**Revisión de convenciones de código:**
+Antes de integrar cambios, se verificaba que el código mantuviera las convenciones definidas para backend, frontend, HTML, CSS y commits. Esto incluye el uso adecuado de `PascalCase`, `camelCase`, `kebab-case`, componentes Vue organizados, servicios backend separados y mensajes de commit estructurados.
+
+### Proceso de revisión
+
+El proceso de revisión seguido por el equipo fue el siguiente:
+
+1. El integrante desarrollaba o modificaba una funcionalidad asignada dentro del proyecto.
+2. Antes de subir los cambios, revisaba que el código cumpla con las convenciones definidas para backend, frontend, HTML/CSS y commits.
+3. Se verificaba que el código respete principios de Clean Code, como nombres claros, baja duplicación y responsabilidades bien separadas.
+4. Se revisaba que la funcionalidad esté organizada según el dominio correspondiente, manteniendo el enfoque DDD aplicado en frontend y backend.
+5. El integrante compilaba y probaba localmente los cambios realizados.
+6. Si la funcionalidad era crítica o presentaba lógica compleja, se revisaba con otro integrante mediante Pair Programming.
+7. Luego de validar el cambio, se realizaba el commit utilizando una estructura clara, como `feat:`, `fix:`, `docs:`, `style:`, `refactor:` o `test:`.
+8. Finalmente, el cambio se subía a la rama `main`, manteniendo la integración continua del proyecto.
+
+### Checklist de revisión
+
+Para asegurar la calidad del código antes de integrarlo, se consideró la siguiente lista de verificación:
+
+* El código sigue las convenciones de nombres definidas para C#, Vue, HTML y CSS.
+* Las clases, métodos, variables, componentes y funciones tienen nombres claros y descriptivos.
+* El código aplica principios de Clean Code.
+* Cada clase, método o componente tiene una responsabilidad clara.
+* La funcionalidad está ubicada en el módulo o carpeta correspondiente según su dominio.
+* El código respeta la separación de responsabilidades entre controladores, servicios, repositorios, modelos y DTOs.
+* El frontend mantiene componentes organizados y estilos encapsulados mediante `Scoped CSS`.
+* La lógica del frontend se organiza de acuerdo con los flujos principales del dominio de Jobsy.
+* El código fue compilado y probado localmente antes de subirlo al repositorio.
+* No se suben credenciales, información sensible, tokens o datos privados de usuarios.
+* Los cambios no afectan funcionalidades principales como registro, login, vacantes, postulaciones, perfiles o asistencia con IA.
+* Los commits siguen la convención definida por el equipo.
+* Las funcionalidades complejas fueron revisadas con otro integrante mediante Pair Programming.
+
+### Criterios de aceptación
+
+Un cambio era aceptado cuando cumplía con las convenciones de codificación, respetaba los principios de Clean Code, mantenía la estructura basada en DDD y no rompía funcionalidades existentes.
+
+Además, el código debía haber sido validado localmente antes de subirse a la rama `main`. En caso de tratarse de una funcionalidad compleja o crítica, debía revisarse mediante Pair Programming para asegurar que la lógica implementada sea correcta y comprensible.
+
+También se consideró como criterio de aceptación que el cambio no introduzca riesgos de seguridad, como exposición de credenciales, manejo incorrecto de datos personales o fallos en la diferenciación de permisos entre usuarios postulantes, reclutadores y administradores.
+
+En funcionalidades relacionadas con IA, se consideró importante mantener un enfoque ético, evitando reforzar sesgos discriminatorios durante el filtrado inicial de CVs.
+
+### Frecuencia de revisiones
+
+Las revisiones se realizaron de manera continua durante el desarrollo del proyecto, especialmente antes de subir cambios a la rama `main`. Debido al uso de Trunk-Based Development, la validación debía realizarse con frecuencia para evitar que errores o conflictos afectaran la estabilidad de la rama principal.
+
+Asimismo, las revisiones en pares se aplicaron principalmente en funcionalidades críticas o de mayor complejidad, como la lógica de negocio del backend, la gestión de roles, el registro de usuarios, la gestión de vacantes, las postulaciones y los flujos relacionados con la asistencia de IA.
+
 <a name="6-3"></a>
 #### 6.3. Validation Interviews
 <a name="6-3-1"></a>
