@@ -2379,14 +2379,71 @@ El objetivo de **Continuous Deployment (CD)** en Jobsy es que todos los cambios 
 
 <a name="7-4"></a>
 #### 7.4. Continuous Monitoring
+
+El monitoreo continuo en la plataforma Jobsy de WorkMate está diseñado para garantizar la observabilidad completa de todo el ecosistema de software (Landing Page estática, Frontend Web Application y la RESTful API en el Backend). Al integrar métricas de rendimiento de interfaz, pruebas de estrés masivas, disponibilidad sintética global y analíticas de mercado, aseguramos el cumplimiento estricto de nuestro Acuerdo de Servicio SaaS, el cual estipula una disponibilidad anual del 99.5%.
+
 <a name="7-4-1"></a>
 ##### 7.4.1. Tools and Practices
+
+Para mantener la resiliencia técnica, mitigar errores en entornos de producción bajo el flujo *Trunk-Based Development* y asegurar una óptima experiencia de usuario, se han seleccionado e implementado las siguientes herramientas especializadas:
+
+* **Google Lighthouse:** Herramienta automatizada de auditoría para la calidad de páginas web. Se ejecuta de forma continua para medir y optimizar los indicadores de rendimiento (Core Web Vitals), accesibilidad (bajo estándares WCAG), buenas prácticas y optimización SEO en la Landing Page y la Web Application.
+  
+![Google Lighthouse](assets/images/chapter-7/Lighthouse.jpg)
+
+* **AWS + RedLine13:** Plataforma de pruebas de carga distribuidas a gran escala. Permite configurar y desplegar instancias en la nube de Amazon Web Services (AWS) para inyectar tráfico masivo y simular picos de concurrencia extrema, validando la estabilidad y elasticidad del backend en ASP.NET.
+
+![RedLine13](assets/images/chapter-7/RedLine13.png)
+
+* **Catchpoint:** Plataforma avanzada de Monitoreo de la Experiencia Digital (DEM). Se utiliza para realizar monitoreo sintético proactivo, evaluando constantemente los tiempos de respuesta de la red (DNS, TCP, TLS) y la disponibilidad de los endpoints de la API desde múltiples nodos estratégicos en Latinoamérica.
+
+![Catchpoint](assets/images/chapter-7/Catchpoint.png)
+
+* **Similarweb:** Herramienta de analítica de mercado, tráfico y posicionamiento digital. Proporciona visibilidad externa sobre el comportamiento de nuestros segmentos objetivo (reclutadores y postulantes), midiendo el engagement, retención, canales de adquisición y tasa de rebote frente a competidores indirectos como LinkedIn y Computrabajo.
+
+![Similarweb](assets/images/chapter-7/Similarweb.png)
+
+**Prácticas de Monitoreo del Equipo:**
+* **Monitoreo Sintético Automatizado:** Catchpoint ejecuta solicitudes simuladas automatizadas cada 5 minutos hacia los endpoints críticos (ej. `/api/v1/job-offers`), detectando caídas de infraestructura antes de que afecten a los usuarios reales.
+* **Auditorías de Calidad en CI/CD:** Implementación de *Lighthouse CI* en el pipeline de despliegue. Si una nueva modificación técnica en Vue 3 degrada el score de rendimiento por debajo de 90, el pipeline bloquea la entrega a producción de manera preventiva.
+* **Simulación de Carga Pre-Lanzamiento:** Antes de finalizar cada ciclo de desarrollo, el equipo programa pruebas de estrés con RedLine13 para identificar cuellos de botella en la persistencia de datos (MySQL) ante un volumen masivo de CVs concurrentes.
+
+
 <a name="7-4-2"></a>
 ##### 7.4.2. Monitoring Pipeline Components
+
+Los componentes de recolección de datos operan en un flujo estructurado de tres niveles para capturar el estado integral de la plataforma:
+
+1. **Componente de Rendimiento en el Cliente (Frontend):** Supervisa métricas como el *Largest Contentful Paint* (LCP), *First Input Delay* (FID) y el *Cumulative Layout Shift* (CLS) a través de Lighthouse, garantizando que el Dashboard del reclutador y del postulante carguen sin fricciones visuales.
+2. **Componente de Disponibilidad y Red (Backend):** Catchpoint actúa en el nivel de red monitoreando la API alojada en Railway. Rastrea de forma continua el *Time to First Byte* (TTFB) y alerta sobre fallos de conectividad en las rutas de integración.
+3. **Componente de Estrés y Capacidad de Carga:** Instancias administradas a través de RedLine13 que miden el impacto del consumo de CPU, latencia de base de datos y memoria del servidor cuando múltiples usuarios interactúan con la IA de preselección.
+4. **Componente de Tráfico y Competitividad:** Similarweb extrae la cuota de mercado digital del producto, comparando la retención de los usuarios de Jobsy contra la de las soluciones ATS tradicionales.
+
+---
+
 <a name="7-4-3"></a>
 ##### 7.4.3. Alerting Pipeline Components
+
+El sistema de alertas traduce los datos crudos recopilados por los componentes de monitoreo en eventos con prioridades accionables basados en umbrales estrictos de rendimiento:
+
+| Componente | Métrica Monitoreada | Umbral de Alerta / Condición | Nivel de Severidad |
+| :--- | :--- | :--- | :--- |
+| **Catchpoint API** | Disponibilidad HTTP | Código de respuesta diferente a `200 OK` en 3 nodos geográficos consecutivos. | **Crítica** |
+| **RedLine13 + AWS** | Latencia del Servidor | El tiempo de respuesta de los endpoints supera los `2.0 segundos` bajo carga. | **Alta** |
+| **Lighthouse CI** | Calidad de Software | El score de *Performance* o *Accessibility* cae por debajo de 90 tras un build. | **Advertencia** |
+| **Catchpoint Network**| Resolución DNS | El tiempo de resolución de dominio para `front-end-jobsy.vercel.app` supera los `500ms`. | **Media** |
+| **Similarweb Engine** | Tasa de Rebote (Bounce) | El abandono en la Landing Page incrementa más de un `15%` en una semana. | **Baja** |
+
+---
+
 <a name="7-4-4"></a>
 ##### 7.4.4. Notification Pipeline Components
+
+Una vez que se dispara una condición en el componente de alertas, el pipeline de notificaciones gestiona la distribución del incidente de acuerdo a una matriz de escalamiento técnico optimizada:
+
+* **Canal de Incidentes Críticos y Altos (Errores en Producción / Caídas de API):** Las alertas emitidas por Catchpoint y fallos críticos en RedLine13 se despachan inmediatamente a través de *Webhooks* dedicados hacia los canales de comunicación interna del equipo de desarrollo (integrados con Discord/GitHub). Notifica de inmediato a los encargados de la infraestructura backend (Ysaac Villanueva, Fabricio Vega) para la aplicación de *rollbacks* automatizados.
+* **Canal de Gestión de Mejoras (Advertencias / Degradación de Rendimiento):** Las desviaciones menores detectadas por Lighthouse en la UI o variaciones en Similarweb no interrumpen el flujo operativo, sino que generan de manera automática un *Issue* en el repositorio de GitHub de WorkMate. Estos reportes son asignados directamente al equipo Frontend (María Hernández, Jasmin Urrutia) para ser priorizados en el *Backlog* del siguiente Sprint.
+
 
 <a name="part-3"></a>
 ## Part III: Experiment-Driven Lifecycle
