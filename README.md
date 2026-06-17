@@ -2331,6 +2331,14 @@ Finalmente, debido a que la plataforma utiliza IA para el filtrado inicial de CV
 <a name="6-2-2"></a>
 ##### 6.2.2. Reviews
 
+Las revisiones de código forman parte del proceso de verificación estática del proyecto WorkMate. Su objetivo es asegurar que los cambios realizados por los integrantes del equipo mantengan la calidad, legibilidad, seguridad y coherencia con la arquitectura definida.
+
+A diferencia de un flujo tradicional basado en ramas secundarias y Pull Requests, el equipo utilizó un enfoque de **Trunk-Based Development**, trabajando directamente sobre la rama principal `main`. Esta rama contiene la base de código centralizada, estable y lista para producción. Por ello, no se emplearon Pull Requests tradicionales desde ramas independientes.
+
+Debido a este enfoque, las revisiones se apoyaron principalmente en la comunicación constante del equipo, la validación local estricta y el Pair Programming. Estas prácticas permitieron reducir conflictos de integración y mantener la estabilidad del código antes de subir cambios al repositorio remoto.
+
+![Reviews](assets/images/chapter-6/Reviews.png)
+
 <a name="6-3"></a>
 #### 6.3. Validation Interviews
 <a name="6-3-1"></a>
