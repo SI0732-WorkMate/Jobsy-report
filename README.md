@@ -2277,6 +2277,29 @@ En esta sección se presentan las pruebas principales del sistema realizadas con
 #### 6.3. Validation Interviews
 <a name="6-3-1"></a>
 ##### 6.3.1. Diseño de Entrevistas
+
+Para la validación de la solución implementada de Jobsy, se diseñaron guías de entrevistas semiestructuradas divididas por segmento de objetivo. El propósito principal es recopilar feedback cualitativo sobre la usabilidad de la plataforma, el valor predictivo y funcional de los módulos de Inteligencia Artificial, y la viabilidad del modelo SaaS.
+
+###### Cuestionario para el Segmento 1: Equipos de Recursos Humanos (Empresas / Reclutadores)
+
+1. Al observar el Dashboard principal, ¿la disposición de las tarjetas (vacantes activas, postulaciones, accesos rápidos) le resulta clara y eficiente para su flujo de trabajo diario?
+2. Durante la simulación de creación de una oferta de empleo, ¿los campos obligatorios solicitados y las etiquetas de habilidades le parecen intuitivos y ágiles de completar?
+3. Al ver la lista de candidatos preclasificados con un porcentaje de compatibilidad (Match Score), ¿qué tanta confianza le genera que la IA realice este primer filtro automatizado?
+4. El asistente de IA genera guías de preguntas técnicas según el puesto. ¿Considera que esta herramienta le aporta valor estratégico o prefiere estructurar las evaluaciones de manera manual?
+5. Basado en la optimización de tiempos mostrada en la plataforma, ¿su organización estaría dispuesta a adquirir una suscripción mensual o anual (SaaS) bajo los términos del acuerdo de servicio?
+6. ¿Qué funcionalidad añadiría, eliminaría o modificaría en este panel técnico para que se adapte por completo a las necesidades de su departamento de RRHH?
+
+---
+
+###### Cuestionario para el Segmento 2: Postulantes (Candidatos para el empleo)
+
+1. ¿Qué le parece la línea gráfica y la paleta de colores de la interfaz? ¿Le transmite la confianza y profesionalismo necesarios para gestionar sus postulaciones?
+2. El proceso para buscar una vacante y subir su currículum en formato PDF, ¿le resultó más rápido o más complejo en comparación con otras plataformas tradicionales del mercado (LinkedIn, Computrabajo)?
+3. Al utilizar la herramienta para obtener feedback inmediato de su CV frente a una vacante (sin postular formalmente), ¿le parecen útiles y claras las áreas de mejora que le sugiere la inteligencia artificial?
+4. En el sistema implementado puede ver en tiempo real el estado de su postulación (En revisión, Con entrevista, Finalizado). ¿Siento que esta transparencia reduce la incertidumbre habitual de los procesos de selección?
+5. ¿Se siente cómodo interactuando con una plataforma donde las primeras etapas de selección y la pre-evaluación estén guiadas por un algoritmo de IA?
+6. Si tuviera el control de cambiar algo en la experiencia de usuario de Jobsy para su perfil como candidato, ¿qué funcionalidad o elemento modificaría?
+
 <a name="6-3-2"></a>
 ##### 6.3.2. Registro de Entrevistas
 <a name="6-3-3"></a>
