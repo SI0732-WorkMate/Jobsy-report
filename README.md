@@ -2275,6 +2275,11 @@ Debido a que el equipo trabajó bajo un enfoque de Trunk-Based Development, el p
 
 <a name="6-2-1"></a>
 ##### 6.2.1. Static Code Analysis
+
+El análisis estático de código en Jobsy se realiza mediante la revisión del código fuente sin necesidad de ejecutar completamente el sistema. Este análisis permite identificar errores de estructura, incumplimiento de convenciones, problemas de legibilidad, duplicación innecesaria, malas prácticas y posibles riesgos de seguridad.
+
+Para el proyecto, se revisaron principalmente tres aspectos: estándares de codificación, convenciones de nombres y organización, calidad del código y seguridad básica relacionada con el tratamiento de datos y accesos.
+
 <a name="6-2-1-1"></a>
 ###### 6.2.1.1. Coding standard & Code conventions
 <a name="6-2-1-2"></a>
