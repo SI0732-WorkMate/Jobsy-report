@@ -2422,13 +2422,26 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 
 1. ¿Qué le parece la línea gráfica y la paleta de colores de la interfaz? ¿Le transmite la confianza y profesionalismo necesarios para gestionar sus postulaciones?
 2. El proceso para buscar una vacante y subir su currículum en formato PDF, ¿le resultó más rápido o más complejo en comparación con otras plataformas tradicionales del mercado (LinkedIn, Computrabajo)?
-3. Al utilizar la herramienta para obtener feedback inmediato de su CV frente a una vacante (sin postular formalmente), ¿le parecen útiles y claras las áreas de mejora que le sugiere la inteligencia artificial?
-4. En el sistema implementado puede ver en tiempo real el estado de su postulación (En revisión, Con entrevista, Finalizado). ¿Siento que esta transparencia reduce la incertidumbre habitual de los procesos de selección?
-5. ¿Se siente cómodo interactuando con una plataforma donde las primeras etapas de selección y la pre-evaluación estén guiadas por un algoritmo de IA?
-6. Si tuviera el control de cambiar algo en la experiencia de usuario de Jobsy para su perfil como candidato, ¿qué funcionalidad o elemento modificaría?
+3. En el sistema implementado puede ver en tiempo real el estado de su postulación (En revisión, Con entrevista, Finalizado). ¿Siento que esta transparencia reduce la incertidumbre habitual de los procesos de selección?
+4. ¿Se siente cómodo interactuando con una plataforma donde las primeras etapas de selección?
+5. Si tuviera el control de cambiar algo en la experiencia de usuario de Jobsy para su perfil como candidato, ¿qué funcionalidad o elemento modificaría?
 
 <a name="6-3-2"></a>
 ##### 6.3.2. Registro de Entrevistas
+
+**Entrevistas Segmento 1 : Equipo RRHH**
+
+**Entrevistas Segmento 2 : Postulantes**
+
+| **Entrevistado 1: Jean Fabio Noriega Collado** |
+|------------------------------------------------|
+| <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/Entrevistajean.png" alt="Entrevista1Seg1" width=75% /> |
+| Distrito: San Miguel / Edad: 20 |
+| **Entrevistador:** Jasmin Adriana Urrutia Peña |
+| **Link:** [[https://youtu.be/ph6_L_bYXDs](https://youtu.be/ph6_L_bYXDs)] |
+|-Resumen: Durante la entrevista de validación, el postulante Jean valoró positivamente la aplicación Jobs, destacando que su diseño es intuitivo, profesional y fácil de usar. Consideró que el proceso de postulación mediante enlace al CV es sencillo y que la visualización del estado de las postulaciones en tiempo real aporta mayor transparencia al proceso de selección. Como sugerencia de mejora, recomendó ampliar la información del perfil del usuario incluyendo datos como nivel de idiomas y número telefónico..|
+
+
 <a name="6-3-3"></a>
 ##### 6.3.3. Evaluaciones según heurísticas
 
