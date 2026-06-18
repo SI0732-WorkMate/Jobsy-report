@@ -2928,10 +2928,37 @@ Se establecieron las condiciones experimentales (resultado esperado si la hipót
 
 <a name="8-2-5"></a>
 ##### 8.2.5. Scale Calculations and Decisions
+
+|**Scale Calculation**|**Decision**|**Desfavorable**|**Aceptable**|**Ideal**|**Excelente**|
+| :- | :- | :-: | :-: | :-: | :-: |
+|Creemos que al implementar el filtrado inteligente por IA, se reducirá el tiempo de preselección de candidatos en al menos un 40%. Sabremos que esto es cierto cuando observemos una reducción del 40% en el Time-to-Shortlist y que al menos el 70% de los reclutadores adopte el filtrado IA como método principal.|Mantener el filtrado IA como método principal de preselección y ampliar su uso a todas las vacantes activas.| | | |X|
+|Creemos que al enviar retroalimentación a los postulantes descartados, mejorará la percepción de transparencia del proceso en al menos un 60%. Sabremos que esto es cierto cuando observemos que al menos el 60% de los postulantes que reciben retroalimentación valore positivamente la transparencia del proceso.|Activar el campo de retroalimentación por defecto para todos los reclutadores.| |X| | |
+|Creemos que al implementar el panel de seguimiento tipo Kanban, mejorará la gestión ordenada del proceso de selección. Sabremos que esto es cierto cuando observemos que al menos el 75% de los reclutadores actualice el estado de sus candidatos diariamente.|Consolidar el panel Kanban como vista principal del módulo de seguimiento de candidatos.| | |X| |
+|Creemos que al gamificar las evaluaciones de habilidades blandas, mejorará el nivel de engagement de los postulantes en al menos un 50%. Sabremos que esto es cierto cuando observemos que más del 50% de los candidatos complete la evaluación gamificada.|Incorporar la evaluación gamificada como opción estándar dentro del flujo de postulación.|X| | | |
+|Creemos que al integrar una agenda de entrevistas y recordatorios, aumentará el uso activo de la coordinación dentro de Jobsy en al menos un 75%. Sabremos que esto es cierto cuando observemos que al menos el 75% de los reclutadores utiliza activamente la agenda integrada.|Establecer la agenda integrada como canal principal de coordinación dentro de Jobsy.| |X| | |
+
 <a name="8-2-6"></a>
-##### 8.2.6. Methods Selection
+##### 8.2.5. Methods Selection
+
+|**Herramienta**|**Google Analytics**|**Catchpoint**|**RedLine13**|**Lighthouse**|
+| :- | :- | :- | :- | :- |
+|**Precio**|Plan gratuito/créditos gratis|Basado en suscripción, con pruebas gratuitas|Gratuito con limitaciones|Plan gratuito, disponible para ejecución local|
+|**Capacidad de Análisis**|Análisis exhaustivo de métricas y datos de usuario|Monitoreo exhaustivo de rendimiento y experiencia de usuario desde múltiples ubicaciones|Análisis orientado a pruebas de carga y rendimiento de aplicaciones|Análisis orientado a la experiencia de usuario, con métricas clave de rendimiento y accesibilidad|
+|**Sencillez**|Aprendizaje sencillo de las métricas|Interfaz avanzada pero detallada y completa|Información detallada y resumida sobre rendimiento|Información resumida en valores clave que puntúan aspectos de la aplicación|
+|**Ventajas**|Excelente capacidad de generación de reportes y amplia integración con otros servicios|Análisis en tiempo real desde diversas ubicaciones y dispositivos, ideal para empresas con usuarios globales|Simulación de tráfico y pruebas de rendimiento bajo condiciones de carga|Evaluación de accesibilidad, rendimiento y diseño con métricas claras para optimizar la experiencia del usuario|
+
 <a name="8-2-7"></a>
 ##### 8.2.7. Data Analytics: Goals, KPIs
+
+Se llevaron a cabo pruebas de rendimiento, accesibilidad y mejores prácticas con Lighthouse en nuestra
+aplicación Jobsy para evaluar su desempeño y optimizar la experiencia de usuario. A
+continuación, mostramos unos ejemplos de ambos segmentos objetivos.
+
+Postulante:
+
+
+Reclutador:
+
 <a name="8-2-8"></a>
 ##### 8.2.8. Web and Mobile Tracking Plan
 
