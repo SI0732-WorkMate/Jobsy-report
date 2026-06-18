@@ -2434,17 +2434,17 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 | **Entrevistado 1: Karla Rojas** |
 |------------------------------------------------|
 | <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaFernanda.png" alt="Entrevista1Seg1" width=75% /> |
-| **Distrito:** La Molina / **Edad:** 20 |
+| **Distrito:** La Molina / **Edad:** 21 |
 | **Entrevistador:** María Patricia Hernández Uchuya |
 | **Link:** [[https://youtu.be/lzJ1FFqTt60](https://youtu.be/lzJ1FFqTt60)] |
-| - Resumen: Karla considera que Jobsy tiene una interfaz clara, ordenada y útil para el trabajo diario de recursos humanos, ya que el dashboard permite revisar rápidamente publicaciones, ofertas activas y accesos importantes. También señala que la creación de ofertas es intuitiva y rápida gracias al uso de campos organizados y etiquetas de habilidades. Respecto a la IA, la valora como apoyo para filtrar candidatos mediante el Match Score y generar preguntas técnicas, aunque considera que la decisión final debe seguir siendo revisada por una persona. Además, estaría dispuesto a pagar una suscripción si la plataforma demuestra ahorro de tiempo en el proceso de selección. Como mejora, propone permitir cambiar el estado de los candidatos directamente desde la lista para agilizar el seguimiento. |
+| **Resumen:** Karla considera que Jobsy tiene una interfaz clara, ordenada y útil para el trabajo diario de recursos humanos, ya que el dashboard permite revisar rápidamente publicaciones, ofertas activas y accesos importantes. También señala que la creación de ofertas es intuitiva y rápida gracias al uso de campos organizados y etiquetas de habilidades. Respecto a la IA, la valora como apoyo para filtrar candidatos mediante el Match Score y generar preguntas técnicas, aunque considera que la decisión final debe seguir siendo revisada por una persona. Además, estaría dispuesto a pagar una suscripción si la plataforma demuestra ahorro de tiempo en el proceso de selección. Como mejora, propone permitir cambiar el estado de los candidatos directamente desde la lista para agilizar el seguimiento. |
 
 | **Entrevistado 2: Briseth Hurtado** |
 |------------------------------------------------|
 | <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaBriseth.png" alt="Entrevista1Seg1" width=75% /> |
 | **Distrito:** La Molina / **Edad:** 20 |
 | **Link:** [[https://drive.google.com/file/d/1uaTHyG_gFCG_G8sinMKBB0rMmcDa9BR1/view?usp=sharing](https://drive.google.com/file/d/1uaTHyG_gFCG_G8sinMKBB0rMmcDa9BR1/view?usp=sharing)] |
-| - Resumen: Briseth trabaja como contratista en el área de Recursos Humanos y consideró que la plataforma es clara, fácil de usar y útil para gestionar procesos de postulación. Destacó como muy valiosa la función de analíticas, ya que le permite visualizar mediante dashboards las diferentes publicaciones, algo que no ha observado en otras plataformas que utiliza. Aunque no le pareció muy atractiva la forma en que se presentan las postulaciones, opinó que la aplicación luce bien y no considera necesario agregar más funciones. |
+| **Resumen:** Briseth trabaja como contratista en el área de Recursos Humanos y consideró que la plataforma es clara, fácil de usar y útil para gestionar procesos de postulación. Destacó como muy valiosa la función de analíticas, ya que le permite visualizar mediante dashboards las diferentes publicaciones, algo que no ha observado en otras plataformas que utiliza. Aunque no le pareció muy atractiva la forma en que se presentan las postulaciones, opinó que la aplicación luce bien y no considera necesario agregar más funciones. |
 
 **Entrevistas Segmento 2 : Postulantes**
 
@@ -2453,8 +2453,14 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 | <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/Entrevistajean.png" alt="Entrevista1Seg1" width=75% /> |
 | **Distrito:** San Miguel / **Edad:** 20 |
 | **Link:** [[https://youtu.be/ph6_L_bYXDs](https://youtu.be/ph6_L_bYXDs)] |
-| - Resumen: Durante la entrevista de validación, el postulante Jean valoró positivamente la aplicación Jobs, destacando que su diseño es intuitivo, profesional y fácil de usar. Consideró que el proceso de postulación mediante enlace al CV es sencillo y que la visualización del estado de las postulaciones en tiempo real aporta mayor transparencia al proceso de selección. Como sugerencia de mejora, recomendó ampliar la información del perfil del usuario incluyendo datos como nivel de idiomas y número telefónico. |
+| **Resumen:** Durante la entrevista de validación, el postulante Jean valoró positivamente la aplicación Jobs, destacando que su diseño es intuitivo, profesional y fácil de usar. Consideró que el proceso de postulación mediante enlace al CV es sencillo y que la visualización del estado de las postulaciones en tiempo real aporta mayor transparencia al proceso de selección. Como sugerencia de mejora, recomendó ampliar la información del perfil del usuario incluyendo datos como nivel de idiomas y número telefónico. |
 
+| **Entrevistado 2: Angela Ushiñahua** |
+|------------------------------------------------|
+| <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaAngela.jpg" alt="Entrevista1Seg1" width=75% /> |
+| **Distrito:** Villa el Salvador / **Edad:** 24 |
+| **Link:** [[https://youtu.be/b0SY_Nao0OI](https://youtu.be/b0SY_Nao0OI)] |
+| **Resumen:** Angela busca empleo en el área de Recursos Humanos y consideró que la plataforma es clara, fácil de usar y útil para postular. Destacó como muy valiosa la función de analíticas, ya que permite saber mediante dashboard las diferentes publicaciones, algo que no ha visto en otras plataformas que ella usa. Aunque no le pareció muy atractiva la forma en que se presentan las postulaciones, opinó que la aplicación se ve bien y no ve necesario agregar más funciones. |
 
 <a name="6-3-3"></a>
 ##### 6.3.3. Evaluaciones según heurísticas
