@@ -2472,6 +2472,92 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 <a name="6-3-3"></a>
 ##### 6.3.3. Evaluaciones según heurísticas
 
+**Aplicación para evaluar:** Jobsy
+
+**Tareas que evaluar:**
+
+- Los reclutadores deberían poder gestionar candidatos preclasificados con Match Score de forma rápida desde la lista de candidatos.
+- Los postulantes deberían recibir información clara cuando su postulación cambia de estado o cuando son descartados.
+- Los postulantes deberían poder completar su perfil profesional con información suficiente para mejorar su presentación ante las empresas.
+- La sección de postulaciones debería presentar la información de forma clara, ordenada y visualmente atractiva.
+- El asistente de IA debería mostrar sugerencias de evaluación comprensibles, editables y bajo control del reclutador.
+
+**Tabla de resumen:**
+
+| Escala de Severidad | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| Nivel | No tan grave | Leve | Moderado | Grave | Muy grave |
+
+| #Orden | Problema | Escala de Severidad | Heurística / Principio violada(o) |
+|---|---|---:|---|
+| #1 | No se permite cambiar el estado de un candidato directamente desde la lista de candidatos. | 4 | Flexibilidad y eficiencia de uso |
+| #2 | El postulante no recibe una retroalimentación clara cuando es descartado del proceso. | 5 | Visibilidad del estado del sistema |
+| #3 | El perfil del postulante no cuenta con campos suficientes como nivel de idiomas o número telefónico. | 3 | Correspondencia entre el sistema y el mundo real |
+| #4 | La presentación visual de las postulaciones no resulta suficientemente atractiva ni fácil de revisar. | 3 | Diseño estético y minimalista |
+| #5 | Las sugerencias generadas por la IA no muestran con suficiente claridad los criterios usados ni ofrecen control completo al reclutador antes de usarlas. | 4 | Control y libertad del usuario |
+
+---
+
+### Heurísticas y Recomendaciones
+
+#### Problema #1: No se permite cambiar el estado de un candidato directamente desde la lista de candidatos.
+
+**Heurística violada:** Flexibilidad y eficiencia de uso.
+
+**Descripción del problema:**  
+Actualmente, el reclutador puede revisar candidatos preclasificados con apoyo del Match Score, pero el flujo puede volverse menos eficiente si necesita ingresar a una vista adicional para cambiar el estado de cada candidato. Esto afecta la rapidez del seguimiento, especialmente cuando se gestionan varias postulaciones o muchos candidatos en una misma vacante.
+
+**Recomendación:**  
+Agregar una opción directa en cada fila o tarjeta de candidato para modificar su estado, por ejemplo: "En revisión", "Entrevista", "Finalista" o "Descartado". También se podría incluir una acción rápida tipo desplegable o botón "Mover a..." para reducir pasos y facilitar el seguimiento del proceso.
+
+---
+
+#### Problema #2: El postulante no recibe una retroalimentación clara cuando es descartado del proceso.
+
+**Heurística violada:** Visibilidad del estado del sistema.
+
+**Descripción del problema:**  
+La plataforma permite que el postulante visualice el estado de su postulación, pero no se evidencia una explicación clara cuando el proceso finaliza de forma negativa. Esto puede generar incertidumbre, ya que el usuario solo sabe que no continúa, pero no conoce el motivo o algún comentario que le permita mejorar para futuras postulaciones.
+
+**Recomendación:**  
+Incluir una sección de retroalimentación cuando una postulación sea marcada como descartada o finalizada. Esta retroalimentación puede ser breve y opcional para el reclutador, usando motivos predefinidos como "No cumple con la experiencia requerida", "Perfil no alineado a la vacante" o "Vacante cerrada", además de un campo de comentario adicional.
+
+---
+
+#### Problema #3: El perfil del postulante no cuenta con campos suficientes como nivel de idiomas o número telefónico.
+
+**Heurística violada:** Correspondencia entre el sistema y el mundo real.
+
+**Descripción del problema:**  
+El perfil profesional del postulante debería representar la información que normalmente se solicita en un proceso real de selección. Sin embargo, si el formulario no permite registrar datos como número telefónico, nivel de idiomas, enlaces profesionales o portafolio, el perfil puede quedar incompleto para los reclutadores.
+
+**Recomendación:**  
+Ampliar el formulario de perfil profesional agregando campos como número telefónico, nivel de idiomas, LinkedIn, portafolio, ciudad, modalidad de trabajo preferida y disponibilidad. Estos campos deben organizarse en secciones para no sobrecargar la pantalla.
+
+---
+
+#### Problema #4: La presentación visual de las postulaciones no resulta suficientemente atractiva ni fácil de revisar.
+
+**Heurística violada:** Diseño estético y minimalista.
+
+**Descripción del problema:**  
+La sección de postulaciones cumple su función principal, pero la forma en que se presenta la información puede mejorar. Si los estados, fechas, vacantes y acciones no están jerarquizados visualmente, el usuario puede tardar más en identificar qué postulaciones siguen activas, cuáles requieren atención y cuáles ya finalizaron.
+
+**Recomendación:**  
+Mejorar la organización visual mediante tarjetas o una tabla más clara. Se recomienda usar etiquetas de estado, colores moderados, fechas visibles, nombre de la empresa, nombre de la vacante y una acción principal como "Ver detalle". Esto ayudaría a que el postulante revise su información de manera más rápida y ordenada.
+
+---
+
+#### Problema #5: Las sugerencias generadas por la IA no muestran con suficiente claridad los criterios usados ni ofrecen control completo al reclutador antes de usarlas.
+
+**Heurística violada:** Control y libertad del usuario.
+
+**Descripción del problema:**  
+El asistente de IA aporta valor al generar preguntas técnicas o sugerencias de evaluación. Sin embargo, al tratarse de un proceso sensible como la selección de personal, el reclutador debe poder entender por qué la IA propone ciertos criterios y modificar las sugerencias antes de aplicarlas. Si no se muestran los criterios utilizados, la IA puede percibirse como una caja negra.
+
+**Recomendación:**  
+Agregar una vista donde se indiquen las habilidades detectadas, los criterios usados por la IA y las preguntas generadas. Además, se debe permitir editar, eliminar o regenerar preguntas antes de guardarlas. También sería útil añadir un mensaje indicando que la IA funciona como apoyo y que la decisión final pertenece al reclutador.
+
 <a name="6-4"></a>
 #### 6.4. Auditoría de Experiencias de Usuario
 <a name="6-4-1"></a>
