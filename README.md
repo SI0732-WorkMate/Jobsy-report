@@ -2457,7 +2457,7 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 
 | **Entrevistado 2: Angela Ushiñahua** |
 |------------------------------------------------|
-| <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaAngela.jpg" alt="Entrevista1Seg1" width=75% /> |
+| <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaAngela.jpg" alt="EntrevistaAngela" width=75% /> |
 | **Distrito:** Villa el Salvador / **Edad:** 24 |
 | **Link:** [[https://youtu.be/b0SY_Nao0OI](https://youtu.be/b0SY_Nao0OI)] |
 | **Resumen:** Angela busca empleo en el área de Recursos Humanos y consideró que la plataforma es clara, fácil de usar y útil para postular. Destacó como muy valiosa la función de analíticas, ya que permite saber mediante dashboard las diferentes publicaciones, algo que no ha visto en otras plataformas que ella usa. Aunque no le pareció muy atractiva la forma en que se presentan las postulaciones, opinó que la aplicación se ve bien y no ve necesario agregar más funciones. |
