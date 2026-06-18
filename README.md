@@ -2618,25 +2618,287 @@ Una vez que se dispara una condición en el componente de alertas, el pipeline d
 #### 8.1. Experiment Planning
 <a name="8-1-1"></a>
 ##### 8.1.1. As-Is Summary
+
+Actualmente, Jobsy (producto WorkMate) cuenta con una plataforma web funcional orientada a equipos de Recursos Humanos y postulantes, que centraliza la publicación de vacantes, la recepción de postulaciones, el filtrado preliminar de currículums mediante inteligencia artificial (clasificación en aptos, en duda y descartados con un Match Score), un Dashboard del Reclutador con métricas (vacantes activas, postulaciones, tasa de éxito) y un Dashboard del Postulante donde se visualiza el estado de cada postulación en tiempo real (en revisión, finalizado). 
+
+El módulo de autenticación (IAM), la gestión de ofertas laborales (JobOfferManagement) y la gestión de postulaciones (ApplicationManagement) se encuentran implementados sobre una arquitectura DDD con bounded contexts, con backend en .NET 9 / ASP.NET Core y frontend en Vue 3, validados mediante pruebas unitarias y una primera ronda de entrevistas de validación con usuarios reales de ambos segmentos (reclutadores y postulantes). 
+
+No obstante, al ser un producto en etapa temprana (Producto Mínimo Viable), se han identificado los siguientes problemas y vacíos funcionales que limitan su propuesta de valor completa frente a la competencia (ATS tradicionales): 
+
+- Retroalimentación post-entrevista ausente: el sistema informa al postulante el estado de su proceso (en revisión, con entrevista, finalizado), pero no le comunica ningún motivo o comentario cuando es descartado, lo que reduce la transparencia percibida y contradice la necesidad de comunicación oportuna identificada en el Segmento 2 (Postulantes).
+
+- Seguimiento disperso: si bien existe un panel de estados, no se ha validado con datos reales qué tan consistentemente los reclutadores lo actualizan frente al uso de canales externos (correo, hojas de cálculo). 
+- Evaluación de habilidades blandas no diferenciada: las evaluaciones técnicas y psicométricas planteadas en el Solution Profile no cuentan aún con un componente de gamificación que las distinga de un cuestionario tradicional. 
+- Coordinación de entrevistas no centralizada: la programación de entrevistas y el envío de recordatorios no están integrados en una agenda propia dentro de la plataforma, por lo que los usuarios podrían seguir dependiendo de calendarios externos. 
+
+Estos vacíos constituyen el punto de partida para el ciclo de Experiment-Driven Development (EDD) desarrollado en las siguientes secciones, cuyo objetivo es validar, antes de invertir en desarrollo adicional, cuáles de las funcionalidades propuestas en las Lean UX Assumptions generan un impacto real y medible en el comportamiento de reclutadores y postulantes. 
+
 <a name="8-1-2"></a>
 ##### 8.1.2. Raw Material: Assumptions, Gaps, Ideas
+
+A partir del As-Is Summary y de las Lean UX Assumptions definidas en el Capítulo I, se identifica el siguiente material crudo (raw material) que sirve de base para formular las preguntas experimentales de esta sección. 
+
+**Assumptions** 
+
+- Se asume que los reclutadores confiarán en un primer filtro de candidatos realizado por IA siempre que puedan validar manualmente el resultado, lo que reduciría su carga operativa sin que sientan pérdida de control sobre la decisión final de contratación. 
+- Se asume que los postulantes valorarán recibir una breve retroalimentación o motivo al ser descartados de un proceso, lo que mejoraría su percepción de transparencia y su disposición a postular nuevamente a la empresa.
+- Se asume que un panel de seguimiento visual tipo Kanban será adoptado de forma consistente por los reclutadores como su principal herramienta de gestión del embudo de selección, reemplazando el uso de hojas de cálculo y correos. 
+- Se asume que los postulantes, especialmente los más jóvenes, mostrarán mayor motivación y tasa de finalización en evaluaciones de habilidades blandas si estas tienen un formato gamificado en lugar de un cuestionario tradicional. 
+- Se asume que centralizar la coordinación de entrevistas y recordatorios dentro de Jobsy reducirá la dependencia de canales externos (correo, WhatsApp, calendarios personales) y disminuirá la tasa de inasistencias. 
+
+**Knowledge Gaps** 
+
+- Falta evidencia cuantitativa sobre cuánto tiempo ahorra realmente el filtrado por IA frente al proceso manual en un entorno de uso real (no solo en pruebas internas del equipo). 
+- No se cuenta con datos sobre cuánto afecta la ausencia de retroalimentación a la percepción de la marca empleadora ni a la probabilidad de que el postulante vuelva a aplicar en el futuro.
+- Se requiere más información sobre la frecuencia real con la que los reclutadores actualizarían el panel de seguimiento si se usara fuera de un entorno controlado de prueba. 
+- No existen datos previos sobre la disposición de los reclutadores a confiar en resultados de evaluaciones gamificadas para tomar decisiones de contratación. 
+- Se carece de información sobre la tasa actual de inasistencias a entrevistas coordinadas por canales externos, necesaria como línea base para medir el impacto de la agenda integrada. 
+
+**Ideas** 
+
+- Ejecutar un piloto con un conjunto reducido de vacantes reales activando el filtrado por IA y comparar tiempos de preselección contra vacantes gestionadas manualmente en paralelo. 
+- Incorporar un campo opcional de retroalimentación breve (texto corto o motivo predefinido) que el reclutador pueda enviar al marcar a un candidato como "descartado". 
+- Incluir un indicador visual de "última actualización" en el panel de seguimiento para incentivar y poder medir la frecuencia de uso por parte de los reclutadores. 
+- Diseñar un primer prototipo de evaluación gamificada de baja fidelidad (por ejemplo, un escenario interactivo simple) para validar la aceptación antes de invertir en desarrollo completo. 
+- Habilitar recordatorios automáticos por correo y notificación dentro de la app como primera versión de la agenda integrada, antes de construir la sincronización con calendarios externos. 
+
+**Claims** 
+
+- Se afirma que el filtrado inteligente de CVs es la funcionalidad con mayor potencial de reducir la carga operativa de los reclutadores, al atacar directamente la tarea más repetitiva del proceso de selección. 
+- Se afirma que ofrecer retroalimentación, aunque sea mínima, mejora la experiencia del candidato y diferencia a Jobsy de plataformas donde el postulante simplemente "desaparece" del proceso sin explicación.
+- Se postula que un seguimiento visual centralizado reduce errores de comunicación y pérdida de candidatos en proceso, en comparación con el uso de canales dispersos. 
+- Se afirma que la gamificación puede mejorar el engagement de los postulantes, aunque su efecto sobre la confianza de los reclutadores en los resultados aún debe validarse. 
+- Se sostiene que centralizar la coordinación de entrevistas reduce las inasistencias al ofrecer recordatorios automáticos y un único punto de referencia para candidato y reclutador. 
+
+
 <a name="8-1-3"></a>
 ##### 8.1.3. Experiment-Ready Questions
+
+Las preguntas identificadas a partir del raw material se evaluaron bajo cuatro criterios (Confidence, Risk, Impact, Interest), cada uno en una escala del 1 al 10, para obtener un Total Score que permite priorizarlas objetivamente. 
+
+
+
+|**Question**|**Confidence**|**Risk**|**Impact**|**Interest**|**Total Score**|
+| - | - | - | - | - | - |
+|¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual?|8 - Alta, ya que el módulo de IA para clasificación de CVs (aptos, en duda, descartados) ya está implementado y en uso por los reclutadores.|3 - Riesgo medio-bajo: el modelo de IA puede generar falsos negativos si los criterios de match no están bien calibrados para todos los rubros. |9 - Impacto alto, pues ataca directamente el dolor principal identificado: la sobrecarga operativa por revisión manual de cientos de CVs.|7 - Interés alto entre los equipos de RRHH que manejan alto volumen de postulaciones por vacante.|**27**|
+|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|6 - Moderada - Es una funcionalidad simple de implementar, pero no se ha probado con usuarios.|2 - Riesgo bajo, ya que no depende de servicios externos ni de IA. |7 - Impacto alto en la experiencia del candidato y en la marca empleadora. |7 - Interés alto, conecta directo con lo que pidieron en las entrevistas de validación. |**22**|
+|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|7 - Alta, ya que el panel de gestión visual (aptos, en duda, descartados) ya forma parte del Dashboard del Reclutador implementado en la plataforma.|2 - Bajo riesgo, pues corresponde a un patrón de interfaz ampliamente validado (Kanban) y ya integrado en el producto.|6 - Impacto medio-alto en la organización interna del proceso, aunque no es la funcionalidad más crítica frente al filtrado por IA.|6 - Interés moderado entre los reclutadores que gestionan múltiples vacantes de forma simultánea.|**21**|
+|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|5 - Moderada, ya que la gamificación es una funcionalidad propuesta en las Feature Assumptions, pero aún no ha sido validada con usuarios reales en Jobsy.|5 - Riesgo medio-alto: existe incertidumbre sobre si los reclutadores confiarán en resultados gamificados para decisiones de contratación, y sobre el esfuerzo de desarrollo que implica.|7 - Impacto alto en la diferenciación frente a la competencia (ATS tradicionales), al aportar una experiencia de evaluación más atractiva para el segmento de postulantes.|8 - Interés alto, especialmente entre postulantes jóvenes que valoran experiencias de postulación modernas e interactivas, según lo señalado en las entrevistas de validación.|**25**|
+|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas? |6 - Moderada- alta, ya que el agendamiento de entrevistas está contemplado como funcionalidad clave del producto y responde a una necesidad identificada en las Feature Assumptions. |3 - Riesgo medio-bajo, principalmente asociado a la sincronización |8 - Impacto alto, ya que reduce la dependencia de canales con calendarios externos (Google Calendar, Outlook) que ya usan los reclutadores.|7 - Interés alto entre los reclutadores que coordinan múltiples entrevistas por semana y entre los postulantes que valoran la transparencia en el seguimiento de su proceso.|**24**|
+
+
 <a name="8-1-4"></a>
 ##### 8.1.4. Question Backlog
+
+Con base en el Total Score obtenido en la sección anterior, se asignó una prioridad relativa (escala tipo Fibonacci: 1, 2, 3, 5, 8) a cada pregunta experimental, donde 1 representa la mayor prioridad de validación. 
+
+
+
+|**Prioridad (1,2,3,5,8)**|**Pregunta**|
+| - | - |
+|**1**|¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual?|
+|**3**|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|
+|**3**|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|
+|**5**|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|
+|**5**|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas?|
+
 <a name="8-1-5"></a>
 ##### 8.1.5. Experiment Cards
+
+Para cada pregunta priorizada se elaboró una Experiment Card que resume el motivo de la validación (Why), la propuesta concreta a implementar o probar (What) y la hipótesis de resultado esperado (Hypothesis). 
+
+**Experiment Card 1** 
+
+| Question |¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual? |
+| - | :- |
+|**Why**|Si los reclutadores reducen el tiempo dedicado a la revisión manual de currículums, podrán enfocarse en actividades estratégicas como entrevistas y decisiones finales, lo que se traduce en un proceso de selección más ágil y en una mejor percepción de valor de la plataforma frente a los ATS tradicionales.|
+|**What**|Medir el tiempo que toma a un reclutador pasar de "vacante publicada" a "lista de candidatos preseleccionados" usando el filtrado por IA (Match Score) frente al proceso manual equivalente, utilizando un grupo de vacantes piloto.|
+|**Hypothesis**|Se espera que el uso del filtrado inteligente por IA reduzca el tiempo de preselección de candidatos en al menos un 40% frente a la revisión manual, y que al menos el 70% de los reclutadores adopte el filtrado automático como su método principal.|
+
+**Experiment Card 2** 
+
+
+
+|**Question**|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|
+| - | :- |
+|**Why**|Actualmente el postulante descartado no recibe ninguna explicación, lo que genera frustración y una percepción de opacidad en el proceso. Dar una retroalimentación mínima puede mejorar la experiencia incluso cuando el resultado es negativo, fortaleciendo la imagen de la marca empleadora y la disposición del candidato a postular nuevamente.|
+|**What**| Habilitar un campo opcional para que el reclutador envíe un breve motivo o comentario al marcar a un candidato como descartado, y medir la percepción de los postulantes que lo reciben frente a quienes no.|
+|**Hypothesis**|Se espera que al menos el 60% de los postulantes que reciben retroalimentación valore positivamente la transparencia del proceso, frente a quienes no la reciben.|
+
+**Experiment Card 3** 
+
+
+
+|**Question**|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|
+| - | :- |
+|**Why**|Un seguimiento visual y centralizado del estado de cada candidato evita que la información se disperse en correos y hojas de cálculo, reduce la pérdida de seguimiento de postulantes y facilita la coordinación entre los miembros del equipo de RRHH que comparten una misma vacante.|
+|**What**|Habilitar el panel de seguimiento de candidatos por estados (aptos, en duda, descartados, con entrevista, finalizado) y registrar la frecuencia con la que los reclutadores consultan y actualizan dicho estado durante el proceso de selección.|
+|Hypothesis | Se espera que al menos el 75% de los reclutadores actualice el estado de sus candidatos en el panel al menos una vez al día durante un proceso de selección activo, y que reporten una mejora percibida en la organización del proceso.|
+
+**Experiment Card 4** 
+
+
+
+|**Question**|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|
+| - | :- |
+|**Why**|Una evaluación gamificada puede aumentar la motivación de los postulantes para completar pruebas de habilidades blandas, generando datos más ricos y comparables para los reclutadores, además de mejorar la percepción de innovación de la marca empleadora frente a procesos de selección tradicionales y poco atractivos.|
+|**What**|Implementar una evaluación gamificada de habilidades blandas (por ejemplo, mediante escenarios interactivos con retroalimentación inmediata) dentro del flujo de postulación, y medir la tasa de finalización frente a una evaluación equivalente en formato de cuestionario tradicional.|
+|**Hypothesis**|Se espera que más del 50% de los postulantes complete la evaluación gamificada (frente a la tasa de finalización del cuestionario tradicional) y que los reclutadores consideren útiles los resultados obtenidos para su decisión final.|
+
+**Experiment Card 5** 
+
+
+
+|**Question**|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas?|
+| - | :- |
+|**Why**|Centralizar la programación de entrevistas y los recordatorios automáticos reduce el riesgo de inasistencias y descoordinaciones, disminuye el tiempo administrativo dedicado a confirmar fechas por canales externos, y mejora la experiencia tanto del reclutador como del postulante al tener un único punto de referencia para cada etapa.|
+|**What**|Habilitar la agenda integrada para programar entrevistas y enviar recordatorios automáticos a reclutadores y postulantes, y medir qué proporción de las entrevistas coordinadas durante el piloto se gestiona íntegramente dentro de Jobsy frente a canales externos.|
+|**Hypothesis**|Se espera que al menos el 75% de los reclutadores participantes utilice activamente la agenda integrada para programar entrevistas y configurar recordatorios durante el periodo de prueba.|
+
 
 <a name="8-2"></a>
 #### 8.2. Experiment Design
 <a name="8-2-1"></a>
 ##### 8.2.1. Hypotheses
+
+A partir de cada Experiment Card se formuló una hipótesis de trabajo (científica/de negocio) junto con su hipótesis nula correspondiente, siguiendo la estructura Belief - Hypothesis - Null Hypothesis. 
+
+**Hypothesis 1** 
+
+|**Question**|¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual?|
+| - | :- |
+|**Belief**|Los reclutadores confían en un primer filtro automatizado por IA siempre que puedan revisar y validar manualmente el resultado final, lo que reduce su carga operativa sin que sientan pérdida de control sobre la decisión de contratación.|
+|**Hypothesis**|La implementación del filtrado inteligente de CVs reducirá el tiempo promedio de preselección de candidatos en un 40% y logrará que al menos el 70% de los reclutadores lo utilice como método principal de revisión.|
+|**Null Hypothesis**|El filtrado inteligente de CVs por IA no generará una reducción significativa en el tiempo de preselección ni será adoptado de forma sostenida por los reclutadores frente al método manual.|
+| | |
+
+
+**Hypothesis 2** 
+
+|**Question**|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|
+| - | :- |
+|**Belief**|Los postulantes valoran ser informados del motivo de un resultado negativo, incluso si es breve, porque reduce la incertidumbre y mejora su percepción del proceso de selección.|
+|**Hypothesis**|La incorporación de retroalimentación al descartar candidatos logrará que al menos el 60% de los postulantes que la reciban valore positivamente la transparencia del proceso, frente al grupo que no recibe retroalimentación.|
+|**Null Hypothesis**|La retroalimentación al ser descartado no generará una diferencia significativa en la percepción de transparencia de los postulantes frente a no recibir ninguna explicación.|
+| | |
+
+
+**Hypothesis 3** 
+
+|**Question**|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|
+| - | :- |
+|**Belief**|Los reclutadores valoran tener una vista centralizada y actualizada del embudo de selección, ya que les permite tomar decisiones más rápidas sin depender de canales dispersos como correo electrónico u hojas de cálculo externas.|
+|**Hypothesis**|La implementación del panel de seguimiento de candidatos logrará que al menos el 75% de los reclutadores lo actualice diariamente y reporte una mejora en la organización percibida del proceso de selección.|
+| - | :- |
+|**Null Hypothesis**|El panel de seguimiento de candidatos no incrementará la frecuencia de actualización del estado de los postulantes ni la percepción de organización del proceso por parte de los reclutadores.|
+| | |
+
+
+**Hypothesis 4** 
+
+|**Question**|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|
+| - | :- |
+|**Belief**|Los postulantes, especialmente los más jóvenes, se sienten más motivados a completar evaluaciones cuando estas tienen un formato dinámico e interactivo en lugar de un cuestionario extenso y monótono.|
+|**Hypothesis**|La implementación de evaluaciones gamificadas de habilidades blandas logrará que más del 50% de los postulantes las complete y que los reclutadores valoren positivamente su utilidad en la decisión de contratación.|
+|**Null Hypothesis**|La gamificación de las evaluaciones de habilidades blandas no incrementará la tasa de finalización por parte de los postulantes ni será percibida como útil por los reclutadores frente al formato tradicional.|
+| | |
+
+**Hypothesis 5** 
+
+|**Question**|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas?|
+| - | :- |
+|**Belief**|Los reclutadores y postulantes prefieren un único canal centralizado para gestionar fechas de entrevistas y recordatorios en lugar de coordinar manualmente por correo electrónico u otras aplicaciones externas, lo que reduce errores de coordinación.|
+|**Hypothesis**|La implementación de la agenda integrada logrará que al menos el 75% de los reclutadores la utilice activamente para programar entrevistas y configurar recordatorios durante el proceso de selección.|
+|**Null Hypothesis**|La agenda integrada no logrará una adopción significativa por parte de los reclutadores, quienes continuarán coordinando entrevistas mayoritariamente a través de canales externos.|
+| | |
+
 <a name="8-2-2"></a>
 ##### 8.2.2. Domain Business Metrics
+
+Cada hipótesis se vincula a una métrica de negocio del dominio de reclutamiento (HR-Tech) sobre la cual se espera observar el efecto del experimento. Estas métricas son indicadores de negocio ya relevantes para el dominio de Jobsy, distintos de la forma específica en que se medirán dentro de cada experimento (ver 8.2.3. Measures). 
+
+
+
+|**Question**|**Domain Business Metric**|
+| - | - |
+|¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual?|Time-to-Shortlist (tiempo promedio desde publicación de vacante hasta preselección de candidatos aptos).|
+|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|Tasa de satisfacción del candidato (Candidate Satisfaction Score) y tasa de re-postulación de candidatos descartados a futuras vacantes de la misma empresa.|
+|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|Frecuencia de actualización de estado de candidatos y percepción de organización del proceso (encuesta de satisfacción).|
+|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|Tasa de finalización de evaluaciones (Completion Rate) y utilidad percibida por el reclutador en la decisión final.|
+|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas?|Tasa de adopción de la agenda integrada (proporción de entrevistas coordinadas dentro de Jobsy) y tasa de inasistencia a entrevistas programadas.|
+
+
 <a name="8-2-3"></a>
 ##### 8.2.3. Measures
+
+Para cada pregunta se definió el método concreto de medición que permitirá contrastar la hipótesis planteada con datos reales recogidos durante el experimento. 
+
+
+
+|**Question**|¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual?|
+| - | :- |
+|**Measure**|Registrar en el sistema las marcas de tiempo de "vacante publicada" y "candidatos marcados como aptos" para un conjunto de vacantes piloto con filtrado IA activado, comparándolas contra vacantes equivalentes gestionadas manualmente. Complementar con una encuesta de confianza en el Match Score dirigida a los reclutadores participantes.|
+
+|**Question**|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|
+| - | :- |
+|**Measure**|Aplicar una breve encuesta de percepción a dos grupos de postulantes descartados durante el piloto: uno que recibe retroalimentación y otro que no, comparando el puntaje de satisfacción y registrando si vuelven a postular a futuras vacantes de la misma empresa dentro de un periodo de tres meses.|
+
+|**Question**|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|
+| - | :- |
+|**Measure**|Registrar en el sistema la cantidad de actualizaciones de estado por reclutador y por día durante un proceso de selección activo, y aplicar una breve encuesta post-proceso sobre la percepción de orden y control del embudo de contratación.|
+
+
+|**Question**|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|
+| - | :- |
+|**Measure**|Comparar la tasa de finalización entre un grupo de postulantes que recibe la evaluación gamificada y un grupo de control que recibe el cuestionario tradicional equivalente, y recoger retroalimentación de los reclutadores sobre la utilidad de los resultados gamificados en su proceso de decisión.|
+
+
+
+|**Question**|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas?|
+| - | :- |
+|**Measure**|Registrar, durante el periodo piloto, qué proporción de las entrevistas programadas por los reclutadores participantes se gestionó completamente dentro de la agenda de Jobsy (incluyendo recordatorios automáticos), y comparar la tasa de inasistencias frente a procesos coordinados por canales externos.|
+
+
 <a name="8-2-4"></a>
 ##### 8.2.4. Conditions
+
+Se establecieron las condiciones experimentales (resultado esperado si la hipótesis se cumple) y las condiciones nulas (resultado esperado si la hipótesis no se cumple) para cada experimento, las cuales determinarán si se valida o se descarta cada hipótesis al finalizar la prueba. 
+
+
+
+|**Question**|¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual?|
+| - | :- |
+|**Condición Experimental**|El tiempo promedio de preselección se reducirá en un 40% o más y al menos el 70% de los reclutadores usará el filtrado IA como método principal, medido mediante los registros de tiempo del sistema y la encuesta de adopción.
+|**Condición Nula**|No se observará una reducción significativa en el tiempo de preselección (menor al 15%) ni una adopción sostenida del filtrado IA por parte de los reclutadores.|
+
+
+
+|**Question**|¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección?|
+| - | :- |
+|**Condición Experimental**|Al menos el 60% de los postulantes que reciben retroalimentación calificará el proceso como transparente, frente a un porcentaje menor en el grupo que no la recibe.|
+|**Condición Nula**|No se observará una diferencia relevante en la percepción de transparencia entre el grupo que recibe retroalimentación y el que no.|
+
+
+
+|**Question**|¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores?|
+| - | :- |
+|**Condición Experimental**|Al menos el 75% de los reclutadores actualizará el estado de sus candidatos diariamente y la percepción de organización del proceso (medida en la encuesta) será calificada como positiva por la mayoría de los participantes.|
+|**Condición Nula**|Menos del 40% de los reclutadores actualizará el estado de forma diaria y no se observará una mejora relevante en la percepción de organización del proceso.|
+
+
+
+|**Question**|¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección?|
+| - | :- |
+|**Condición Experimental**|La tasa de finalización de la evaluación gamificada superará el 50% y será mayor a la del cuestionario tradicional, y la mayoría de los reclutadores reportará que los resultados aportan valor a su decisión.|
+|**Condición Nula**|La tasa de finalización de la evaluación gamificada será igual o menor a la del cuestionario tradicional, y los reclutadores no percibirán un valor adicional en sus resultados.|
+
+
+
+|**Question**|¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas?|
+| - | :- |
+|**Condición Experimental**|Al menos el 75% de los reclutadores utilizará la agenda integrada de forma activa y se observará una reducción en la tasa de inasistencia a entrevistas frente a la coordinación por canales externos.|
+|**Condición Nula**|Menos del 40% de los reclutadores adoptará la agenda integrada de forma activa y no se observará una reducción relevante en la tasa de inasistencia a entrevistas.|
+
 <a name="8-2-5"></a>
 ##### 8.2.5. Scale Calculations and Decisions
 <a name="8-2-6"></a>
