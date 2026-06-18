@@ -2431,6 +2431,14 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 
 **Entrevistas Segmento 1 : Equipo RRHH**
 
+| **Entrevistado 1: Karla Fernanda Rojas Revoredo** |
+|------------------------------------------------|
+| <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaFernanda.png" alt="Entrevista1Seg1" width=75% /> |
+| Distrito: La Molina / Edad: 20 |
+| **Entrevistador:** María Patricia Hernández Uchuya |
+| **Link:** [[https://youtu.be/lzJ1FFqTt60](https://youtu.be/lzJ1FFqTt60)] |
+| - Resumen: Fernanda considera que Jobsy tiene una interfaz clara, ordenada y útil para el trabajo diario de recursos humanos, ya que el dashboard permite revisar rápidamente publicaciones, ofertas activas y accesos importantes. También señala que la creación de ofertas es intuitiva y rápida gracias al uso de campos organizados y etiquetas de habilidades. Respecto a la IA, la valora como apoyo para filtrar candidatos mediante el Match Score y generar preguntas técnicas, aunque considera que la decisión final debe seguir siendo revisada por una persona. Además, estaría dispuesto a pagar una suscripción si la plataforma demuestra ahorro de tiempo en el proceso de selección. Como mejora, propone permitir cambiar el estado de los candidatos directamente desde la lista para agilizar el seguimiento. |
+
 **Entrevistas Segmento 2 : Postulantes**
 
 | **Entrevistado 1: Jean Fabio Noriega Collado** |
@@ -2439,7 +2447,7 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 | Distrito: San Miguel / Edad: 20 |
 | **Entrevistador:** Jasmin Adriana Urrutia Peña |
 | **Link:** [[https://youtu.be/ph6_L_bYXDs](https://youtu.be/ph6_L_bYXDs)] |
-|-Resumen: Durante la entrevista de validación, el postulante Jean valoró positivamente la aplicación Jobs, destacando que su diseño es intuitivo, profesional y fácil de usar. Consideró que el proceso de postulación mediante enlace al CV es sencillo y que la visualización del estado de las postulaciones en tiempo real aporta mayor transparencia al proceso de selección. Como sugerencia de mejora, recomendó ampliar la información del perfil del usuario incluyendo datos como nivel de idiomas y número telefónico..|
+| - Resumen: Durante la entrevista de validación, el postulante Jean valoró positivamente la aplicación Jobs, destacando que su diseño es intuitivo, profesional y fácil de usar. Consideró que el proceso de postulación mediante enlace al CV es sencillo y que la visualización del estado de las postulaciones en tiempo real aporta mayor transparencia al proceso de selección. Como sugerencia de mejora, recomendó ampliar la información del perfil del usuario incluyendo datos como nivel de idiomas y número telefónico. |
 
 
 <a name="6-3-3"></a>
