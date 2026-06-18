@@ -2956,18 +2956,105 @@ continuación, mostramos unos ejemplos de ambos segmentos objetivos.
 
 Postulante:
 
+<img src="assets/images/chapter-8/Postulantes/panel_principal.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Postulantes/perfil.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Postulantes/bandeja.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Postulantes/postulaciones.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Postulantes/ofertas-empleo.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Postulantes/asistencia_ia.png" width=75% />
 
 Reclutador:
+
+<img src="assets/images/chapter-8/Reclutador/perfil.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Reclutador/panel_principal.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Reclutador/candidatos.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Reclutador/asistencia.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Reclutador/analitica.png" width=75% />
+
+---
+<img src="assets/images/chapter-8/Reclutador/publicaciones.png" width=75% />
 
 <a name="8-2-8"></a>
 ##### 8.2.8. Web and Mobile Tracking Plan
 
-<a name="8-3"></a>
+Para Jobsy, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar el proceso de reclutamiento dentro de la plataforma y potenciar la participación de reclutadores y postulantes. A medida que avancemos hacia la etapa final del proyecto, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas.
+
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
+
+**1. Implementación Inicial:**
+
+Durante esta fase, nos enfocaremos en el lanzamiento de las nuevas funcionalidades y en la recolección de datos iniciales para establecer una línea base de rendimiento.
+
+**Recopilación de Datos:**
+
+<u>Métricas de Uso:</u> Se recopilarán datos sobre el uso de la plataforma, incluyendo el número de reclutadores y postulantes activos, la duración de las sesiones y las tasas de conversión en los procesos de selección.
+
+<u>Interacciones de los Usuarios:</u> Se registrarán las interacciones con las nuevas funcionalidades, como el uso del filtrado por IA, actualizaciones del panel Kanban, envíos de retroalimentación, inicio y finalización de evaluaciones gamificadas y agendamiento de entrevistas.
+
+<u>Feedback de Usuarios:</u> A través de encuestas y herramientas de retroalimentación, se recogerán opiniones sobre la usabilidad de la plataforma y las nuevas funcionalidades implementadas.
+
+**Análisis Comparativo:**
+
+Se compararán los datos obtenidos durante esta fase con los datos históricos de la plataforma antes de la implementación de las nuevas funcionalidades, para evaluar el impacto inmediato de las mejoras.
+
+**2. Seguimiento Continuo:**
+
+Después de la implementación inicial, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento y realizar ajustes según sea necesario.
+
+Recopilación de Datos:
+
+- *Métricas en Tiempo Real:* Se implementarán herramientas de análisis web y móvil (Mixpanel, Google Analytics) para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar tendencias y patrones de uso.
+- *Segmentación de Usuarios:* Los datos se segmentarán por tipo de usuario (reclutador o postulante) para entender mejor cómo cada grupo interactúa con la plataforma.
+- *Tasa de Retención:* Se medirá la tasa de retención de usuarios a lo largo del tiempo para evaluar la efectividad de las nuevas funcionalidades en mantener a los usuarios comprometidos con la plataforma.
+
+**Evaluación y Ajustes:**
+
+*Informes Periódicos:* Se generarán informes mensuales que resuman los hallazgos del seguimiento, incluyendo recomendaciones para ajustes y mejoras.
+
+*Iteración Basada en Datos:* Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de los usuarios, asegurando que Jobsy evolucione para satisfacer mejor las necesidades de reclutadores y postulantes.
+
+Este enfoque asegurará que Jobsy continúe evolucionando en función de los datos y permita tomar decisiones informadas para mejorar la experiencia de ambos segmentos en la plataforma.
+
 #### 8.3. Experimentation
-<a name="8-3-1"></a>
+
 ##### 8.3.1. To-Be User Stories
-<a name="8-3-2"></a>
+
+| Epic / Story ID | **Título** | **Descripción** | **Criterios de Aceptación** | Relacionado con (Epic ID) |
+|:---|:---|:---|:---|:---|
+| US016 | Filtrar candidatos automáticamente por IA | Como reclutador, quiero que el sistema filtre automáticamente a los postulantes según su afinidad con la vacante, para reducir el tiempo de preselección manual. | **Escenario 1: Filtrado activado**<br>• **Given** que el reclutador ha publicado una vacante con requisitos definidos<br>• **When** accede a la lista de postulantes<br>• **Then** el sistema muestra los candidatos ordenados por Match Score de mayor a menor.<br><br>**Escenario 2: Revisar detalle del puntaje**<br>• **Given** que el sistema ha generado el Match Score de un candidato<br>• **When** el reclutador hace clic en el puntaje<br>• **Then** el sistema muestra qué habilidades y requisitos coincidieron con el perfil. | EP004 |
+| US017 | Enviar retroalimentación al descartar candidato | Como reclutador, quiero poder registrar un motivo al descartar a un postulante, para que el proceso sea más transparente. | **Escenario 1: Retroalimentación enviada**<br>• **Given** que el reclutador cambia el estado de un candidato a "Descartado"<br>• **When** completa el campo opcional de motivo y confirma<br>• **Then** el sistema notifica al postulante con el motivo registrado.<br><br>**Escenario 2: Descarte sin motivo**<br>• **Given** que el reclutador cambia el estado a "Descartado"<br>• **When** deja el campo de motivo vacío<br>• **Then** el sistema notifica el descarte sin incluir detalle adicional. | EP002 |
+| US018 | Gestionar estado de candidatos en panel visual | Como reclutador, quiero mover a los candidatos entre estados de selección (Apto, En duda, Descartado), para llevar un seguimiento ordenado del proceso. | **Escenario 1: Cambio de estado**<br>• **Given** que el reclutador está en el panel de gestión de candidatos<br>• **When** cambia el estado de un postulante<br>• **Then** el sistema actualiza y guarda el nuevo estado del candidato.<br><br>**Escenario 2: Visualización por estado**<br>• **Given** que hay candidatos en distintos estados<br>• **When** el reclutador filtra por un estado específico<br>• **Then** el sistema muestra únicamente los candidatos que corresponden a ese estado. | EP002 |
+| US019 | Completar evaluación gamificada de habilidades blandas | Como postulante, quiero completar una evaluación interactiva de habilidades blandas, para mostrar mis competencias de forma más atractiva que un cuestionario tradicional. | **Escenario 1: Inicio de evaluación**<br>• **Given** que el postulante ha recibido una invitación de evaluación<br>• **When** accede al enlace de la evaluación<br>• **Then** el sistema presenta escenarios interactivos con retroalimentación inmediata.<br><br>**Escenario 2: Resultados visibles para el reclutador**<br>• **Given** que el postulante ha completado la evaluación<br>• **When** el reclutador abre el perfil del candidato<br>• **Then** el sistema muestra un resumen de los resultados obtenidos. | EP004 |
+
+
 ##### 8.3.2. To-Be Product Backlog
+
+| **# Orden** | **User Story ID** | **Título** | **Story Points (1 / 2 / 3 / 5 / 8)** |
+| :-: | :-: | :- | :-: |
+| 1 | US016 | Filtrar candidatos automáticamente por IA | 8 |
+| 2 | US018 | Gestionar estado de candidatos en panel visual | 3 |
+| 3 | US017 | Enviar retroalimentación al descartar candidato | 2 |
+| 4 | US019 | Completar evaluación gamificada de habilidades blandas | 8 |
+
+
 <a name="8-3-3"></a>
 ##### 8.3.3. Pipeline-supported Software Lifecycle
 <a name="8-3-3-1"></a>
@@ -3012,13 +3099,15 @@ Reclutador:
 ## Conclusiones
 **Conclusiones y recomendaciones.**
 
--El proyecto Jobsy ha alcanzado exitosamente sus objetivos principales. El equipo desarrolló una plataforma completa de reclutamiento que conecta candidatos con empleadores de manera efectiva. La investigación inicial con usuarios permitió validar la necesidad del producto y entender claramente los problemas que debía resolver. Se implementaron todas las funcionalidades planificadas siguiendo una metodología ágil y se documentó todo el proceso de desarrollo detalladamente.
+- El proyecto Jobsy ha alcanzado exitosamente sus objetivos principales. El equipo desarrolló una plataforma completa de reclutamiento que conecta candidatos con empleadores de manera efectiva. La investigación inicial con usuarios permitió validar la necesidad del producto y entender claramente los problemas que debía resolver. Se implementaron todas las funcionalidades planificadas siguiendo una metodología ágil y se documentó todo el proceso de desarrollo detalladamente.
 
--El desarrollo técnico de Jobsy demostró la aplicación correcta de principios de ingeniería de software. Se utilizó una arquitectura orientada por dominio que facilita el mantenimiento y evolución del código. La base de datos fue diseñada para soportar eficientemente todos los casos de uso identificados. Además, se estableció un pipeline de CI/CD que asegura calidad en cada integración del código y permite deployments predecibles.
+- El desarrollo técnico de Jobsy demostró la aplicación correcta de principios de ingeniería de software. Se utilizó una arquitectura orientada por dominio que facilita el mantenimiento y evolución del código. La base de datos fue diseñada para soportar eficientemente todos los casos de uso identificados. Además, se estableció un pipeline de CI/CD que asegura calidad en cada integración del código y permite deployments predecibles.
 
--La validación del producto mediante pruebas unitarias, de integración y entrevistas con usuarios confirmó que Jobsy cumple con las expectativas establecidas. Se realizaron auditorías de experiencia de usuario que permitieron identificar y corregir problemas antes del lanzamiento. El equipo aplicó prácticas modernas de DevOps incluyendo monitoreo continuo y alertas automáticas para garantizar la disponibilidad del servicio.
+- La validación del producto mediante pruebas unitarias, de integración y entrevistas con usuarios confirmó que Jobsy cumple con las expectativas establecidas. Se realizaron auditorías de experiencia de usuario que permitieron identificar y corregir problemas antes del lanzamiento. El equipo aplicó prácticas modernas de DevOps incluyendo monitoreo continuo y alertas automáticas para garantizar la disponibilidad del servicio.
 
--Este informe documenta un ciclo completo de desarrollo de software que sirve como referencia para futuros proyectos. El trabajo realizado por el equipo de WorkMate establece una base sólida para la evolución de Jobsy y demuestra que con metodologías adecuadas, investigación rigurosa y prácticas de ingeniería bien aplicadas, es posible entregar productos de calidad que realmente resuelven problemas reales en el mercado.
+- Este informe documenta un ciclo completo de desarrollo de software que sirve como referencia para futuros proyectos. El trabajo realizado por el equipo de WorkMate establece una base sólida para la evolución de Jobsy y demuestra que con metodologías adecuadas, investigación rigurosa y prácticas de ingeniería bien aplicadas, es posible entregar productos de calidad que realmente resuelven problemas reales en el mercado.
+
+- El diseño del experimento definió escalas de decisión claras, métodos de validación combinados y un plan de tracking estructurado. Esto permite que, una vez ejecutado el piloto, el equipo cuente con criterios objetivos para decidir qué funcionalidades del To-Be se consolidan, ajustan o descartan, manteniendo trazabilidad entre cada hipótesis y su respectiva User Story en el Product Backlog.
 
 <a name="v-validation"></a>
 ## Video App Validation
