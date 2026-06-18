@@ -2462,6 +2462,13 @@ Para la validación de la solución implementada de Jobsy, se diseñaron guías 
 | **Link:** [[https://youtu.be/b0SY_Nao0OI](https://youtu.be/b0SY_Nao0OI)] |
 | **Resumen:** Angela busca empleo en el área de Recursos Humanos y consideró que la plataforma es clara, fácil de usar y útil para postular. Destacó como muy valiosa la función de analíticas, ya que permite saber mediante dashboard las diferentes publicaciones, algo que no ha visto en otras plataformas que ella usa. Aunque no le pareció muy atractiva la forma en que se presentan las postulaciones, opinó que la aplicación se ve bien y no ve necesario agregar más funciones. |
 
+| **Entrevistado 3: Leonardo Leonsio** |
+|------------------------------------------------|
+| <img src="assets/images/chapter-6/entrevistasSegmentosObjetivos/EntrevistaLeonardo.png" alt="Entrevista1Seg1" width=75% /> |
+| **Distrito:** Lima / **Edad:** 20 |
+| **Link:** [[https://drive.google.com/file/d/136F-eKvNsyARmHJlcIDg5zz2-TZoVr1J/view?usp=sharing](https://drive.google.com/file/d/136F-eKvNsyARmHJlcIDg5zz2-TZoVr1J/view?usp=sharing)] |
+| **Resumen:** Estudiante en busca de oportunidades laborales para aplicar y fortalecer los conocimientos adquiridos en la carrera. Motivado(a) por el aprendizaje continuo, la innovación tecnológica y el desarrollo profesional en entornos dinámicos y colaborativos. |
+
 <a name="6-3-3"></a>
 ##### 6.3.3. Evaluaciones según heurísticas
 
