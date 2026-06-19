@@ -1,4 +1,3 @@
-
 <div style="text-align: center;">
   <img src="./assets/images//logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
@@ -15,7 +14,7 @@
 <br>
 
 <div style="text-align: center;">
-    <h3 style="text-align: center">Informe del Trabajo Parcial </h3>
+    <h3 style="text-align: center">Informe del Trabajo Parcial - Avance 2 </h3>
     <h4 style="text-align: center;"> Startup: WorkMate </h3>
     <h4 style="text-align: center"> Producto: Jobsy </h4>
 </div>
@@ -44,6 +43,7 @@
 | AV1 | 23/04/2026 | Equipo de Desarrollo | Estructura inicial completa |
 | AV1 | 26/04/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo I<br>Capítulo II<br>Capítulo III<br>Capítulo IV<br>Capítulo V |
 | TB1 | 08/05/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo VI<br>Capítulo VII |
+| AV2 | 18/06/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Actualización de Student Outcome (AV2)<br>Capítulo VIII: Experiment-Driven Development (8.1, 8.2, 8.3)<br>Actualización de To-Be User Stories y To-Be Product Backlog (5ta US-Experimento)<br>Conclusiones |
 
 ## Project Report Collaboration Insights
 
@@ -239,24 +239,29 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 **<span style="color:#FFD700">María Hernández:</span>** 
 - **AV1:** Definió la problemática y el Lean UX Process manteniendo la objetividad profesional y el enfoque en resolver problemas reales sin sesgos.
 - **TB1:** Lideró la transición a la arquitectura de software, asegurando que la selección de patrones técnicos cumpla con estándares de mantenibilidad y seguridad de datos a largo plazo.
+- **AV2:** Condujo el análisis estático de código y el proceso de revisión por pares (Static Code Analysis & Reviews) con rigor profesional, además de diseñar y ejecutar las entrevistas de validación cualitativa, garantizando el consentimiento informado y el manejo ético de la información de los usuarios entrevistados.
 
 **<span style="color:#00BFFF">Jasmin Urrutia:</span>** 
 - **AV1:** Estructuró el Needfinding de forma inclusiva y ética, asegurando que el diseño refleje las realidades operativas de reclutadores y postulantes.
 - **TB1:** Desarrolló el prototipado de alta fidelidad aplicando criterios de accesibilidad (WCAG), garantizando que la interfaz sea inclusiva para usuarios con diversas capacidades.
+- **AV2:** Implementó el monitoreo continuo del sistema (Prometheus/Grafana/Datadog) y configuró las pipelines de alertas y notificaciones, asumiendo la responsabilidad profesional de mantener la disponibilidad y confiabilidad del servicio frente a los usuarios finales.
 
 **<span style="color:#0000FF">Fabricio Vega):</span>** 
 - **AV1:** Condujo el análisis de entrevistas respetando la privacidad y el consentimiento, realizando un análisis competitivo basado en información veraz.
 - **TB1:** Diseñó la arquitectura de persistencia de datos bajo el principio de "Privacy by Design", protegiendo la información sensible de los candidatos frente a vulnerabilidades.
+- **AV2:** Estructuró la planificación de experimentos (As-Is Summary, supuestos, preguntas y Experiment Cards) basándose en evidencia real recolectada del producto, evitando formular hipótesis especulativas y asegurando que cada experimento responda a una necesidad genuina de los usuarios.
 
 **<span style="color:#FF69B4">Ysaac Villanueva:</span>** 
 - **AV1:** Formuló el Requirements Specification bajo estándares profesionales, asegurando que los requerimientos sean trazables y cumplan con necesidades reales.
 - **TB1:** Validó que el Product Backlog técnico cumpla con las normativas locales de protección de datos personales, evitando riesgos legales para la organización y el usuario.
+- **AV2:** Diseñó el cálculo de tamaño de muestra, la selección de métodos (A/B Testing, Fake Door) y el plan de tracking, cuidando que la recolección de datos de los usuarios sea proporcional, transparente y respete su privacidad durante la fase de experimentación.
 
 </td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
 - **AV1:** El equipo demostró ética al investigar basándose en datos reales y metodologías formales (Lean UX).
 - **TB1:** Se alcanzó un nivel de profesionalismo técnico superior al integrar la seguridad, la accesibilidad y el cumplimiento normativo dentro del diseño arquitectónico, demostrando responsabilidad no solo en el "qué" se construye, sino en "cómo" se protege al usuario final.
+- **AV2:** El equipo consolidó una cultura de verificación responsable: desde la calidad estática del código y la validación directa con usuarios, hasta el monitoreo operativo y el diseño riguroso de experimentos. Esto evidencia que las decisiones de diseño e implementación se sustentan en evidencia verificable y en el respeto por la privacidad y el bienestar de los usuarios involucrados en cada prueba.
 
 </td>
 </tr>
@@ -267,24 +272,29 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 **<span style="color:#FFD700">María Hernández:</span>** 
 - **AV1:** Evaluó el impacto económico mediante el Lean UX Canvas, determinando la optimización de recursos empresariales.
 - **TB1:** Analizó la viabilidad económica de la infraestructura Cloud, seleccionando servicios que optimizan el costo operativo y permiten la escalabilidad global del negocio.
+- **AV2:** Determinó cómo la calidad estática del código y las revisiones por pares reducen el costo económico de mantenimiento a largo plazo, y mediante las evaluaciones heurísticas sobre las entrevistas, valoró el impacto social de mejorar la usabilidad para reclutadores y postulantes.
 
 **<span style="color:#00BFFF">Jasmin Urrutia:</span>** 
 - **AV1:** Analizó el impacto social identificando frustraciones actuales en los procesos de selección mediante el User Journey.
 - **TB1:** Utilizó el To-Be Scenario Mapping para medir cómo la solución reduce el estrés laboral y mejora la transparencia social en la inserción laboral de nuevos talentos.
+- **AV2:** Evaluó el impacto operativo y económico de contar con monitoreo y alertas continuas, evidenciando cómo la detección temprana de fallos reduce tiempos de inactividad y costos asociados, además de aumentar la confianza social de los usuarios en la disponibilidad de la plataforma.
 
 **<span style="color:#0000FF">Fabricio Vega:</span>** 
 - **AV1:** Midió el impacto económico en el mercado mediante el Análisis Competitivo frente a alternativas globales.
 - **TB1:** Evaluó el impacto ambiental y técnico de la solución, seleccionando una arquitectura eficiente que reduce el consumo innecesario de recursos de procesamiento y almacenamiento.
+- **AV2:** Tradujo supuestos de negocio en hipótesis y métricas de Domain Business Metrics, dimensionando el impacto económico esperado (reducción del tiempo de preselección, adopción del filtrado por IA) antes de invertir recursos en su desarrollo completo.
 
 **<span style="color:#FF69B4">Ysaac Villanueva:</span>** 
 - **AV1:** Delimitó el impacto socioeconómico definiendo Segmentos Objetivo alineados con la transformación digital de las PYMES.
 - **TB1:** Proyectó el impacto social de la automatización del software, fundamentando cómo la reducción de sesgos en los algoritmos de selección promueve una sociedad más equitativa.
+- **AV2:** Definió KPIs y el plan de tracking (Mixpanel/Google Analytics) que permiten cuantificar el impacto social y económico real de las nuevas funcionalidades, y tradujo los resultados esperados de los experimentos en User Stories priorizadas en el Product Backlog, asegurando que el desarrollo futuro responda a impacto validado y no a intuición.
 
 </td>
 <td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
 
 - **AV1:** El equipo fundamentó que la plataforma reducirá costos operativos (económico) y agilizará la inserción laboral (social).
 - **TB1:** A través de la especificación de la arquitectura y el diseño To-Be, el equipo demostró capacidad para emitir juicios técnicos que consideran la eficiencia energética del software, la equidad algorítmica y la rentabilidad en la nube, asegurando una solución sostenible y de alto impacto positivo en el mercado laboral actual.
+- **AV2:** El equipo demostró capacidad para emitir juicios informados basados en evidencia: la calidad estática y las validaciones cualitativas sustentan decisiones técnicas responsables, el monitoreo continuo asegura disponibilidad y confianza social, y el diseño riguroso de experimentos (hipótesis, métricas, tracking y backlog) garantiza que cada nueva inversión de desarrollo esté justificada por un impacto económico y social medible antes de su implementación definitiva.
 
 </td>
 </tr>
@@ -3129,6 +3139,7 @@ Este enfoque asegurará que Jobsy continúe evolucionando en función de los dat
 | US017 | Enviar retroalimentación al descartar candidato | Como reclutador, quiero poder registrar un motivo al descartar a un postulante, para que el proceso sea más transparente. | **Escenario 1: Retroalimentación enviada**<br>• **Given** que el reclutador cambia el estado de un candidato a "Descartado"<br>• **When** completa el campo opcional de motivo y confirma<br>• **Then** el sistema notifica al postulante con el motivo registrado.<br><br>**Escenario 2: Descarte sin motivo**<br>• **Given** que el reclutador cambia el estado a "Descartado"<br>• **When** deja el campo de motivo vacío<br>• **Then** el sistema notifica el descarte sin incluir detalle adicional. | EP002 |
 | US018 | Gestionar estado de candidatos en panel visual | Como reclutador, quiero mover a los candidatos entre estados de selección (Apto, En duda, Descartado), para llevar un seguimiento ordenado del proceso. | **Escenario 1: Cambio de estado**<br>• **Given** que el reclutador está en el panel de gestión de candidatos<br>• **When** cambia el estado de un postulante<br>• **Then** el sistema actualiza y guarda el nuevo estado del candidato.<br><br>**Escenario 2: Visualización por estado**<br>• **Given** que hay candidatos en distintos estados<br>• **When** el reclutador filtra por un estado específico<br>• **Then** el sistema muestra únicamente los candidatos que corresponden a ese estado. | EP002 |
 | US019 | Completar evaluación gamificada de habilidades blandas | Como postulante, quiero completar una evaluación interactiva de habilidades blandas, para mostrar mis competencias de forma más atractiva que un cuestionario tradicional. | **Escenario 1: Inicio de evaluación**<br>• **Given** que el postulante ha recibido una invitación de evaluación<br>• **When** accede al enlace de la evaluación<br>• **Then** el sistema presenta escenarios interactivos con retroalimentación inmediata.<br><br>**Escenario 2: Resultados visibles para el reclutador**<br>• **Given** que el postulante ha completado la evaluación<br>• **When** el reclutador abre el perfil del candidato<br>• **Then** el sistema muestra un resumen de los resultados obtenidos. | EP004 |
+| US020 | Programar entrevistas mediante agenda integrada | Como reclutador, quiero contar con una agenda integrada para programar entrevistas y configurar recordatorios automáticos, para coordinar el proceso de selección sin depender de canales externos. | **Escenario 1: Programación de entrevista**<br>• **Given** que el reclutador ha seleccionado a un candidato apto<br>• **When** elige una fecha y hora disponible en la agenda integrada<br>• **Then** el sistema crea la entrevista y notifica al postulante.<br><br>**Escenario 2: Recordatorio automático**<br>• **Given** que una entrevista ha sido programada<br>• **When** se aproxima la fecha y hora establecida<br>• **Then** el sistema envía un recordatorio automático al reclutador y al postulante. | EP002 |
 
 
 ##### 8.3.2. To-Be Product Backlog
@@ -3139,6 +3150,7 @@ Este enfoque asegurará que Jobsy continúe evolucionando en función de los dat
 | 2 | US018 | Gestionar estado de candidatos en panel visual | 3 |
 | 3 | US017 | Enviar retroalimentación al descartar candidato | 2 |
 | 4 | US019 | Completar evaluación gamificada de habilidades blandas | 8 |
+| 5 | US020 | Programar entrevistas mediante agenda integrada | 5 |
 
 
 <a name="8-3-3"></a>
