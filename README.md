@@ -3157,6 +3157,29 @@ Este enfoque asegurará que Jobsy continúe evolucionando en función de los dat
 ##### 8.3.3. Pipeline-supported Software Lifecycle
 <a name="8-3-3-1"></a>
 ###### 8.3.3.1. To-Be Sprint Backlogs
+
+| User Story ID | User Story Title | Task ID | Task Title | Description | Estimation (Hours) | Assigned to | Status |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US016** | **Filtrar candidatos automáticamente por IA** | W-35 | Extender Match Score para ordenamiento | Adaptar el endpoint de listado de postulantes por vacante para ordenarlos por Match Score de mayor a menor. | 6 | Ysaac Villanueva | `Done` |
+| | | W-36 | Endpoint de detalle del match | Crear endpoint que devuelva qué habilidades/requisitos coincidieron con el perfil del candidato. | 5 | Fabricio Vega | `Done` |
+| | | W-37 | UI de lista ordenada y detalle de match | Vista con candidatos ordenados por puntaje + modal que muestra el detalle del match al hacer clic. | 6 | María Hernández | `Done` |
+| | | | | | | | |
+| **US017** | **Enviar retroalimentación al descartar candidato** | W-38 | Endpoint de descarte con motivo | PATCH para cambiar estado a "Descartado" con campo opcional de motivo, dispara notificación al postulante. | 3 | Ysaac Villanueva | `Done` |
+| | | W-39 | Modal de confirmación de descarte | UI con campo de texto opcional para registrar el motivo antes de confirmar el descarte. | 3 | Jasmin Urrutia | `Done` |
+| | | | | | | | |
+| **US018** | **Gestionar estado de candidatos en panel visual** | W-40 | Endpoint de cambio/filtrado de estado | Endpoint para actualizar el estado del candidato (Apto/En duda/Descartado) y filtrar por estado. | 4 | Fabricio Vega | `Done` |
+| | | W-41 | Vista Kanban con drag & drop | Panel visual tipo Kanban con cambio de estado por columna y filtro por estado. | 5 | María Hernández | `Done` |
+| | | | | | | | |
+| **US019** | **Completar evaluación gamificada de habilidades blandas** | W-42 | Modelo y endpoints de evaluación | Modelo de datos y endpoints para escenarios interactivos de evaluación y registro de resultados. | 7 | Ysaac Villanueva | `Done` |
+| | | W-43 | Módulo interactivo de evaluación (postulante) | Vista de escenarios interactivos con retroalimentación inmediata para el postulante. | 6 | Jasmin Urrutia | `Done` |
+| | | W-44 | Resumen de resultados (reclutador) | Componente que muestra el resumen de resultados de la evaluación en el perfil del candidato. | 4 | María Hernández | `Done` |
+| | | | | | | | |
+| **US020** | **Programar entrevistas mediante agenda integrada** | W-45 | Endpoint de gestión de entrevistas | Crear/gestionar entrevistas vinculadas a candidato + reclutador, validando disponibilidad. | 5 | Fabricio Vega | `Done` |
+| | | W-46 | Servicio de recordatorio automático | Job/servicio que envía notificación de recordatorio antes de la entrevista programada. | 4 | Ysaac Villanueva | `Done` |
+| | | W-47 | Componente de agenda/calendario | UI de calendario para seleccionar fecha y hora disponible al programar la entrevista. | 5 | María Hernández | `Done` |
+
+
+
 <a name="8-3-3-2"></a>
 ###### 8.3.3.2. Implemented To-Be Landing Page Evidence
 <a name="8-3-3-3"></a>
