@@ -3180,41 +3180,255 @@ Este enfoque asegurará que Jobsy continúe evolucionando en función de los dat
 
 
 
-<a name="8-3-3-2"></a>
-###### 8.3.3.2. Implemented To-Be Landing Page Evidence
 <a name="8-3-3-3"></a>
-###### 8.3.3.3. Implemented To-Be Web App Evidence
-<a name="8-3-3-4"></a>
-###### 8.3.3.4. Implemented To-Be Mobile App Evidence
+###### 8.3.3.1. Implemented To-Be Web App Evidence
+
+
+1. Implementacion de US-16
+-Adaptar el endpoint de listado de postulantes por vacante para ordenarlos por Match Score de mayor a menor.
+<img src="assets/images/chapter-8/US161.png" width=75% />
+2. Implementacion de US-17
+-UI con campo de texto opcional para registrar el motivo antes de confirmar el descarte.
+<img src="assets/images/chapter-8/US171.png" width=75% />
+3. Implementacion de US-18
+-Panel visual tipo Kanban con cambio de estado por columna y filtro por estado.
+<img src="assets/images/chapter-8/US181.png" width=75% />
+4. Implementacion de US-19
+-Vista de escenarios interactivos con retroalimentación inmediata para el postulante.
+<img src="assets/images/chapter-8/US191.png" width=75% />
+-Componente que muestra el resumen de resultados de la evaluación en el perfil del candidato.
+<img src="assets/images/chapter-8/US192.png" width=75% />
+5. Implementacion de US-20
+-Job/servicio que envía notificación de recordatorio antes de la entrevista programada.
+<img src="assets/images/chapter-8/US201.png" width=75% />
+-UI de calendario para seleccionar fecha y hora disponible al programar la entrevista.
+<img src="assets/images/chapter-8/US200.png" width=75% />
+<img src="assets/images/chapter-8/US202.png" width=75% />
+
 <a name="8-3-3-5"></a>
-###### 8.3.3.5. Implemented To-Be RESTful API Evidence
+###### 8.3.3.2. Implemented To-Be RESTful API Evidence
+
+<img src="assets/images/chapter-8/endpoints.png" width=75% />
+<img src="assets/images/chapter-8/endpoints1.png" width=75% />
+<img src="assets/images/chapter-8/endpoints2.png" width=75% />
+
 <a name="8-3-3-6"></a>
-###### 8.3.3.6. Team Collaboration Insights
+###### 8.3.3.3. Team Collaboration Insights
+<img src="assets/images/chapter-8/commits.png" width=75% />
+<img src="assets/images/chapter-8/commits1.png" width=75% />
+<img src="assets/images/chapter-8/commits2.png" width=75% />
+
+
 <a name="8-3-4"></a>
 ##### 8.3.4. To-Be Validation Interviews
 <a name="8-3-4-1"></a>
 ###### 8.3.4.1. Diseño de Entrevistas
+
+**Segmento 1: Reclutadores / Empresas**
+1. ¿En qué sector opera tu empresa?
+2. ¿Cuántos empleados tiene tu empresa aproximadamente?
+3. ¿Cuántas personas conforman tu equipo de reclutamiento?
+4. ¿Cuántas vacantes gestionas en promedio al mes?
+5. ¿Actualmente usas alguna herramienta de IA para preseleccionar candidatos?
+6. Si un sistema ordenara automáticamente a los candidatos por compatibilidad con la vacante, ¿confiarías en ese resultado para tomar decisiones?
+7. ¿Qué tan importante es para ti poder ver por qué un candidato obtuvo cierto puntaje de match (qué habilidades coincidieron)?
+8. Aproximadamente, ¿Cuánto tiempo dedicas hoy a revisar manualmente los CVs de una sola vacante?
+9. ¿Cómo das seguimiento actualmente al estado de tus candidatos?
+10. ¿Qué tan probable es que uses diariamente un panel visual (tipo Kanban) para mover candidatos entre estados?
+11. ¿Qué tan seguido pierdes de vista o te confundes sobre en qué etapa está un candidato?
+12. ¿Cómo coordinas hoy tus entrevistas con candidatos?
+13. ¿Qué tan útil sería tener recordatorios automáticos dentro de la misma plataforma?
+14. ¿Con qué frecuencia un candidato no se presenta a una entrevista programada?
+15. ¿Actualmente das algún motivo o comentario a los candidatos que descartas?
+16. ¿Qué tan dispuesto estarías a confiar en los resultados de una evaluación gamificada de habilidades blandas para tu decisión de contratación?
+17. ¿Qué funcionalidad te parece más valiosa para tu trabajo diario?
+
+
+**Segmento 2: Postulantes / Candidatos**
+1. ¿Cuál es tu rango de edad?
+2. ¿Cuántos años de experiencia laboral tienes?
+3. ¿En qué área te desempeñas principalmente?
+4. ¿Con qué frecuencia postulas a empleos actualmente?
+5. Cuando has sido descartado de un proceso de selección, ¿recibiste algún motivo o comentario?
+6. ¿Qué tan probable es que vuelvas a postular a una empresa que te dio retroalimentación al descartarte, comparado con una que no lo hizo?
+7. ¿Qué tanto afecta tu percepción de una empresa el no recibir ninguna respuesta o motivo?
+8. ¿Prefieres un formato de evaluación interactivo/dinámico o un cuestionario tradicional?
+9. ¿Qué tan probable es que completes por entero una evaluación si tiene un formato gamificado (tipo escenarios interactivos)?
+10. ¿Alguna vez abandonaste una evaluación de selección por encontrarla larga o aburrida?
+11. ¿Cómo coordinas hoy la fecha/hora de tus entrevistas?
+12. ¿Te ha pasado olvidar o llegar tarde a una entrevista por falta de recordatorios?
+13. ¿Qué tan útil sería recibir un recordatorio automático antes de tu entrevista?
+14. ¿Qué tan satisfecho estás con la visibilidad que tienes hoy sobre el estado de tu postulación?
+15. ¿Qué funcionalidad valorarías más como postulante?
+
 <a name="8-3-4-2"></a>
 ###### 8.3.4.2. Registro de Entrevistas
 
+Como parte del proceso de validación del problema y de la solución para la plataforma Jobsy, se diseñaron y aplicaron formularios estructurados dirigidos a los dos actores clave del ecosistema: reclutadores (Segmento 1) y postulantes (Segmento 2). El propósito de estas herramientas fue recopilar datos cuantitativos y cualitativos sobre los puntos de dolor actuales en la selección de personal, la gestión de vacantes y la experiencia del candidato durante la postulación. 
+
+Los formatos completos de los cuestionarios aplicados y la recopilación gráfica de sus resultados se encuentran disponibles para su consulta en el siguiente enlace:
+
+* [Segmento 1](https://drive.google.com/file/d/1YHalYoLkyju_BtXNBPNmG82Jl1iBNMtp/view?usp=sharing)
+
+<img src="assets/images/chapter-8/seg1ent.png" width=75% />
+
+* [Segmento 2](https://drive.google.com/file/d/1gbKaWanqBgxZOFrUkUDJ-sIQnkFyW5hc/view?usp=sharing)
+
+<img src="assets/images/chapter-8/seg2ent.png" width=75% />
+
+**Análisis de las Entrevistas (Cuantitativo)**
+
+A partir de las 22 respuestas recolectadas por segmento mediante la Encuesta de Validación para Jobsy, se consolidan a continuación los hallazgos cuantitativos más relevantes para cada segmento objetivo, que sustentan el análisis y las decisiones tomadas en la Sección 8.4 (Experiment Aftermath & Analysis).
+
+---
+
+**Segmento 1: Equipos de Recursos Humanos (Reclutadores)**
+
+| Categoría | Porcentaje |
+|---|---|
+| Usa actualmente alguna herramienta de IA para preseleccionar candidatos | 57.1% |
+| Confiaría en un ordenamiento automático por compatibilidad para tomar decisiones (escala 4-5) | 68.2% |
+| Considera importante ver por qué un candidato obtuvo cierto puntaje de match (escala 4-5) | 54.5% |
+| Dedica 1 hora o más a revisar manualmente los CVs de una sola vacante | 68.2% |
+| Se confunde con frecuencia sobre en qué etapa está un candidato con el método actual (escala 4-5) | 50.0% |
+| Probabilidad alta de usar diariamente un panel visual tipo Kanban (escala 4-5) | 63.6% |
+| Coordina hoy sus entrevistas por canales externos dispersos (correo, WhatsApp, llamadas) | 90.9% |
+| Considera muy útil contar con recordatorios automáticos en la plataforma (escala 4-5) | 81.9% |
+| Reporta inasistencias de candidatos a entrevistas (rara vez o frecuentemente) | 100.0% |
+| Da motivo o comentario a los candidatos descartados de forma consistente ("siempre") | 36.8% |
+| Confiaría en resultados de una evaluación gamificada para su decisión de contratación (escala 4-5) | 63.6% |
+
+---
+
+**Segmento 2: Postulantes (Candidatos para el empleo)**
+
+| Categoría | Porcentaje |
+|---|---|
+| Postula a empleos de forma activa u ocasional | 81.8% |
+| Ha recibido motivo o comentario al ser descartado (siempre o a veces) | 71.4% |
+| Sería más probable que vuelva a postular a una empresa que le dio retroalimentación (escala 4-5) | 72.7% |
+| Le afecta "mucho" no recibir ninguna respuesta o motivo | 68.2% |
+| Prefiere un formato de evaluación interactivo/dinámico frente al tradicional | 63.6% |
+| Probabilidad alta de completar por entero una evaluación gamificada (escala 4-5) | 59.1% |
+| Ha abandonado alguna vez una evaluación tradicional por larga o aburrida | 50.0% |
+| Coordina hoy sus entrevistas por correo o WhatsApp | 77.2% |
+| Ha olvidado o llegado tarde a una entrevista por falta de recordatorios | 40.0% |
+| Considera muy útil recibir un recordatorio automático antes de su entrevista (escala 4-5) | 72.7% |
+| Se encuentra insatisfecho con la visibilidad actual del estado de su postulación (escala 1-2) | 27.3% |
+
 <a name="8-4"></a>
 #### 8.4. Experiment Aftermath & Analysis
+
 <a name="8-4-1"></a>
 ##### 8.4.1. Analysis and Interpretation of Results
+
+Se aplicaron dos encuestas de validación cuantitativa a los segmentos objetivo (22 respuestas por segmento) durante el piloto TB2, complementando el registro de entrevistas cualitativas de la Sección 8.3.4.2. A continuación se contrasta cada hipótesis (Sección 8.2.1) frente a los datos recolectados y las Condiciones Experimentales/Nulas definidas en la Sección 8.2.4.
+
+**Hipótesis 1 – Filtrado inteligente de CVs (US016)**
+
+- El 57.1% de los reclutadores ya usaba alguna herramienta de IA antes del piloto, y el 68.2% (suma de escalas 4 y 5) confiaría en un ordenamiento automático por compatibilidad para tomar decisiones.
+- El 54.5% considera importante o muy importante (escalas 4-5) poder ver **por qué** un candidato obtuvo cierto puntaje (explicabilidad).
+- Actualmente, el 45.5% de los reclutadores dedica entre 1 y 3 horas a revisar manualmente los CVs de una sola vacante, y un 22.7% adicional dedica más de 3 horas — es decir, casi 7 de cada 10 reclutadores gestiona una carga alta de revisión manual, validando el dolor original (Sección 8.1.1).
+
+**Resultado:** Hipótesis **validada**. Se cumple la Condición Experimental (confianza mayoritaria en el filtrado y alto costo de tiempo en el proceso manual actual). El 31.8% de los reclutadores identificó el "Filtrado por IA" como la funcionalidad más valiosa para su trabajo diario (Pregunta 17), la más alta entre las cuatro opciones evaluadas.
+
+**Hipótesis 2 – Retroalimentación al descartar candidatos (US017)**
+
+- Del lado del postulante: solo el 23.8% recibe motivo siempre, un 47.6% "a veces" y un 28.6% nunca. El 68.2% de los postulantes indica que le afecta "mucho" no recibir ninguna respuesta.
+- El 72.7% (escalas 4-5) de los postulantes afirma que sería más probable volver a postular a una empresa que sí les dio retroalimentación al descartarlos, frente a una que no lo hizo.
+- Del lado del reclutador: solo el 36.8% da motivo "siempre", 42.1% "a veces" y 21.1% "nunca" — confirmando que la práctica actual es inconsistente incluso cuando la funcionalidad ya existe.
+
+**Resultado:** Hipótesis **validada** del lado del impacto en el postulante (mejora clara en disposición a repostular y en percepción de marca empleadora), pero se confirma la **brecha de adopción** anticipada: casi 2 de cada 3 reclutadores (63.2%) no da retroalimentación de forma consistente. Se marca como aprendizaje de diseño para el backlog (ver 8.4.2).
+
+**Hipótesis 3 – Panel de seguimiento tipo Kanban (US018)**
+
+- El 63.6% de los reclutadores (escalas 4-5) indica alta probabilidad de usar diariamente un panel visual tipo Kanban.
+- El 50% (escalas 4-5) reporta que "seguido" o "muy seguido" pierde de vista o se confunde sobre en qué etapa está un candidato con el método actual (23.8% usa hojas de cálculo, 23.8% correo, 28.6% no tiene método fijo).
+
+**Resultado:** Hipótesis **validada**. Se cumple ampliamente la Condición Experimental: existe tanto la necesidad (alta tasa de confusión con el método actual) como la disposición de adopción diaria declarada.
+
+**Hipótesis 4 – Gamificación de evaluaciones de habilidades blandas (US019)**
+
+- El 63.6% de los postulantes prefiere un formato interactivo/dinámico frente al 27.3% que prefiere el tradicional.
+- El 59.1% (escalas 4-5) indica alta probabilidad de completar por entero una evaluación gamificada, y el 50% reconoce haber abandonado alguna vez una evaluación tradicional por encontrarla larga o aburrida.
+- Del lado del reclutador, la confianza en estos resultados para la decisión de contratación es de 63.6% (escalas 4-5) — más alta de lo anticipado en la Experiment Card 4, aunque sigue siendo menor que la confianza en el Match Score de IA (68.2%).
+
+**Resultado:** Hipótesis **validada**. Se supera el umbral del 50% de finalización esperado y el reclutador muestra una confianza razonable en los resultados, aunque menor que en el filtrado por IA — se recomienda seguir reforzando la transparencia de criterios en esta funcionalidad.
+
+**Hipótesis 5 – Agenda integrada de entrevistas (US020)**
+
+- El 90.9% de los reclutadores coordina hoy sus entrevistas por canales externos dispersos (36.4% WhatsApp, 22.7% correo, 31.8% llamadas), y solo un 9.1% usa un calendario externo estructurado.
+- El 59.1% de los postulantes reporta inasistencias "rara vez" y un 40.9% "frecuentemente" del lado del reclutador — una tasa de no-show base considerable.
+- El 40% de los postulantes ha olvidado o llegado tarde a una entrevista por falta de recordatorios, y el 81.9% de reclutadores y 72.7% de postulantes (escalas 4-5) califican como muy útil contar con recordatorios automáticos dentro de la plataforma.
+
+**Resultado:** Hipótesis **validada** con fuerte respaldo cuantitativo. Es, junto con el filtrado por IA, una de las funcionalidades con mayor consenso de utilidad en ambos segmentos.
+
+**Síntesis general:** de las 5 hipótesis evaluadas, **4 se validan de forma directa** (filtrado IA, panel Kanban, gamificación, agenda integrada) y **1 se valida parcialmente** (retroalimentación al descartar), ya que si bien el impacto positivo en el postulante es contundente, la adopción real por parte del reclutador es baja al ser un campo opcional. Ningún experimento arrojó evidencia a favor de la hipótesis nula correspondiente.
+
 <a name="8-4-2"></a>
 ##### 8.4.2. Re-scored Question Backlog
 
+Con los resultados cuantitativos obtenidos, se recalculó el puntaje de cada pregunta experimental (Confidence, Risk, Impact, Interest) para reflejar el nuevo nivel de evidencia disponible.
+
+| **Question** | **Confidence** | **Risk** | **Impact** | **Interest** | **Total Score** | **Prioridad Anterior** | **Prioridad Actual** |
+| - | - | - | - | - | - | :-: | :-: |
+| ¿Reducirá el filtrado inteligente de CVs mediante IA el tiempo de preselección de candidatos frente a la revisión manual? | 9 – Confirmada: 68.2% de reclutadores confía en el ordenamiento automático y 68.2% dedica más de 1 hora por vacante hoy en revisión manual. | 2 – Riesgo bajo; pendiente calibrar explicabilidad, valorada por el 54.5%. | 9 – Impacto alto confirmado; es la funcionalidad más votada como valiosa (31.8%). | 8 – Interés alto y sostenido. | **28** | 1 | 1 (consolidar) |
+| ¿Aumentará la agenda integrada de entrevistas y recordatorios el uso activo de la coordinación de entrevistas dentro de Jobsy frente al uso de herramientas externas? | 9 – Confirmada: 90.9% coordina hoy por canales dispersos y 81.9%/72.7% califican los recordatorios como muy útiles. | 2 – Riesgo bajo. | 8 – Impacto alto: tasa de inasistencia base considerable (40.9% "frecuentemente"). | 8 – Interés alto en ambos segmentos. | **27** | 5 | 2 (consolidar) |
+| ¿Mejorará el sistema de seguimiento de candidatos (panel tipo Kanban) la gestión ordenada del proceso de selección por parte de los reclutadores? | 8 – Confirmada: 63.6% probabilidad alta de uso diario; 50% reporta confusión frecuente con el método actual. | 1 – Riesgo muy bajo, patrón ya validado. | 6 – Impacto medio-alto, sin cambios respecto al estimado inicial (18.2% lo valora como más importante). | 6 – Interés moderado. | **21** | 3 | 3 (consolidar) |
+| ¿Mejorará la gamificación de las evaluaciones de habilidades blandas el nivel de engagement de los postulantes durante el proceso de selección? | 7 – Confirmada: 63.6% prefiere formato interactivo y 59.1% probabilidad alta de finalización; confianza del reclutador (63.6%) mayor a la anticipada. | 3 – Riesgo medio-bajo, algo menor al estimado inicial. | 7 – Impacto alto: 50% ha abandonado antes una evaluación tradicional. | 8 – Interés alto, en especial en postulantes jóvenes (22-25 años = 36.4% de la muestra). | **25** | 5 | 4 (consolidar, con seguimiento) |
+| ¿Mejorará la percepción de transparencia de los postulantes si reciben retroalimentación al ser descartados de un proceso de selección? | 6 – Validado el efecto en el postulante (72.7% más propenso a repostular); confirmada la brecha de adopción del reclutador (63.2% no lo hace de forma consistente). | 4 – Riesgo medio-alto: baja adopción si el campo permanece opcional. | 7 – Impacto alto en marca empleadora (68.2% de postulantes afectados "mucho" por el silencio). | 7 – Interés alto. | **24** | 3 | 5 (iterar: evaluar motivos predefinidos u obligatoriedad parcial) |
+
+
 <a name="8-5"></a>
 #### 8.5. Continuous Learning
+
 <a name="8-5-1"></a>
 ##### 8.5.1. Shareback Session Artifacts
 
+Al finalizar el ciclo de experimentación, el equipo de WorkMate realizó una **Shareback Session** con el objetivo de comunicar los aprendizajes obtenidos a todos los interesados del proyecto (equipo de desarrollo, product owner y representantes de los segmentos objetivo entrevistados), cerrando el ciclo de Experiment-Driven Development y alimentando el backlog de producto con evidencia real.
+
+**Formato de la sesión:**
+- Duración: 30 minutos.
+- Dinámica: cada Experiment Card se presentó en formato "Pregunta → Qué hicimos → Qué aprendimos → Qué haremos después", evitando presentar los resultados como éxito o fracaso binario y enfocándose en el aprendizaje generado.
+- Participantes: los cuatro integrantes del equipo, actuando cada uno como responsable de comunicar los resultados de los experimentos donde lideró la implementación.
+
+**Artefactos generados en la sesión:**
+- Tablero visual (Kanban) con las 5 Experiment Cards movidas a las columnas "Validado", "Validado parcialmente" o "Requiere nuevo experimento", según el resultado de la Sección 8.4.1.
+- Resumen de una página (One-Pager) por hipótesis, incluyendo la métrica de negocio afectada (Sección 8.2.2), el resultado observado y la decisión tomada según la escala definida en la Sección 8.2.5.
+- Lista de nuevas preguntas emergentes, producto de los aprendizajes obtenidos, que se incorporan como semilla para un futuro Question Backlog (por ejemplo: "¿Aumentará la tasa de uso del campo de motivo de descarte si se sugieren motivos predefinidos en lugar de texto libre?").
+
+**Principales aprendizajes compartidos:**
+1. La confianza del usuario en una funcionalidad de IA aumenta significativamente cuando el sistema expone el criterio usado (explicabilidad), tal como se observó tanto en el filtrado de CVs (alta confianza) como en la evaluación gamificada (confianza más baja, al no explicar aún los criterios de evaluación al reclutador).
+2. Una funcionalidad puede estar disponible y aun así no ser adoptada si depende de un paso opcional del usuario (caso de la retroalimentación al descartar candidatos), lo que constituye un aprendizaje de diseño de producto más que de validación de la necesidad.
+3. Los patrones de interfaz ya validados en el mercado (Kanban) presentan menor riesgo y mayor velocidad de adopción, por lo que se prioriza reservar la capacidad de experimentación para funcionalidades más inciertas, como es el caso de la IA aplicada a evaluación de habilidades blandas.
+
 <a name="8-6"></a>
 #### 8.6. To-Be Software Platform Pre-launch
+
 <a name="8-6-1"></a>
 ##### 8.6.1. About-the-Product Intro Video
 
+Como parte del cierre del ciclo de Experiment-Driven Development, el equipo elaboró un video introductorio actualizado sobre la versión To-Be de Jobsy, dirigido a los visitantes del Landing Page y a los usuarios (reclutadores y postulantes) que ya cuentan con una cuenta en la plataforma. El video resume las nuevas funcionalidades validadas durante el piloto: filtrado inteligente por IA con explicación de compatibilidad, panel Kanban de seguimiento de candidatos, retroalimentación al descartar postulantes, evaluación gamificada de habilidades blandas y agenda integrada de entrevistas con recordatorios automáticos.
+
+**Video:** LINK
+**Duración aproximada:** 2 minutos.
+
 ---
+<a name="Matriz de Evaluación Etica y de Impacto"></a>
+## Matriz de Evaluación Ética y de Impacto
+
+La siguiente matriz busca evidenciar el reconocimiento de las responsabilidades éticas y profesionales del equipo, así como la emisión de juicios informados sobre el impacto de Jobsy (producto WorkMate) en contextos globales, económicos, ambientales y sociales, evitando un enfoque puramente "mercenario" de la ingeniería.
+
+| Dimensión / Criterio a Evaluar | Identificación de Riesgos e Impactos (Positivos y Negativos) | Evaluación del Impacto (¿A quién afecta y cuál es la magnitud?) | Estrategias de Mitigación y Acciones de Diseño |
+| :--- | :--- | :--- | :--- |
+| **1. Salud y Bienestar Laboral** | Negativo: la gamificación de evaluaciones o la exposición pública de un Match Score bajo podría generar ansiedad o desmotivación en postulantes, especialmente en quienes buscan su primer empleo. Positivo: reduce el estrés operativo reportado por los equipos de RRHH al automatizar tareas repetitivas (Sección 2.3.5, As-Is Scenario Mapping). | Afectados: postulantes en situación de vulnerabilidad laboral (bajo puntaje de compatibilidad) y equipos de RRHH sobrecargados. | Mostrar el Match Score como una guía de compatibilidad y no como una calificación absoluta; incluir siempre retroalimentación constructiva (US017) en lugar de solo un número; limitar la exposición pública del puntaje únicamente al reclutador. |
+| **2. Inclusión y Accesibilidad** | Negativo: el filtrado automático por IA podría perpetuar sesgos existentes en los datos de entrenamiento (por ejemplo, subvalorar CVs con formatos no estándar o de candidatos sin experiencia previa). | Afectados: postulantes de grupos históricamente subrepresentados en procesos de selección tradicionales (recién egresados, personas sin acceso a formación formal). | Auditar periódicamente el modelo de Match Score para detectar sesgos discriminatorios (compromiso ya declarado en el Acuerdo de Servicio SaaS, Sección 5.2.4); mantener siempre control y validación humana final por parte del reclutador antes de descartar candidatos, tal como se estableció en las Feature Assumptions (Sección 1.2.2.2). |
+| **3. Impacto Social y Cultural** | Negativo: la automatización total del proceso podría despersonalizar la relación entre reclutador y candidato, reduciendo el componente humano de la contratación. Positivo: mejora la transparencia percibida y reduce la incertidumbre del "silencio administrativo" identificado en las entrevistas (Sección 6.3.2 y 8.3.4.2). | Afectados: la relación de confianza entre empresas y la comunidad de postulantes en el mercado laboral local. | Diseñar los mensajes automáticos de retroalimentación (US017) con un tono empático y no genérico; mantener espacios de interacción directa (entrevistas, mensajería) como parte central del flujo, evitando que la IA reemplace por completo el criterio humano. |
+| **4. Impacto Económico** | Negativo: al ser un modelo SaaS por suscripción, existe el riesgo de que micro y pequeñas empresas con menor presupuesto queden en desventaja frente a medianas y grandes empresas que sí puedan costear el servicio, replicando la brecha ya señalada frente a competidores como HireVue (Sección 2.1.1). Positivo: reduce significativamente el Time-to-Shortlist (Sección 8.2.2), disminuyendo costos operativos del proceso de contratación. | Afectados: pequeñas empresas y startups en etapa temprana que buscan optimizar procesos de RRHH con recursos limitados. | Evaluar planes escalonados de precio accesibles para pequeñas empresas (mencionado como oportunidad en la Sección 1.3, Segmento 1); priorizar en el roadmap funcionalidades de alto impacto y bajo costo de desarrollo antes que funcionalidades más costosas como la gamificación. |
+| **5. Impacto Ambiental** | Negativo: el procesamiento de CVs mediante IA (parsing, cálculo de Match Score) y el monitoreo continuo (Lighthouse, Catchpoint, RedLine13) implican un consumo energético asociado al cómputo en la nube. | Afectados: huella de carbono asociada a la infraestructura cloud utilizada por Jobsy (Vercel, Railway). | Optimizar las consultas y el procesamiento del backend para reducir el consumo de cómputo por request; preferir proveedores cloud con compromisos de energía renovable al escalar la infraestructura en fases futuras. |
+| **6. Enfoque Global y Privacidad de Datos** | Negativo: al gestionar información sensible de postulantes (CVs, datos personales, resultados de evaluaciones) y aspirar a una expansión regional en Latinoamérica (Sección 1.1.1, Visión), existe el riesgo de que los datos queden sujetos a marcos regulatorios distintos según el país. | Afectados: la privacidad de postulantes y reclutadores en distintos países de la región. | Mantener el principio de "Privacy by Design" ya aplicado en la arquitectura de persistencia (ver Student Outcome, Fabricio Vega – TB1); asegurar que el Acuerdo de Servicio SaaS (Sección 5.2.4) se adapte a las normativas locales de protección de datos personales de cada país antes de expandir el servicio. |
+| **7. Revelación de Peligros y Responsabilidad Profesional** | Riesgo: un sesgo no detectado en el algoritmo de filtrado podría derivar en discriminación indirecta hacia ciertos grupos de postulantes sin que reclutadores o candidatos lo perciban. | Afectados: la integridad del proceso de selección y la confianza de ambos segmentos objetivo en la plataforma. | Siguiendo los principios éticos y profesionales del ingeniero de software, el equipo se compromete a revelar de forma proactiva cualquier sesgo detectado en las auditorías del modelo de IA (Sección 6.2.1.2), documentarlo, y suspender temporalmente el filtrado automático de las vacantes afectadas hasta corregir el modelo, priorizando la integridad del proceso sobre la disponibilidad continua del servicio. |
+
 
 <a name="conclusiones"></a>
 ## Conclusiones
