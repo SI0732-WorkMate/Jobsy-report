@@ -30,7 +30,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – Mayo 2026</h4>
+    <h4 style="text-align: center">Lima – Julio 2026</h4>
 </div>
 
 <hr class="page-break">
@@ -2574,20 +2574,129 @@ Agregar una vista donde se indiquen las habilidades detectadas, los criterios us
 ##### 6.4.1. Auditoría realizada
 <a name="6-4-1-1"></a>
 ###### 6.4.1.1. Información del grupo auditado
+
+| Elemento | Información Identificada |
+| :--- | :--- |
+| **Startup auditado** | CargoSystems |
+| **Producto auditado** | CargoExpress |
+| **Integrantes del equipo auditado** | Anampa Lavado, Luis Angel<br>Fernandez, Alexander Piero<br>Rocca Leon, Anhelo Rodrigo<br>Valverde Mozo, Andre Gabriel |
+| **Artefactos revisados** | Informe final del proyecto, código fuente del backend, código fuente de la aplicación móvil, pruebas automatizadas y archivos de configuración incluidos en ambos repositorios |
+| **Stack observado** | **Aplicación móvil:** Android nativa en Kotlin y Jetpack Compose (Navigation Compose, Retrofit, Gson, Google Maps, Firebase).<br><br>**Backend:** REST en ASP.NET Core (.NET 8), Entity Framework Core, MySQL, JWT, Swagger/OpenAPI, BCrypt, organización DDD. |
+| **Alcance funcional identificado** | Registro e inicio de sesión de clientes y empresarios; gestión de viajes, conductores, vehículos, gastos y alertas; consulta y filtrado; paneles de resumen; estadísticas; historial de auditoría; seguimiento de viajes |
+| **Criterio de referencia para la auditoría** | Final Project Statement y criterios de aceptación documentados, priorizando la correspondencia entre informe, implementación móvil, servicios backend, pruebas y configuración técnica |
+
 <a name="6-4-1-2"></a>
 ###### 6.4.1.2. Cronograma de auditoría realizada
+
+| Fecha | Horario | Actividad | Evidencia revisada | Técnica aplicada | Resultado esperado |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 02/07/2026 | 09:00–10:00 | Definición del alcance y criterios | Plantilla, informe final,<br>ejemplo de auditoría | Revisión documental | Determinar artefactos, alcance y estructura del informe |
+| 02/07/2026 | 10:00–13:00 | Revisión del informe y User Stories | Capítulos III, VI, VII y VIII | Análisis de trazabilidad | Identificar criterios funcionales y técnicos auditables |
+| 02/07/2026 | 15:00–18:00 | Inspección de la aplicación móvil | Código Kotlin, Compose,<br>configuración Android | Inspección estática | Contrastar pantallas, flujos, servicios y seguridad móvil |
+| 03/07/2026 | 09:00–12:00 | Inspección del backend | Código ASP.NET Core, endpoints,<br>dominio, configuración | Inspección estática | Verificar reglas de negocio, autenticación, autorización y persistencia |
+| 03/07/2026 | 12:00–13:00 | Revisión de pruebas y automatización | Proyectos de pruebas, archivos<br>Feature y Gradle | Revisión técnica | Comprobar existencia y cobertura observable de pruebas |
+
 <a name="6-4-1-3"></a>
 ###### 6.4.1.3. Contenido de auditoría realizada
+
+### 6.4.1.3. Contenido de auditoría realizada
+
+La revisión de 30 User Stories funcionales y 3 criterios técnicos arrojó la siguiente distribución de resultados:
+
+| Estado de la Revisión | Cantidad | Porcentaje |
+| :--- | :---: | :---: |
+| **Fortalezas** | 24 | 72.7% |
+| **Observaciones** | 3 | 9.1% |
+| **No conformidades** | 6 | 18.2% |
+
+#### Principales Hallazgos
+
+| ID | Tipo | Descripción del Hallazgo |
+| :--- | :--- | :--- |
+| **H03** | No conformidad | El seguimiento "en tiempo real" del viaje es en realidad una simulación con coordenadas y velocidad aleatorias hacia un destino fijo. |
+| **H04** | No conformidad | La edición de vehículos solo permite modificar nombre y estado, y la búsqueda se hace por nombre en vez de placa, como exige la User Story. |
+| **H05** | No conformidad | El registro de cuentas no implementa verificación de correo (sin token ni estado pendiente de confirmación). |
+| **H06** | No conformidad | No existe una política de privacidad como artefacto independiente, solo una sección dentro de términos y condiciones. |
+| **H01** | Observación | Los campos de origen/destino del viaje aceptan texto libre sin validar que sean ubicaciones reales. |
+| **H02** | Observación | El registro de gastos no valida montos razonables ni permite adjuntar boletas/recibos como sustento. |
+| **H07 / H08** | Observación | Buena cobertura de pruebas en backend (xUnit, integración, BDD), pero prácticamente nula en móvil (solo el test de plantilla); no se hallaron pipelines CI/CD pese a mencionarse Crashlytics/Performance Monitoring en el informe. |
+
+#### Recomendaciones Principales Entregadas
+
+*   **Validación geográfica:** Validar ubicaciones con mapa/geocodificación en lugar de permitir texto libre.
+*   **Sustento de gastos:** Agregar sustento documental (adjuntar boletas/recibos) y validar montos razonables en el registro de gastos.
+*   **Seguimiento real:** Reemplazar la simulación GPS por el uso de ubicación real del dispositivo.
+*   **Gestión de vehículos:** Completar la edición de todos los campos obligatorios y corregir la búsqueda de vehículos para que se realice por placa.
+*   **Seguridad y cuentas:** Implementar el flujo completo de verificación de correo electrónico.
+*   **Cumplimiento legal:** Separar la política de privacidad como un artefacto independiente.
+*   **Calidad de software:** Reforzar la cobertura de pruebas en la aplicación móvil y configurar los pipelines de CI/CD mencionados.
+
 <a name="6-4-2"></a>
 ##### 6.4.2. Auditoría recibida
 <a name="6-4-2-1"></a>
 ###### 6.4.2.1. Información del grupo auditor
+
+
+| Elemento | Información Identificada |
+| :--- | :--- |
+| **Startup auditora** | Café Metrix |
+| **Integrantes del equipo auditor** | Camila Cristina Loli Ramirez<br>Christian Fabrizio Inga Orihuela<br>Michael Fred Quispe Roldan<br>Oscar Josue Antayhua Castillo<br>Carlos Fredy Fernández Camayo<br>Adrian Ricardo Donayre Alvarez |
+| **Producto auditado** | Jobsy (Startup WorkMate) |
+| **Criterio de referencia** | Final Project Statement, correspondencia entre informe, exposición del Capítulo VIII e implementación observable |
+
 <a name="6-4-2-2"></a>
 ###### 6.4.2.2. Cronograma de auditoría recibida
+
+### Cronograma de Actividades de la Segunda Auditoría
+
+| Fecha | Horario | Actividad | Evidencia revisada | Técnica aplicada |
+| :--- | :--- | :--- | :--- | :--- |
+| 22/06/2026 | 17:00–18:00 | Reunión de apertura y definición del alcance | Final Project Statement,<br>programa de auditoría | Revisión documental |
+| 23/06/2026 | 18:30–20:00 | Revisión integral del informe | Informe final (Cap. 1–8) | Revisión documental |
+| 24/06/2026 | 19:00–20:00 | Revisión de la exposición del Capítulo VIII | Diapositivas y notas | Análisis comparativo |
+| 25/06/2026 | 18:30–20:00 | Inspección del frontend | Código fuente frontend Jobsy | Inspección de código |
+| 26/06/2026 | 18:30–20:00 | Inspección del backend | Código fuente backend Jobsy | Inspección de código |
+| 27/06/2026 | 16:00–17:30 | Inspección de la ejecución del sistema | Aplicación en ejecución,<br>pruebas funcionales | Validación funcional |
+| 29/06/2026 | 12:00–16:00 | Consolidación de evidencias y hallazgos | Informe, exposición,<br>código, ejecución | Análisis comparativo |
+
+
 <a name="6-4-2-3"></a>
 ###### 6.4.2.3. Contenido de auditoría recibida
+
+La startup **Café Metrix** evaluó un total de 15 User Stories, identificando no conformidades críticas principalmente en los flujos dependientes de Inteligencia Artificial (IA) y en la correcta gestión de estados del negocio.
+
+| ID | Tipo | Descripción del Hallazgo |
+| :--- | :--- | :--- |
+| **H01** | No conformidad | La gestión de vacantes no implementa el estado "Cerrada" exigido por los criterios de aceptación (el backend solo define Activa/Borrador). |
+| **H02** | No conformidad | El registro de reclutador no captura datos empresariales ni implementa verificación (ausencia del campo RUC). |
+| **H03** | No conformidad | El perfil del postulante no permite subir o reemplazar el archivo del CV en formato físico. |
+| **H04** | No conformidad | Los tres flujos de asistencia por IA (US010, US011, US012) fallan con error 401 debido a un problema de autenticación con la API de OpenRouter. |
+| **H05** | Observación | No existe un módulo completo de notificaciones configurables por el usuario. |
+| **H06** | Observación | El modelo de control de accesos y roles no contempla un rol de Administrador del sistema. |
+| **H07** | Oportunidad de mejora | El módulo de analíticas depende de una ruta apuntada directamente a `localhost` (hardcodeada). |
+| **H08** | Oportunidad de mejora | Exposición crítica de una API key de `pdf.co` embebida directamente en el código del frontend. |
+| **H09** | Observación | Inconsistencia entre la infraestructura de despliegue reportada en el informe (Railway) y la observada en ejecución (Render). |
+| **H10** | Fortaleza | Buen cumplimiento y solidez en la autenticación base, flujo de postulación a vacantes, dashboard principal y analíticas base. |
+
+
 <a name="6-4-2-4"></a>
 ###### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
+*Falta evidenciar*
+
+A continuación, se detallan las acciones correctivas aplicadas o planificadas por el equipo de desarrollo para subsanar cada uno de los hallazgos reportados por el equipo auditor:
+
+| ID | Hallazgo Detectado | Estado / Solución Aplicada |
+| :--- | :--- | :--- |
+| **H01** | Estado "Cerrada" en vacantes | *[Ejemplo: Implementado en backend agregando el estado al ENUM y mapeando el flujo en la BD]* |
+| **H02** | Registro de reclutador (RUC) | *[Ejemplo: Añadido campo RUC en el formulario de registro y validación básica]* |
+| **H03** | Subida de CV como archivo | *[Ejemplo: Configurado almacenamiento en Firebase Storage / AWS S3 para recibir el PDF]* |
+| **H04** | Error 401 en OpenRouter | *[Ejemplo: Se corrigió la carga de la variable de entorno de la API key en el servidor]* |
+| **H05** | Notificaciones configurables | *[Ejemplo: Pendiente / Planificado para el siguiente sprint]* |
+| **H06** | Rol de Administrador | *[Ejemplo: Añadido rol Admin en la tabla de usuarios y rutas protegidas]* |
+| **H07** | Ruta hardcodeada a localhost | *[Ejemplo: Reemplazado por variable de entorno de la URL de producción]* |
+| **H08** | API key expuesta (pdf.co) | *[Ejemplo: Migrado el proceso de conversión de PDFs al backend para ocultar la llave]* |
+| **H09** | Despliegue en Railway vs Render | *[Ejemplo: Actualizado el informe final para reflejar el uso real de Render]* |
 
 <a name="cap-7"></a>
 ### Capítulo VII: DevOps Practices
