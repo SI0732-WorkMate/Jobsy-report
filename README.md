@@ -41,13 +41,11 @@
 | Versión | Fecha | Autor | Descripción |
 | :--- | :--- | :--- | :--- |
 | AV1 | 23/04/2026 | Equipo de Desarrollo | Estructura inicial completa |
-| AV1 | 26/04/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo I<br>Capítulo II<br>Capítulo III<br>Capítulo IV<br>Capítulo V |
+| AV2 | 26/04/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo I<br>Capítulo II<br>Capítulo III<br>Capítulo IV<br>Capítulo V |
 | TB1 | 08/05/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capítulo VI<br>Capítulo VII |
-| AV2 | 18/06/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Actualización de Student Outcome (AV2)<br>Capítulo VIII: Experiment-Driven Development (8.1, 8.2, 8.3)<br>Actualización de To-Be User Stories y To-Be Product Backlog (5ta US-Experimento)<br>Conclusiones |
-
-## Project Report Collaboration Insights
-
----
+| AV3 | 18/06/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Actualización de Student Outcome (AV2)<br>Capítulo VIII: Experiment-Driven Development (8.1, 8.2, 8.3)<br>Actualización de To-Be User Stories y To-Be Product Backlog (5ta US-Experimento)<br>Conclusiones |
+| AV4 | 18/06/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | Capitulo 7 |
+| TB2 | 18/06/2026 | María Hernández, Jasmmin Urrutia, Fabricio Vega, Ysaac Villanueva | capitulo 8 |
 
 ## Tabla de Contenidos
 
@@ -3584,3 +3582,9 @@ Link del Backend: https://backend-jobsy-production.up.railway.app/swagger/index.
 Link del Frontend: https://front-end-jobsy.vercel.app
 
 Link de las diapositivas: https://canva.link/wu2ynvec9d19cmy
+
+Link de video about the team: https://youtu.be/lqXfnpV9E9o
+
+Link de About-the-Product Intro Video : https://youtu.be/uaGo4ohUvLY
+
+Link de video Valiadation: https://youtu.be/C0gJDBCc018
