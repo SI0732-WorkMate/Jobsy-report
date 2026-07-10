@@ -3517,7 +3517,7 @@ Al finalizar el ciclo de experimentación, el equipo de WorkMate realizó una **
 
 Como parte del cierre del ciclo de Experiment-Driven Development, el equipo elaboró un video introductorio actualizado sobre la versión To-Be de Jobsy, dirigido a los visitantes del Landing Page y a los usuarios (reclutadores y postulantes) que ya cuentan con una cuenta en la plataforma. El video resume las nuevas funcionalidades validadas durante el piloto: filtrado inteligente por IA con explicación de compatibilidad, panel Kanban de seguimiento de candidatos, retroalimentación al descartar postulantes, evaluación gamificada de habilidades blandas y agenda integrada de entrevistas con recordatorios automáticos.
 
-**Video:** LINK
+**Video:** <https://youtu.be/uaGo4ohUvLY>
 **Duración aproximada:** 2 minutos.
 
 ---
@@ -3554,8 +3554,12 @@ La siguiente matriz busca evidenciar el reconocimiento de las responsabilidades 
 <a name="v-validation"></a>
 ## Video App Validation
 
+LINK: <https://youtu.be/C0gJDBCc018>
+
 <a name="v-team"></a>
 ## Video About-the-Team
+
+LINK: <https://youtu.be/lqXfnpV9E9o>
 
 <a name="bibliografia"></a>
 ## Bibliografía
