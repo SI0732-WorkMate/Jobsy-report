@@ -14,7 +14,7 @@
 <br>
 
 <div style="text-align: center;">
-    <h3 style="text-align: center">Informe del Trabajo Parcial - Avance 2 </h3>
+    <h3 style="text-align: center">Informe del Trabajo Final </h3>
     <h4 style="text-align: center;"> Startup: WorkMate </h3>
     <h4 style="text-align: center"> Producto: Jobsy </h4>
 </div>
