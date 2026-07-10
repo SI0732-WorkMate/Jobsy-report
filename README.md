@@ -2688,15 +2688,13 @@ A continuación, se detallan las acciones correctivas aplicadas o planificadas p
 
 | ID | Hallazgo Detectado | Estado / Solución Aplicada |
 | :--- | :--- | :--- |
-| **H01** | Estado "Cerrada" en vacantes | *[Ejemplo: Implementado en backend agregando el estado al ENUM y mapeando el flujo en la BD]* |
-| **H02** | Registro de reclutador (RUC) | *[Ejemplo: Añadido campo RUC en el formulario de registro y validación básica]* |
-| **H03** | Subida de CV como archivo | *[Ejemplo: Configurado almacenamiento en Firebase Storage / AWS S3 para recibir el PDF]* |
-| **H04** | Error 401 en OpenRouter | *[Ejemplo: Se corrigió la carga de la variable de entorno de la API key en el servidor]* |
-| **H05** | Notificaciones configurables | *[Ejemplo: Pendiente / Planificado para el siguiente sprint]* |
-| **H06** | Rol de Administrador | *[Ejemplo: Añadido rol Admin en la tabla de usuarios y rutas protegidas]* |
-| **H07** | Ruta hardcodeada a localhost | *[Ejemplo: Reemplazado por variable de entorno de la URL de producción]* |
-| **H08** | API key expuesta (pdf.co) | *[Ejemplo: Migrado el proceso de conversión de PDFs al backend para ocultar la llave]* |
-| **H09** | Despliegue en Railway vs Render | *[Ejemplo: Actualizado el informe final para reflejar el uso real de Render]* |
+| **H01** | Estado "Cerrada" en vacantes | ![](./assets/images/chapter-6/Modificaciones1.png) |
+| **H02** | Registro de reclutador (RUC) | ![](./assets/images/chapter-6/Modificaciones2.png) |
+| **H03** | Subida de CV como archivo | ![](./assets/images/chapter-6/Modificaciones3.png) |
+| **H04** | Notificaciones configurables | ![](./assets/images/chapter-6/Modificaciones4.png) |
+| **H05** | Ruta hardcodeada a localhost | *[Ejemplo: Reemplazado por variable de entorno de la URL de producción]* |
+| **H06** | API key expuesta (pdf.co) | *[Ejemplo: Migrado el proceso de conversión de PDFs al backend para ocultar la llave]* |
+| **H07** | Despliegue en Railway vs Render | *[Ejemplo: Actualizado el informe final para reflejar el uso real de Render]* |
 
 <a name="cap-7"></a>
 ### Capítulo VII: DevOps Practices
